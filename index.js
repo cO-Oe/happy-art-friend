@@ -6,8 +6,6 @@
 // Import required packages
 const path = require('path');
 const restify = require('restify');
-const ComputerVisionClient = require('@azure/cognitiveservices-computervision').ComputerVisionClient;
-const ApiKeyCredentials = require('@azure/ms-rest-js').ApiKeyCredentials;
 
 // Import required bot services. See https://aka.ms/bot-services to learn more about the different parts of a bot.
 const { BotFrameworkAdapter, ConversationState, MemoryStorage, UserState } = require('botbuilder');
@@ -72,12 +70,8 @@ if (!endpointHostName.includes('/v5.0') && !endpointHostName.endsWith('/qnamaker
     endpointHostName = endpointHostName + '/qnamaker';
 }
 
-// Create computer vision model 
-const computerVisionClient = new ComputerVisionClient(
-  new ApiKeyCredentials({ inHeader: { 'Ocp-Apim-Subscription-Key': process.env.CVAPIKey } }), process.env.CVEndpointHostName);
-
 // Create the bot's main handler.
-const bot = new QnABot(conversationState, userState, computerVisionClient);
+const bot = new QnABot(conversationState, userState);
 
 // Listen for incoming requests.
 server.post('/api/messages', (req, res) => {

@@ -1,15 +1,14 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
 
-const { ActivityHandler } = require('botbuilder');
+const { ActivityHandler, teamsGetChannelId } = require('botbuilder');
 const { LuisRecognizer, QnAMaker } = require('botbuilder-ai');
-const { CosmosDbPartitionedStorage } = require('botbuilder-azure');
 const { BlobServiceClient } = require('@azure/storage-blob');
-const path = require('path');
+const ComputerVisionClient = require('@azure/cognitiveservices-computervision').ComputerVisionClient;
+const ApiKeyCredentials = require('@azure/ms-rest-js').ApiKeyCredentials;
+const CosmosClient = require("@azure/cosmos").CosmosClient;
 const axios = require('axios');
-const fs = require('fs');
 const uuid = require('uuid');
-const { ComputerVisionClient } = require('@azure/cognitiveservices-computervision');
 
 const CONVERSATION_DATA_PROPERTY = 'conversationData';
 const USER_PROFILE_PROPERTY = 'userProfile';
@@ -24,9 +23,8 @@ class QnABot extends ActivityHandler {
      *
      * @param {ConversationState} conversationState
      * @param {UserState} userState
-     * @param {ComputerVisionClient} computerVisionClient
      */
-    constructor(conversationState, userState, computerVisionClient) {
+    constructor(conversationState, userState) {
         super();
         if (!conversationState) throw new Error('[QnABot]: Missing parameter. conversationState is required');
         if (!userState) throw new Error('[QnABot]: Missing parameter. userState is required');
@@ -37,6 +35,11 @@ class QnABot extends ActivityHandler {
 
         this.conversationState = conversationState;
         this.userState = userState;
+
+        // Create computer vision model 
+        const computerVisionClient = new ComputerVisionClient(
+          new ApiKeyCredentials({ inHeader: { 'Ocp-Apim-Subscription-Key': process.env.CVAPIKey } }), process.env.CVEndpointHostName);
+
         this.computerVisionClient = computerVisionClient;
     
         const dispatchRecognizer = new LuisRecognizer({
@@ -48,41 +51,27 @@ class QnABot extends ActivityHandler {
             includeInstanceData: true
         }, true);
 
+        this.dispatchRecognizer = dispatchRecognizer;
+
         const qnaMaker = new QnAMaker({
             knowledgeBaseId: process.env.QnAKnowledgebaseId,
             endpointKey: process.env.QnAEndpointKey,
             host: process.env.QnAEndpointHostName
         });
 
-        const storage = new CosmosDbPartitionedStorage({ //cosmosdb
-            cosmosDbEndpoint: process.env.CosmosDbEndpoint,
-            authKey: process.env.CosmosDbAuthKey,
-            databaseId: process.env.CosmosDbDatabaseId,
-            containerId: process.env.CosmosDbContainerId,
-            compatibilityMode: false
+        this.qnaMaker = qnaMaker;
+
+        const cosmosClient = new CosmosClient({ 
+          endpoint: process.env.CosmosDbEndpoint, 
+          key: process.env.CosmosDbAuthKey 
         });
 
-        this.dispatchRecognizer = dispatchRecognizer;
-        this.qnaMaker = qnaMaker;
-        this.storage = storage //cosmosdb
+        const cosmosDatabase = cosmosClient.database("PaintingDB");
+        const cosmosContainer = cosmosDatabase.container("paintings");
+
+        this.cosmosContainer = cosmosContainer;
 
         this.onMessage(async (context, next) => {
-
-            //cosmod test
-            /*
-            await context.sendActivity(`Test cosmos db`);
-                        storeItems["test"] = { name: [`testPainting`]}
-            await storage.write(storeItems)
-            var paintingInfo = storeItems.test.name.toString();
-            await context.sendActivity(`PaintingInfo from cosmosdb: ${paintingInfo}`);
-
-            let storeItems = await storage.read(["test"])
-            var paintingInfo = storeItems.test.name.toString();
-            await context.sendActivity(`PaintingInfo from cosmosdb: ${paintingInfo}`);
-            */
-            //cosmod test
-
-
 
             // Get the state properties from the turn context.
             const userProfile = await this.userProfileAccessor.get(context, {});
@@ -188,19 +177,6 @@ class QnABot extends ActivityHandler {
       // Prepare Promises to download each attachment and then execute each Promise.
       const promises = turnContext.activity.attachments.map(this.writeAttachmentToBlob);
       const successfulSaves = await Promise.all(promises);
-
-      // Replies back to the user with information about where the attachment is stored on the bot's server,
-      // and what the name of the saved file is.
-      async function replyForReceivedAttachments(localAttachmentData) {
-          if (localAttachmentData) {
-              // Because the TurnContext was bound to this function, the bot can call
-              // `TurnContext.sendActivity` via `this.sendActivity`;
-              await this.sendActivity(`Attachment "${ localAttachmentData.fileName }" ` +
-                  `has been received and saved to "${ localAttachmentData.localPath }".`);
-          } else {
-              await this.sendActivity('Attachment was not successfully saved to disk.');
-          }
-      }
       
       async function replyForBlobAttachments(blobAttachmentData) {
         if (blobAttachmentData) {
@@ -216,47 +192,26 @@ class QnABot extends ActivityHandler {
       // Prepare Promises to reply to the user with information about saved attachments.
       // The current TurnContext is bound so `replyForReceivedAttachments` can also send replies.
       const replyPromises = successfulSaves.map(replyForBlobAttachments.bind(turnContext));
-      this.computerVision(successfulSaves[0].urlPath);
+
+      let tags = await(this.computerVision(successfulSaves[0].urlPath));
+
+      // query to return all items
+      const querySpec = {
+        query: `"SELECT * from c"`
+      };
+
+      const { resources: items } = await this.cosmosContainer.items
+        .query(querySpec)
+        .fetchAll();
+
+      console.log(items);
       await Promise.all(replyPromises);
   }
 
-  /**
-     * Downloads attachment to the disk.
-     * @param {Object} attachment
-     */
-    async downloadAttachmentAndWrite(attachment) {
-      // Retrieve the attachment via the attachment's contentUrl.
-      const url = attachment.contentUrl;
-
-      // Local file path for the bot to save the attachment.
-      const localFileName = path.join(__dirname, attachment.name);
-
-      try {
-          // arraybuffer is necessary for images
-          const response = await axios.get(url, { responseType: 'arraybuffer' });
-          // If user uploads JSON file, this prevents it from being written as "{"type":"Buffer","data":[123,13,10,32,32,34,108..."
-          if (response.headers['content-type'] === 'application/json') {
-              response.data = JSON.parse(response.data, (key, value) => {
-                  return value && value.type === 'Buffer' ? Buffer.from(value.data) : value;
-              });
-          }
-          fs.writeFile(localFileName, response.data, (fsError) => {
-              if (fsError) {
-                  throw fsError;
-              }
-          });
-      } catch (error) {
-          console.error(error);
-          return undefined;
-      }
-      // If no error was thrown while writing to disk, return the attachment's name
-      // and localFilePath for the response back to the user.
-      return {
-          fileName: attachment.name,
-          localPath: localFileName
-      };
-  }
-
+ /**
+  * Downloads attachment to the blob.
+  * @param {Object} attachment
+  */
   async writeAttachmentToBlob(attachment) {
     // Retrieve the attachment via the attachment's contentUrl.
     const url = attachment.contentUrl;
@@ -308,9 +263,11 @@ class QnABot extends ActivityHandler {
 
       const tags = (await this.computerVisionClient.analyzeImage(tagsURL, { visualFeatures: ['Tags'] })).tags;
       console.log(`Tags: ${formatTags(tags)}`);
+      return tags;
     }
     catch (err) {
       console.log(err);
+      return undefined;
     }
   } 
 
