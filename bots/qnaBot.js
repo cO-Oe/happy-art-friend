@@ -6,6 +6,8 @@ const { LuisRecognizer, QnAMaker } = require('botbuilder-ai');
 const path = require('path');
 const axios = require('axios');
 const fs = require('fs');
+const async = require('async');
+
 
 /**
  * A simple bot that responds to utterances with answers from QnA Maker.
@@ -16,17 +18,17 @@ class QnABot extends ActivityHandler {
      *
      * @param {ConversationState} conversationState
      * @param {UserState} userState
+     * @param {ComputerVisionClient} computerVisionClient
      */
-    constructor(conversationState, userState) {
+    constructor(conversationState, userState, computerVisionClient) {
         super();
         if (!conversationState) throw new Error('[QnABot]: Missing parameter. conversationState is required');
         if (!userState) throw new Error('[QnABot]: Missing parameter. userState is required');
 
         this.conversationState = conversationState;
         this.userState = userState;
-        
-        //參考範例加入
-        
+        this.computerVisionClient = computerVisionClient;
+
         const dispatchRecognizer = new LuisRecognizer({
             applicationId: process.env.LuisAppId,
             endpointKey: process.env.LuisAPIKey,
@@ -44,8 +46,6 @@ class QnABot extends ActivityHandler {
 
         this.dispatchRecognizer = dispatchRecognizer;
         this.qnaMaker = qnaMaker;
-
-        //參考範例加入
 
         this.onMessage(async (context, next) => {
             // If user input is an attachment
@@ -83,8 +83,6 @@ class QnABot extends ActivityHandler {
        
     }
 
-     //參考範例加入
-
     async dispatchToTopIntentAsync(context, intent, recognizerResult) {
         switch (intent) {
         case 'art_luis':
@@ -102,7 +100,6 @@ class QnABot extends ActivityHandler {
         }
     }
 
-<<<<<<< HEAD
     async ProcessArtLuis(context, luisResult) {
         console.log('ProcessCovid19Luis');
 
@@ -129,9 +126,7 @@ class QnABot extends ActivityHandler {
             await context.sendActivity('Sorry, I am a dummy QnA system');
         }
     }
-    //參考範例加入
 
-=======
     /**
      * Saves incoming attachments to disk by calling `this.downloadAttachmentAndWrite()` and
      * responds to the user with information about the saved attachment or an error.
@@ -158,9 +153,13 @@ class QnABot extends ActivityHandler {
       // Prepare Promises to reply to the user with information about saved attachments.
       // The current TurnContext is bound so `replyForReceivedAttachments` can also send replies.
       const replyPromises = successfulSaves.map(replyForReceivedAttachments.bind(turnContext));
+
+      this.computerVision();
+
       await Promise.all(replyPromises);
   }
 
+  
   /**
      * Downloads attachment to the disk.
      * @param {Object} attachment
@@ -197,7 +196,22 @@ class QnABot extends ActivityHandler {
           localPath: localFileName
       };
   }
->>>>>>> aa2b0bcd0781c78b5f625dcbd9e515cbf2f1f366
+
+  async computerVision () {
+    try {
+      const tagsURL = 'https://moderatorsampleimages.blob.core.windows.net/samples/sample16.png';
+
+      function formatTags(tags) {
+        return tags.map(tag => (`${tag.name} (${tag.confidence.toFixed(2)})`)).join(', ');
+      };
+      
+      const tags = (await this.computerVisionClient.analyzeImage(tagsURL, { visualFeatures: ['Tags'] })).tags;
+      console.log(`Tags: ${formatTags(tags)}`);
+    }
+    catch (err) {
+      console.log(err);
+    }
+  } 
 }
 
 module.exports.QnABot = QnABot;
