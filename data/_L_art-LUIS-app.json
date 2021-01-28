@@ -20,6 +20,10 @@
     {
       "name": "paintingStyle",
       "features": []
+    },
+    {
+      "name": "paintingTechnique",
+      "features": []
     }
   ],
   "entities": [],
@@ -70,17 +74,17 @@
     },
     {
       "text": "how",
-      "intent": "paintingStyle",
+      "intent": "paintingTechnique",
       "entities": []
     },
     {
       "text": "how was this work painted?",
-      "intent": "paintingStyle",
+      "intent": "paintingTechnique",
       "entities": []
     },
     {
       "text": "method",
-      "intent": "paintingStyle",
+      "intent": "paintingTechnique",
       "entities": []
     },
     {
@@ -110,7 +114,7 @@
     },
     {
       "text": "technique",
-      "intent": "paintingStyle",
+      "intent": "paintingTechnique",
       "entities": []
     },
     {
@@ -129,13 +133,28 @@
       "entities": []
     },
     {
-      "text": "way",
+      "text": "type of painting technique",
+      "intent": "paintingTechnique",
+      "entities": []
+    },
+    {
+      "text": "type of the painting style",
       "intent": "paintingStyle",
+      "entities": []
+    },
+    {
+      "text": "way",
+      "intent": "paintingTechnique",
       "entities": []
     },
     {
       "text": "what is the name of the painting?",
       "intent": "paintingName",
+      "entities": []
+    },
+    {
+      "text": "what is the painting method?",
+      "intent": "paintingTechnique",
       "entities": []
     },
     {
@@ -150,7 +169,7 @@
     },
     {
       "text": "what is the technique?",
-      "intent": "paintingStyle",
+      "intent": "paintingTechnique",
       "entities": []
     },
     {
@@ -165,7 +184,7 @@
     },
     {
       "text": "what method?",
-      "intent": "paintingStyle",
+      "intent": "paintingTechnique",
       "entities": []
     },
     {
@@ -201,6 +220,16 @@
     {
       "text": "when was this work finished?",
       "intent": "paintingDate",
+      "entities": []
+    },
+    {
+      "text": "which style is this?",
+      "intent": "paintingStyle",
+      "entities": []
+    },
+    {
+      "text": "which technique is this?",
+      "intent": "paintingTechnique",
       "entities": []
     },
     {

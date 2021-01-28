@@ -1,42 +1,46 @@
 Label	Weight	Text
-art_luis	1	who is the author
+art_luis	1	what is the technique
 art_luis	1	finish year
-art_luis	1	when was this work finished
-art_luis	1	what method
+art_luis	1	when was the painting accomplished
+art_luis	1	type of painting technique
 art_luis	1	way
 art_luis	1	author
-art_luis	1	style
-art_luis	1	when was this work created
+art_luis	1	work name
+art_luis	1	this painting was painted by who
+art_luis	1	when
+art_luis	1	accomplished year
+art_luis	1	painted date
 art_luis	1	which year
-art_luis	1	when was the painting completed
-art_luis	1	who is the painter
-art_luis	1	what style
 art_luis	1	who painted it
 art_luis	1	method
-art_luis	1	title of this work
-art_luis	1	work title
-art_luis	1	what kind
-art_luis	1	what is the name of the painting
-art_luis	1	completed time
-art_luis	1	what is the title of the painting
-art_luis	1	what time
-art_luis	1	what is the style
-art_luis	1	accomplished year
-art_luis	1	work name
-art_luis	1	how was this work painted
-art_luis	1	when
+art_luis	1	who done this work
+art_luis	1	what is the painting method
 art_luis	1	created time
-art_luis	1	technique
 art_luis	1	who drew it
-art_luis	1	what is the painting's style
-art_luis	1	when was the painting accomplished
-art_luis	1	who created this work
+art_luis	1	name of this work
+art_luis	1	type of the painting style
+art_luis	1	which style is this
+art_luis	1	when was this work finished
 art_luis	1	title
-art_luis	1	name
+art_luis	1	what is the name of the painting
+art_luis	1	title of this work
+art_luis	1	which technique is this
+art_luis	1	what style
+art_luis	1	what is the title of the painting
+art_luis	1	completed time
 art_luis	1	completed year
-art_luis	1	how
-art_luis	1	who
-art_luis	1	this painting was painted by who
+art_luis	1	how was this work painted
+art_luis	1	who accomplished the painting
+art_luis	1	who is the author
+art_luis	1	what is the painting's style
+art_luis	1	what time
+art_luis	1	who created this work
+art_luis	1	date
+art_luis	1	what is the style
+art_luis	1	what kind
+art_luis	1	name
+art_luis	1	artist
+art_luis	1	style
 art_qna	1	next joke
 art_qna	1	Yup, that's true
 art_qna	1	Quit fooling around

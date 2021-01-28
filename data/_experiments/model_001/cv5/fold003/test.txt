@@ -1,13 +1,14 @@
 Label	Weight	Text
-art_luis	1	technique
-art_luis	1	who drew it
+art_luis	1	how was this work painted
+art_luis	1	who accomplished the painting
+art_luis	1	who is the author
 art_luis	1	what is the painting's style
-art_luis	1	when was the painting accomplished
+art_luis	1	what time
 art_luis	1	who created this work
-art_luis	1	title
+art_luis	1	date
+art_luis	1	what is the style
+art_luis	1	what kind
 art_luis	1	name
-art_luis	1	completed year
-art_luis	1	how
 art_qna	1	You say stupid things
 art_qna	1	AMA
 art_qna	1	Awesome job

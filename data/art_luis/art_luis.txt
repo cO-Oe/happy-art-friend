@@ -18,8 +18,11 @@ technique
 this painting was painted by who
 title
 title of this work
+type of painting technique
+type of the painting style
 way
 what is the name of the painting
+what is the painting method
 what is the painting's style
 what is the style
 what is the technique
@@ -33,6 +36,8 @@ when was the painting accomplished
 when was the painting completed
 when was this work created
 when was this work finished
+which style is this
+which technique is this
 which year was this work painted
 which year
 who

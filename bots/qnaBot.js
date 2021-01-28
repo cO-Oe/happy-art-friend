@@ -65,17 +65,17 @@ class QnABot extends ActivityHandler {
         this.onMessage(async (context, next) => {
 
             //cosmod test
-            await context.sendActivity(`Test cosmos db`);
             /*
-            storeItems["test"] = { name: [`testPainting`]}
+            await context.sendActivity(`Test cosmos db`);
+                        storeItems["test"] = { name: [`testPainting`]}
             await storage.write(storeItems)
             var paintingInfo = storeItems.test.name.toString();
             await context.sendActivity(`PaintingInfo from cosmosdb: ${paintingInfo}`);
-            */
+
             let storeItems = await storage.read(["test"])
             var paintingInfo = storeItems.test.name.toString();
             await context.sendActivity(`PaintingInfo from cosmosdb: ${paintingInfo}`);
-
+            */
             //cosmod test
 
 
@@ -144,23 +144,7 @@ class QnABot extends ActivityHandler {
        
     }
 
-    /*
-    async dispatchToTopIntentAsync(context, intent, recognizerResult) {
-        switch (intent) {
-        case 'art_luis':
-            console.log('sent to art luis')
-            await this.ProcessArtLuis(context, recognizerResult.luisResult);
-            break;
-        case 'art_qna':
-            console.log('sent to art QnA')
-            await this.processArtQnA(context);
-            break;
-        default:
-            console.log(`Dispatch unrecognized intent: ${ intent }.`);
-            await context.sendActivity(`Dispatch unrecognized intent: ${ intent }.`);
-            break;
-        }
-    }*/
+    
 
     async ProcessArtLuis(context, luisResult) {
         console.log('ProcessArtLuis');

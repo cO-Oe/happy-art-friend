@@ -15,7 +15,7 @@
   "prebuiltEntities": [],
   "utterances": [
     {
-      "text": "who is the author",
+      "text": "what is the technique",
       "intent": "art_luis",
       "entities": []
     },
@@ -25,12 +25,12 @@
       "entities": []
     },
     {
-      "text": "when was this work finished",
+      "text": "when was the painting accomplished",
       "intent": "art_luis",
       "entities": []
     },
     {
-      "text": "what method",
+      "text": "type of painting technique",
       "intent": "art_luis",
       "entities": []
     },
@@ -45,32 +45,32 @@
       "entities": []
     },
     {
-      "text": "style",
+      "text": "work name",
       "intent": "art_luis",
       "entities": []
     },
     {
-      "text": "when was this work created",
+      "text": "this painting was painted by who",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "when",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "accomplished year",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "painted date",
       "intent": "art_luis",
       "entities": []
     },
     {
       "text": "which year",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
-      "text": "when was the painting completed",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
-      "text": "who is the painter",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
-      "text": "what style",
       "intent": "art_luis",
       "entities": []
     },
@@ -85,62 +85,12 @@
       "entities": []
     },
     {
-      "text": "title of this work",
+      "text": "who done this work",
       "intent": "art_luis",
       "entities": []
     },
     {
-      "text": "work title",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
-      "text": "what kind",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
-      "text": "what is the name of the painting",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
-      "text": "completed time",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
-      "text": "what is the title of the painting",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
-      "text": "what time",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
-      "text": "what is the style",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
-      "text": "accomplished year",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
-      "text": "work name",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
-      "text": "how was this work painted",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
-      "text": "when",
+      "text": "what is the painting method",
       "intent": "art_luis",
       "entities": []
     },
@@ -150,57 +100,7 @@
       "entities": []
     },
     {
-      "text": "technique",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
       "text": "who drew it",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
-      "text": "what is the painting's style",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
-      "text": "when was the painting accomplished",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
-      "text": "who created this work",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
-      "text": "title",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
-      "text": "name",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
-      "text": "completed year",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
-      "text": "how",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
-      "text": "painter",
-      "intent": "art_luis",
-      "entities": []
-    },
-    {
-      "text": "what is the technique",
       "intent": "art_luis",
       "entities": []
     },
@@ -210,7 +110,62 @@
       "entities": []
     },
     {
-      "text": "which year was this work painted",
+      "text": "type of the painting style",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "which style is this",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "when was this work finished",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "title",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "what is the name of the painting",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "title of this work",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "which technique is this",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "what style",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "what is the title of the painting",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "completed time",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "completed year",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "how was this work painted",
       "intent": "art_luis",
       "entities": []
     },
@@ -220,22 +175,47 @@
       "entities": []
     },
     {
+      "text": "who is the author",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "what is the painting's style",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "what time",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "who created this work",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
       "text": "date",
       "intent": "art_luis",
       "entities": []
     },
     {
-      "text": "painted date",
+      "text": "what is the style",
       "intent": "art_luis",
       "entities": []
     },
     {
-      "text": "who done this work",
+      "text": "what kind",
       "intent": "art_luis",
       "entities": []
     },
     {
-      "text": "artist",
+      "text": "name",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "when was the painting completed",
       "intent": "art_luis",
       "entities": []
     },
@@ -245,7 +225,52 @@
       "entities": []
     },
     {
-      "text": "this painting was painted by who",
+      "text": "painter",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "which year was this work painted",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "how",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "when was this work created",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "work title",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "technique",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "what method",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "who is the painter",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "artist",
+      "intent": "art_luis",
+      "entities": []
+    },
+    {
+      "text": "style",
       "intent": "art_luis",
       "entities": []
     },

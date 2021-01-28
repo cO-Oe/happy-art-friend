@@ -1,13 +1,14 @@
 Label	Weight	Text
-art_luis	1	when was the painting completed
-art_luis	1	who is the painter
-art_luis	1	what style
+art_luis	1	painted date
+art_luis	1	which year
 art_luis	1	who painted it
 art_luis	1	method
-art_luis	1	title of this work
-art_luis	1	work title
-art_luis	1	what kind
-art_luis	1	what is the name of the painting
+art_luis	1	who done this work
+art_luis	1	what is the painting method
+art_luis	1	created time
+art_luis	1	who drew it
+art_luis	1	name of this work
+art_luis	1	type of the painting style
 art_qna	1	Aerial Perspective
 art_qna	1	Uhhuh
 art_qna	1	Google Assistant is way smarter than you

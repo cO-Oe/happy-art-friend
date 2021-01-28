@@ -17,13 +17,18 @@
     },
     "dependencies": {
         "@azure/cosmos": "^3.9.5",
+        "@azure/cognitiveservices-computervision": "^7.1.0",
+        "@azure/storage-blob": "^12.4.0",
+        "@types/dotenv": "^8.2.0",
+        "async": "^3.2.0",
         "axios": "^0.21.1",
         "botbuilder": "4.10.3",
         "botbuilder-ai": "4.10.3",
         "botbuilder-azure": "^4.11.1",
         "botbuilder-dialogs": "4.10.3",
         "dotenv": "^8.2.0",
-        "restify": "~8.4.0"
+        "restify": "~8.4.0",
+        "uuid": "^8.3.2"
     },
     "devDependencies": {
         "eslint": "^6.6.0",

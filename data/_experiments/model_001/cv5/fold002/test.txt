@@ -1,13 +1,14 @@
 Label	Weight	Text
-art_luis	1	completed time
+art_luis	1	which style is this
+art_luis	1	when was this work finished
+art_luis	1	title
+art_luis	1	what is the name of the painting
+art_luis	1	title of this work
+art_luis	1	which technique is this
+art_luis	1	what style
 art_luis	1	what is the title of the painting
-art_luis	1	what time
-art_luis	1	what is the style
-art_luis	1	accomplished year
-art_luis	1	work name
-art_luis	1	how was this work painted
-art_luis	1	when
-art_luis	1	created time
+art_luis	1	completed time
+art_luis	1	completed year
 art_qna	1	I'd like to be your bud.
 art_qna	1	Do you know other bots
 art_qna	1	How high can you count

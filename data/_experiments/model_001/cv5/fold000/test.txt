@@ -1,13 +1,14 @@
 Label	Weight	Text
-art_luis	1	who is the author
+art_luis	1	what is the technique
 art_luis	1	finish year
-art_luis	1	when was this work finished
-art_luis	1	what method
+art_luis	1	when was the painting accomplished
+art_luis	1	type of painting technique
 art_luis	1	way
 art_luis	1	author
-art_luis	1	style
-art_luis	1	when was this work created
-art_luis	1	which year
+art_luis	1	work name
+art_luis	1	this painting was painted by who
+art_luis	1	when
+art_luis	1	accomplished year
 art_qna	1	next joke
 art_qna	1	Yup, that's true
 art_qna	1	Quit fooling around
