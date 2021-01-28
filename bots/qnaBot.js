@@ -6,6 +6,7 @@ const { LuisRecognizer, QnAMaker } = require('botbuilder-ai');
 const path = require('path');
 const axios = require('axios');
 const fs = require('fs');
+const { CosmosDbPartitionedStorage } = require('botbuilder-azure');
 
 const CONVERSATION_DATA_PROPERTY = 'conversationData';
 const USER_PROFILE_PROPERTY = 'userProfile';
@@ -49,14 +50,35 @@ class QnABot extends ActivityHandler {
             host: process.env.QnAEndpointHostName
         });
 
+        const storage = new CosmosDbPartitionedStorage({ //cosmosdb
+            cosmosDbEndpoint: process.env.CosmosDbEndpoint,
+            authKey: process.env.CosmosDbAuthKey,
+            databaseId: process.env.CosmosDbDatabaseId,
+            containerId: process.env.CosmosDbContainerId,
+            compatibilityMode: false
+        });
+
         this.dispatchRecognizer = dispatchRecognizer;
         this.qnaMaker = qnaMaker;
-
+        this.storage = storage //cosmosdb
 
         this.onMessage(async (context, next) => {
 
-            console.log(this.conversationState)
-            console.log(this.userState)
+            //cosmod test
+            await context.sendActivity(`Test cosmos db`);
+            /*
+            storeItems["test"] = { name: [`testPainting`]}
+            await storage.write(storeItems)
+            var paintingInfo = storeItems.test.name.toString();
+            await context.sendActivity(`PaintingInfo from cosmosdb: ${paintingInfo}`);
+            */
+            let storeItems = await storage.read(["test"])
+            var paintingInfo = storeItems.test.name.toString();
+            await context.sendActivity(`PaintingInfo from cosmosdb: ${paintingInfo}`);
+
+            //cosmod test
+
+
 
             // Get the state properties from the turn context.
             const userProfile = await this.userProfileAccessor.get(context, {});
@@ -106,8 +128,7 @@ class QnABot extends ActivityHandler {
 
         // If a new user is added to the conversation, send them a greeting message
         this.onMembersAdded(async (context, next) => {
-            console.log(this.conversationState)
-            console.log(this.userState)
+         
 
             const membersAdded = context.activity.membersAdded;
             for (let cnt = 0; cnt < membersAdded.length; cnt++) {
@@ -142,9 +163,8 @@ class QnABot extends ActivityHandler {
     }*/
 
     async ProcessArtLuis(context, luisResult) {
-        console.log('ProcessCovid19Luis');
-            console.log(this.conversationState)
-            console.log(this.userState)
+        console.log('ProcessArtLuis');
+         
 
         // Retrieve LUIS result for Process Automation.
         const result = luisResult.connectedServiceResult;
@@ -161,8 +181,7 @@ class QnABot extends ActivityHandler {
 
     async processArtQnA(context) {
         console.log('Art_QnA');
-            console.log(this.conversationState)
-            console.log(this.userState)
+    
 
         const results = await this.qnaMaker.getAnswers(context);
         if (results.length > 0) {
