@@ -1,0 +1,37 @@
+{
+  "luis_schema_version": "7.0.0",
+  "intents": [
+    {
+      "name": "art_luis"
+    },
+    {
+      "name": "art_qna"
+    }
+  ],
+  "entities": [],
+  "hierarchicals": [],
+  "composites": [],
+  "closedLists": [],
+  "prebuiltEntities": [],
+  "utterances": [],
+  "versionId": "Dispatch",
+  "name": "art-bot-dispatch",
+  "desc": "Dispatch model for art-bot-dispatch",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "phraselists": [],
+  "regex_features": [],
+  "patterns": [],
+  "settings": [
+    {
+      "name": "NormalizeDiacritics",
+      "value": "true"
+    },
+    {
+      "name": "UseAllTrainingData",
+      "value": "true"
+    }
+  ]
+}

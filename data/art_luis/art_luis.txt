@@ -1,0 +1,47 @@
+accomplished year
+artist
+author
+completed time
+completed year
+created time
+date
+finish year
+how
+how was this work painted
+method
+name
+name of this work
+painted date
+painter
+style
+technique
+this painting was painted by who
+title
+title of this work
+way
+what is the name of the painting
+what is the painting's style
+what is the style
+what is the technique
+what is the title of the painting
+what kind
+what method
+what style
+what time
+when
+when was the painting accomplished
+when was the painting completed
+when was this work created
+when was this work finished
+which year was this work painted
+which year
+who
+who accomplished the painting
+who created this work
+who done this work
+who drew it
+who is the author
+who is the painter
+who painted it
+work name
+work title

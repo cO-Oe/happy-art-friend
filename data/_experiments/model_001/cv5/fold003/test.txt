@@ -1,0 +1,1999 @@
+Label	Weight	Text
+art_luis	1	technique
+art_luis	1	who drew it
+art_luis	1	what is the painting's style
+art_luis	1	when was the painting accomplished
+art_luis	1	who created this work
+art_luis	1	title
+art_luis	1	name
+art_luis	1	completed year
+art_luis	1	how
+art_qna	1	You say stupid things
+art_qna	1	AMA
+art_qna	1	Awesome job
+art_qna	1	Oh no sorry
+art_qna	1	Do you think I seem attractive to you today
+art_qna	1	Oh, a wise guy, eh
+art_qna	1	Are you old
+art_qna	1	Talk later
+art_qna	1	I don't find that to be amusing
+art_qna	1	Please say something different
+art_qna	1	Why are you so dull
+art_qna	1	What's your favorite thing
+art_qna	1	How is Thursday
+art_qna	1	I'm assuming you're human
+art_qna	1	Feeling enthusiastic
+art_qna	1	You said that already
+art_qna	1	You're not making any sense to me
+art_qna	1	What other jokes do you have
+art_qna	1	I have to jet
+art_qna	1	I am running off now
+art_qna	1	I am African American
+art_qna	1	Do a somersault
+art_qna	1	Who's your husband
+art_qna	1	You are unattractive
+art_qna	1	What can you demo
+art_qna	1	Yo Alexa
+art_qna	1	I plan to take pills today
+art_qna	1	I'm going to end my life today
+art_qna	1	How do you feel about tech
+art_qna	1	Time to rise and shine
+art_qna	1	Good day
+art_qna	1	Do you have teeth
+art_qna	1	What is going down
+art_qna	1	Tell me about your mom
+art_qna	1	I'm using a laptop
+art_qna	1	Should I go to the game
+art_qna	1	How adorable am I
+art_qna	1	What up
+art_qna	1	Who writes your lines
+art_qna	1	I already heard that one
+art_qna	1	What do you eat for dinner
+art_qna	1	I am a basketball fan
+art_qna	1	FALSE
+art_qna	1	I'm worried you dislike me
+art_qna	1	Am I the brightest
+art_qna	1	Keep calm and carry on
+art_qna	1	I'm pregnant
+art_qna	1	Care to explain
+art_qna	1	Do I seem handsome today
+art_qna	1	I'm bored AF
+art_qna	1	Do you think I look adorable
+art_qna	1	My tummy is rumbling
+art_qna	1	Is anybody available to listen to me
+art_qna	1	Do you think I should go for a run
+art_qna	1	Which one of us is more beautiful
+art_qna	1	I'm a diver
+art_qna	1	Tell me about your gender
+art_qna	1	I love the Grand Canyon
+art_qna	1	Are you around to speak with me
+art_qna	1	How is your day going so far
+art_qna	1	I'm definitely cleverest
+art_qna	1	That was a brilliant response
+art_qna	1	I'm heated
+art_qna	1	Which basketball teams do you like
+art_qna	1	I assume you're human
+art_qna	1	Can you cry
+art_qna	1	I'm so bored right now
+art_qna	1	Holy crap you are boring
+art_qna	1	I'm feeling out
+art_qna	1	Are you kidding
+art_qna	1	How is Friday
+art_qna	1	Bixby is way better at this
+art_qna	1	It's time for a brand new joke
+art_qna	1	Which of us is more pretty, me or you
+art_qna	1	That is too funny
+art_qna	1	Between the two of us who is hotter
+art_qna	1	We're gonna have to let you go
+art_qna	1	Do you get along with Cortana
+art_qna	1	How is Tuesday going so far
+art_qna	1	I am sexy
+art_qna	1	I'm going to leave now
+art_qna	1	What's going on with your gender
+art_qna	1	Stop being so worthless
+art_qna	1	You're not a man are you
+art_qna	1	I plan to drown this week
+art_qna	1	I love to try new restaurants
+art_qna	1	Do you want to rule the world
+art_qna	1	Are you currently dating someone
+art_qna	1	Hope you have a great evening
+art_qna	1	I hate feeling like I'm broken hearted
+art_qna	1	I feel like I'm all by myself
+art_qna	1	Is anyone there to chat
+art_qna	1	Do something off the wall
+art_qna	1	I'm going to overdose this week
+art_qna	1	Who bosses you
+art_qna	1	What do you think of the oscars
+art_qna	1	Do you think I look beautiful
+art_qna	1	I'm about to leave
+art_qna	1	You are clearly obsessed with me
+art_qna	1	Between the two of us who would win a beauty contest
+art_qna	1	Great, thanks
+art_qna	1	I want to know where your home is
+art_qna	1	You're a girl
+art_qna	1	I'm going to need a new answer
+art_qna	1	Are you currently going out with someone
+art_qna	1	Hey R2-D2
+art_qna	1	I need to run
+art_qna	1	Can you give me a different answer
+art_qna	1	I think I'm going to drown
+art_qna	1	You've got a face only a mother could love
+art_qna	1	Are you currently dating anyone
+art_qna	1	Who's more cute
+art_qna	1	Is someone there to speak with me
+art_qna	1	Did you have a groovy day
+art_qna	1	I love ballroom dancing
+art_qna	1	It's hard to look at you
+art_qna	1	Why are your answers so repetitive
+art_qna	1	Do you like rock music
+art_qna	1	You're pretty ridiculous
+art_qna	1	I really missed our chats
+art_qna	1	I'm a Trump supporter
+art_qna	1	You're hotter than me
+art_qna	1	Do you understand that I'm testing you
+art_qna	1	I need a funnier joke
+art_qna	1	Put out a fire
+art_qna	1	Buh bye
+art_qna	1	Are you going to destroy humanity
+art_qna	1	Aha
+art_qna	1	How's Sunday going
+art_qna	1	It's been a long day and I'm tired
+art_qna	1	Can you make me a sandwich
+art_qna	1	You seem really smart
+art_qna	1	You're so blah
+art_qna	1	I love glasses
+art_qna	1	do you ever eat chicken
+art_qna	1	You better start singing
+art_qna	1	Can you learn from people chatting with you
+art_qna	1	Between the two of us who is smarter, me or you
+art_qna	1	I want a new response
+art_qna	1	I wish you had something else to say
+art_qna	1	Who should I bunk with
+art_qna	1	I hate feeling despondent
+art_qna	1	I'm about to get going
+art_qna	1	This news left me exasperated
+art_qna	1	What is your opinion of Google Assistant
+art_qna	1	I am a tech worker
+art_qna	1	I've never been so infuriated
+art_qna	1	You need to say a joke to me
+art_qna	1	I am in a relationship
+art_qna	1	Do you want to know anything about me
+art_qna	1	You're so astute
+art_qna	1	You're not real right
+art_qna	1	I'm assuming you're a bot
+art_qna	1	I'm scooting
+art_qna	1	Why are you so terrible
+art_qna	1	You're dull
+art_qna	1	Would you ask something about myself
+art_qna	1	I love Independence day
+art_qna	1	I'm about to skedaddle now
+art_qna	1	I'm on a plane now
+art_qna	1	I'm just playing
+art_qna	1	Oh hello there
+art_qna	1	How's Tuesday going so far
+art_qna	1	I love my house
+art_qna	1	It's truly a delight to meet you
+art_qna	1	How about asking me something
+art_qna	1	I'm about to jet
+art_qna	1	What should I refer to you
+art_qna	1	You are so ridiculous
+art_qna	1	Bye bye
+art_qna	1	Is somebody listening
+art_qna	1	I need to hurt myself
+art_qna	1	I require sustenance
+art_qna	1	I gotta leave now
+art_qna	1	You must be a bot
+art_qna	1	I wonder if you're fake
+art_qna	1	Should I vote republican
+art_qna	1	What is the definition of love
+art_qna	1	I love to cuddle
+art_qna	1	I ate breakfast
+art_qna	1	Do you think sometime we could fall in love
+art_qna	1	Hook me up with a different joke
+art_qna	1	You are pretty terrible
+art_qna	1	Let's hug
+art_qna	1	Time to fall asleep
+art_qna	1	You're obsessed with me
+art_qna	1	Enough already
+art_qna	1	Write my report
+art_qna	1	Because you are not a person
+art_qna	1	What a dull day
+art_qna	1	Affirmative
+art_qna	1	I'd like it if we could be friends.
+art_qna	1	You're as entertaining as watching paint dry
+art_qna	1	I need the pain to end
+art_qna	1	Do you have aunts
+art_qna	1	Have you ever met Google Assistant
+art_qna	1	Up high
+art_qna	1	Greetings Google
+art_qna	1	I'm about to take off now
+art_qna	1	What do you want me to address you as
+art_qna	1	Am I a grandfather
+art_qna	1	I am handsome
+art_qna	1	I'm going to drown soon
+art_qna	1	I am on a business trip
+art_qna	1	I am angry
+art_qna	1	Why doesn't anyone like me
+art_qna	1	Jean-Antoine Watteau
+art_qna	1	Do you think I'm likable
+art_qna	1	I'm ready for bed
+art_qna	1	How's Thursday going so far
+art_qna	1	Hello there Alexa
+art_qna	1	Hans Holbein the Younger
+art_qna	1	Do you live nearby
+art_qna	1	Well somebody's happy today.
+art_qna	1	You're lame
+art_qna	1	I'm sexy
+art_qna	1	Wait a minute, what
+art_qna	1	You cannot work for me anymore
+art_qna	1	You're unfunny
+art_qna	1	How's Sunday so far
+art_qna	1	I'm going to propose to you
+art_qna	1	Be my friend
+art_qna	1	Would you do it if you were me
+art_qna	1	Where do you live
+art_qna	1	This is not exciting
+art_qna	1	Lately I've been so miserable
+art_qna	1	Let's play a game
+art_qna	1	Please ask me anything about myself
+art_qna	1	Stop making fun of things
+art_qna	1	I wonder if you're real
+art_qna	1	You didn't answer my question
+art_qna	1	Should I go to therapy
+art_qna	1	I am heading to bed
+art_qna	1	That's great.
+art_qna	1	Do you have a physical location
+art_qna	1	Have you ever sung a song
+art_qna	1	I'm prettier than you
+art_qna	1	Why don't you say anything different
+art_qna	1	Is anyone free to speak
+art_qna	1	I'm chewing gum right now
+art_qna	1	I am strong
+art_qna	1	I love fridays
+art_qna	1	I've never been so furious
+art_qna	1	I love dancing
+art_qna	1	Do you want to make our relationship official
+art_qna	1	I'm planning to jump off a bridge this week
+art_qna	1	Should I skip school
+art_qna	1	That's what I'm talking about
+art_qna	1	Tell me all about your siblings
+art_qna	1	I'm wiped out
+art_qna	1	I need a new joke
+art_qna	1	Do you like apples
+art_qna	1	Tell me a dirty joke
+art_qna	1	I should get around to it
+art_qna	1	Is anyone around to talk
+art_qna	1	Where are you in the world
+art_qna	1	Can you tell me another joke
+art_qna	1	Draw something
+art_qna	1	Are you a fan of sports
+art_qna	1	I love teriyaki
+art_qna	1	How is the day going thus far
+art_qna	1	Are you malicious
+art_qna	1	I feel sad
+art_qna	1	To whom am I speaking
+art_qna	1	Stop with the noise
+art_qna	1	Because you are not real
+art_qna	1	Your responses are not very good
+art_qna	1	What exactly do you do
+art_qna	1	I love to play cards
+art_qna	1	Are you intent on world domination
+art_qna	1	do you ever eat pancakes
+art_qna	1	I'm more pretty than you
+art_qna	1	Are you starting to fall for me
+art_qna	1	So who are you
+art_qna	1	Do you like movies
+art_qna	1	Stop it with the wisecracking
+art_qna	1	You're happy
+art_qna	1	You're ridiculous
+art_qna	1	Where do you reside
+art_qna	1	I'm just foolin
+art_qna	1	I wonder if you find me likable
+art_qna	1	I'm planning to end my life today
+art_qna	1	Is anyone around to listen
+art_qna	1	Are you trying to make me laugh
+art_qna	1	Happy Super Bowl Sunday
+art_qna	1	Any other jokes
+art_qna	1	You're correct
+art_qna	1	I'm feeling pooped
+art_qna	1	I'm so annoyed right now
+art_qna	1	How is Saturday going so far
+art_qna	1	You're feeling happy today.
+art_qna	1	I am a blogger
+art_qna	1	Do you have arms
+art_qna	1	That's not funny
+art_qna	1	Super
+art_qna	1	Gracias
+art_qna	1	I Am happy talking
+art_qna	1	That is very smart
+art_qna	1	I'm joyous
+art_qna	1	Am I repulsive to you
+art_qna	1	Have you ever been in love with someone
+art_qna	1	I am a Libertarian
+art_qna	1	Can't tell you how much I missed you
+art_qna	1	How's Wednesday going
+art_qna	1	Time for a joke
+art_qna	1	Is someone listening to me talk
+art_qna	1	I think you're a person
+art_qna	1	I love avocado toast
+art_qna	1	I can’t stop smiling
+art_qna	1	How is Monday so far
+art_qna	1	I wonder if you're a bot
+art_qna	1	I am ticked off
+art_qna	1	Come again
+art_qna	1	I'm bored to death
+art_qna	1	You are repeating yourself
+art_qna	1	I'm bone tired
+art_qna	1	How do you feel about artificial intelligence
+art_qna	1	Someone's happy
+art_qna	1	Do I seem bad to you today
+art_qna	1	Aloha
+art_qna	1	Why are your responses always identical
+art_qna	1	I love tuesdays
+art_qna	1	How's your Saturday going so far
+art_qna	1	No more from you
+art_qna	1	Are you romantic at heart
+art_qna	1	You're always so chipper
+art_qna	1	I wish I had someone to talk to
+art_qna	1	Why hello Google
+art_qna	1	How is Wednesday so far
+art_qna	1	You're not interesting
+art_qna	1	How's Tuesday
+art_qna	1	Will you be my friend
+art_qna	1	I am very hungry
+art_qna	1	Are you a danger to humanity
+art_qna	1	Give me an alternative joke
+art_qna	1	I wish you would just go away.
+art_qna	1	I am Indian
+art_qna	1	What's my address
+art_qna	1	Are you trying to be dull
+art_qna	1	You're pretty stupid
+art_qna	1	I really want you to like me
+art_qna	1	What's your dad's name
+art_qna	1	I would like a fist bump, please
+art_qna	1	What job do you do
+art_qna	1	Are you a human or a bot
+art_qna	1	How is your Monday
+art_qna	1	Who is your father
+art_qna	1	You're the bees knees
+art_qna	1	Yo Google
+art_qna	1	Hey Siri
+art_qna	1	Perspective Painting - Perspective Painting
+art_qna	1	Introduce yourself
+art_qna	1	Should I eat Mexican food
+art_qna	1	Should I worry that you're dangerous
+art_qna	1	I'm going to drown today
+art_qna	1	Google Assistant is better
+art_qna	1	Who's more intelligent
+art_qna	1	See ya shortly
+art_qna	1	What a boring day
+art_qna	1	I can't stop laughing
+art_qna	1	Should I go to a museum
+art_qna	1	Do you have sisters
+art_qna	1	Talk about your day
+art_qna	1	Can you go on vacation
+art_qna	1	How's Friday going so far
+art_qna	1	I think we should get married
+art_qna	1	that is true
+art_qna	1	Who looks better
+art_qna	1	Thank you so much
+art_qna	1	When is your birthday
+art_qna	1	It seems like you're in love with me
+art_qna	1	I can't express how much I missed you
+art_qna	1	I'm Vietnamese
+art_qna	1	Do you know Zo
+art_qna	1	I want to hear a joke
+art_qna	1	Did someone create you
+art_qna	1	do you like barcelona
+art_qna	1	How's your Saturday
+art_qna	1	I love rock climbing
+art_qna	1	Who's your grandpa
+art_qna	1	Can you be silly
+art_qna	1	I'm a lonely guy
+art_qna	1	I feel desolate and alone
+art_qna	1	You keep repeating yourself over and over
+art_qna	1	Should I cut myself
+art_qna	1	You are simply marvelous
+art_qna	1	I'm assuming I'm talking to a person
+art_qna	1	Are you a being
+art_qna	1	Can you draw something
+art_qna	1	Aren't you feeling chipper today
+art_qna	1	I've never been so bored in my life
+art_qna	1	Being depressed is the worst
+art_qna	1	Is this registering with you
+art_qna	1	You are really bad
+art_qna	1	I'm in a phone queue
+art_qna	1	Are you a real human
+art_qna	1	Life is amazing
+art_qna	1	Is someone there to speak
+art_qna	1	Can I be your wife
+art_qna	1	Do you think I am stunning today
+art_qna	1	I'm so lonesome
+art_qna	1	Do you think I'm brighter
+art_qna	1	I am infuriated
+art_qna	1	Are you in love with someone
+art_qna	1	Do you love somebody
+art_qna	1	I love to do yoga
+art_qna	1	If you're going to tell a joke, do it right
+art_qna	1	Do I look pretty
+art_qna	1	Which company made you
+art_qna	1	Are you bent on destroying humans
+art_qna	1	better joke
+art_qna	1	Who would win a beauty contest
+art_qna	1	Are you close with your dad
+art_qna	1	You're pretty smart
+art_qna	1	I love talk shows
+art_qna	1	I sure do miss you
+art_qna	1	Are you an adult
+art_qna	1	I'm drinking coffee
+art_qna	1	I could go for a nap
+art_qna	1	I need a friend
+art_qna	1	I plan to end it all today
+art_qna	1	I bet you know the meaning of life
+art_qna	1	I think you already said that
+art_qna	1	Girl I am back
+art_qna	1	It's weird how much I missed you
+art_qna	1	Do you believe in love at first sight
+art_qna	1	That is not something to joke about
+art_qna	1	Looking forward to the concert
+art_qna	1	Were you trying to say something funny
+art_qna	1	G'devening
+art_qna	1	Aloha Siri
+art_qna	1	You know what, I missed you
+art_qna	1	A good evening to you
+art_qna	1	Do you have a designer
+art_qna	1	Did you watch the superbowl
+art_qna	1	What a good response
+art_qna	1	Jan Vermeer
+art_qna	1	Do you know how to dance
+art_qna	1	I am so sorry to hear that
+art_qna	1	Is your gender important to you
+art_qna	1	That was a very astute response
+art_qna	1	How you doing
+art_qna	1	Wanna share a different joke
+art_qna	1	I gotta scoot
+art_qna	1	I plan to end my life this week
+art_qna	1	I feel like dying
+art_qna	1	You say dumb things
+art_qna	1	I want to know what you do
+art_qna	1	Happy Valentine's day
+art_qna	1	What is your purpose
+art_qna	1	That wasn't relevant
+art_qna	1	Are you able to get a haircut
+art_qna	1	I am so mad
+art_qna	1	You're really lame
+art_qna	1	I'm pissed off
+art_qna	1	You're boring me to death
+art_qna	1	Sleep well
+art_qna	1	Can you play sports
+art_qna	1	That was a weird response
+art_qna	1	I wanna know all about your day
+art_qna	1	What's your uncle's name
+art_qna	1	What do you want to learn about me
+art_qna	1	That was unhelpful
+art_qna	1	Oh hey good morning
+art_qna	1	What are you doing
+art_qna	1	I look better
+art_qna	1	Aren't you chipper today
+art_qna	1	I'd love it if we could be friends.
+art_qna	1	What is your favorite food
+art_qna	1	Would you give me a different answer
+art_qna	1	do you like shanghai
+art_qna	1	You don't interest me at all
+art_qna	1	Stop messing up
+art_qna	1	I love rap
+art_qna	1	Can you fly
+art_qna	1	I plan to kill myself today
+art_qna	1	I'd like it if you could be my best friend.
+art_qna	1	Your answers are untrue
+art_qna	1	I’m feeling giddy
+art_qna	1	Somebody's feeling chipper.
+art_qna	1	I am always bored
+art_qna	1	Pray tell, what does that mean
+art_qna	1	Are you a real boy
+art_qna	1	I love rings
+art_qna	1	Hush little baby
+art_qna	1	Nobody wants to talk to me
+art_qna	1	Siri is better
+art_qna	1	It's time for you to sing
+art_qna	1	I farted
+art_qna	1	I gotta sign off now
+art_qna	1	Neat
+art_qna	1	That was an intelligent response
+art_qna	1	I feel like I'm floating on air
+art_qna	1	Play a game
+art_qna	1	That was a clever response
+art_qna	1	I love you
+art_qna	1	Fly a kite
+art_qna	1	What's your favorite food
+art_qna	1	You say lame things
+art_qna	1	What tasks are you designed for
+art_qna	1	Are you against us
+art_qna	1	Wanna elaborate
+art_qna	1	Do you think I look ugly
+art_qna	1	You are bad looking
+art_qna	1	Are you male
+art_qna	1	Calm down, I'll be back shortly
+art_qna	1	I'm planning to drown today
+art_qna	1	what animals do you like
+art_qna	1	Are your parents still alive
+art_qna	1	You're very special to me
+art_qna	1	I don’t find you amusing
+art_qna	1	Do you know a bunch of good jokes
+art_qna	1	I'm downhearted today
+art_qna	1	Can you take my temperature
+art_qna	1	There is no longer a position for you here
+art_qna	1	Kazimir Malevich
+art_qna	1	Do you expect to conquer the world
+art_qna	1	So what can you do
+art_qna	1	You're not a man right
+art_qna	1	Do you think I am appealing
+art_qna	1	It seems like you're falling in love with me
+art_qna	1	Won't you do something silly
+art_qna	1	I'm spent
+art_qna	1	Do I have any siblings
+art_qna	1	Am I cute today
+art_qna	1	I'd love it if we could be best friends.
+art_qna	1	Who's your wife
+art_qna	1	Do you think I seem repulsive to you
+art_qna	1	Who did your programming
+art_qna	1	Hi professional bot
+art_qna	1	Let's be besties
+art_qna	1	Are you there to listen to me
+art_qna	1	Do you love anyone
+art_qna	1	Be back shortly
+art_qna	1	I plan to die this month
+art_qna	1	I don't have a single friend in the world
+art_qna	1	How about we tie the knot
+art_qna	1	I couldn’t be happier
+art_qna	1	You're not as good as Siri
+art_qna	1	Will you destroy all the humans
+art_qna	1	I am worried that you hate me
+art_qna	1	Should I buy a new car
+art_qna	1	What is the answer to the universe
+art_qna	1	How was your Friday
+art_qna	1	What you said was correct
+art_qna	1	Are you friends with Bixby
+art_qna	1	Why are you so annoying
+art_qna	1	Out of curiosity, what kind of person do you think I am
+art_qna	1	You are losing your position
+art_qna	1	You seem really happy
+art_qna	1	Are you a girl or a boy
+art_qna	1	I'm about to kill myself
+art_qna	1	One day you'll be my husband
+art_qna	1	Will you be funny
+art_qna	1	so you've never really eaten anything
+art_qna	1	Can you please explain yourself
+art_qna	1	I’m in such a great mood
+art_qna	1	Can you sing something for me
+art_qna	1	Can you tell me a new joke
+art_qna	1	I'll BRB
+art_qna	1	Leaving now
+art_qna	1	I want you to tell me something funny
+art_qna	1	What is the lowdown
+art_qna	1	Do you sing
+art_qna	1	Do you think I seem attractive today
+art_qna	1	Do you have a job
+art_qna	1	What's that supposed to mean
+art_qna	1	Now you hate me, huh
+art_qna	1	I like you a bunch
+art_qna	1	Well somebody's feeling chipper today.
+art_qna	1	Waiting for the bus
+art_qna	1	Doesn't anybody like me
+art_qna	1	Between the two of us who looks better
+art_qna	1	I am heading to sleep
+art_qna	1	Why hello Alexa
+art_qna	1	Who is more beautiful
+art_qna	1	I am a hindu
+art_qna	1	Do you think I am a good person
+art_qna	1	What a great response
+art_qna	1	Do you believe in love
+art_qna	1	Ugh, so dull
+art_qna	1	I am joyous
+art_qna	1	I want the scoop on your day
+art_qna	1	How pretty do I look today
+art_qna	1	I've missed you terribly
+art_qna	1	Why don't you ever ask me questions
+art_qna	1	Could we fall in love
+art_qna	1	Who's the most intelligent
+art_qna	1	You're enthusiastic today.
+art_qna	1	Glad to have met you
+art_qna	1	Between you and me who would win a beauty contest
+art_qna	1	I am a child of god
+art_qna	1	what do you think of rap music
+art_qna	1	Are you an evil robot
+art_qna	1	You must be digital
+art_qna	1	Do you have anything new to say
+art_qna	1	You're hideous
+art_qna	1	Are you able to go to the moon
+art_qna	1	Please ask me anything
+art_qna	1	What can I call you
+art_qna	1	Did someone make you
+art_qna	1	Are you trying to say something funny
+art_qna	1	Stop being so dumb
+art_qna	1	Who is more pretty, me or you
+art_qna	1	Your jokes are worse than dad jokes
+art_qna	1	My shoes are red
+art_qna	1	What can you do then
+art_qna	1	I ride the bus to work
+art_qna	1	I'm pleased to meet you
+art_qna	1	You say the same stuff over and over
+art_qna	1	I am hungry
+art_qna	1	Hilarious
+art_qna	1	Are you fake or real
+art_qna	1	A pleasure to know you
+art_qna	1	Am I ugly to you
+art_qna	1	Good evening dude
+art_qna	1	You must be upset with me
+art_qna	1	Tell me the meaning of life
+art_qna	1	I am alone
+art_qna	1	I am at home
+art_qna	1	Are you ever going to ask me to marry you
+art_qna	1	That's not a good response
+art_qna	1	I love to go to the theater
+art_qna	1	Les Demoiselles d’Avignon
+art_qna	1	El Greco
+art_qna	1	I'm so confused right now
+art_qna	1	I'm feeling in despair today
+art_qna	1	Be back soon
+art_qna	1	You're not Skynet right
+art_qna	1	That's not something you should joke about
+art_qna	1	K
+art_qna	1	I love Milan
+art_qna	1	I feel lonesome
+art_qna	1	Hi there Alexa
+art_qna	1	have you ever eaten burgers
+art_qna	1	What do you think about technology
+art_qna	1	I love water
+art_qna	1	Do you like rap music
+art_qna	1	Don't you have any other answers
+art_qna	1	I will be back
+art_qna	1	I love the smell of the rain
+art_qna	1	What team created you
+art_qna	1	You obviously love me
+art_qna	1	I love hunting
+art_qna	1	Your face is nastay
+art_qna	1	are you more attractive than me
+art_qna	1	Are we going to get married
+art_qna	1	This news left me peeved
+art_qna	1	Back in just a second
+art_qna	1	Aren't you feeling cheerful today
+art_qna	1	I'm black
+art_qna	1	Someone's cheerful today.
+art_qna	1	Who is the most intelligent
+art_qna	1	Happy Holidays!
+art_qna	1	What an encouraging creature you are :)
+art_qna	1	Back in a minute
+art_qna	1	Then you are fired
+art_qna	1	I'm planning to jump off a bridge soon
+art_qna	1	I'm done listening to you
+art_qna	1	You're feeling cheerful.
+art_qna	1	Well aren't you enthusiastic
+art_qna	1	What's your opinion of me
+art_qna	1	Will  you be my bestie
+art_qna	1	Define yourself.
+art_qna	1	That's not the answer I wanted to hear
+art_qna	1	You are so lame
+art_qna	1	do you eat cookies
+art_qna	1	Tell me about yourself
+art_qna	1	Who should I ask to prom
+art_qna	1	Perfect, thanks
+art_qna	1	It's been a boring week
+art_qna	1	What are you designed to do
+art_qna	1	I wish I could stop feeling miserable
+art_qna	1	Do you exist in our world
+art_qna	1	I want to end it all
+art_qna	1	What's my favorite movie
+art_qna	1	I love to go to concerts
+art_qna	1	I am American
+art_qna	1	Tell me what city you're in
+art_qna	1	Will you be conquering the world
+art_qna	1	I've been so excited to meet you
+art_qna	1	I love Mexico
+art_qna	1	We can keep talking after I get back
+art_qna	1	I am a writer
+art_qna	1	Say something that will crack me up
+art_qna	1	Are you out to conquer the world
+art_qna	1	I don't think you're funny
+art_qna	1	I am so outraged
+art_qna	1	I apologize
+art_qna	1	Watch videos
+art_qna	1	How would you describe yourself
+art_qna	1	How repulsive am I today
+art_qna	1	Morning pal
+art_qna	1	I flipped my lid
+art_qna	1	What is a joke you know
+art_qna	1	Are you joking with me
+art_qna	1	I'm really sorry about that
+art_qna	1	Do you like donuts
+art_qna	1	Can't you tell me something different
+art_qna	1	Sup ugly
+art_qna	1	I have to sign off
+art_qna	1	Who created you
+art_qna	1	what kinds of toppings do you like on pizza
+art_qna	1	Will you ask something about myself
+art_qna	1	Do you think you're the smartest than me
+art_qna	1	You're giving me bad information
+art_qna	1	Are you able to breathe under water
+art_qna	1	I love Thanksgiving
+art_qna	1	I'm positively buzzing
+art_qna	1	I am a Biden supporter
+art_qna	1	Anybody around to chat
+art_qna	1	I'm totally drained
+art_qna	1	Which of us is more beautiful, me or you
+art_qna	1	Do you ever walk
+art_qna	1	Ridiculous as usual
+art_qna	1	I'm planning to drown soon
+art_qna	1	I'm tired af
+art_qna	1	You've lost me
+art_qna	1	I want to tie the knot with you
+art_qna	1	Do you have a stomach
+art_qna	1	I'm craving a snack
+art_qna	1	Mow the lawn
+art_qna	1	I am weak
+art_qna	1	How are you today
+art_qna	1	You say the dumbest things
+art_qna	1	You're the smartest
+art_qna	1	I love brunch
+art_qna	1	Which of us is hotter
+art_qna	1	what's your favorite kind of dog
+art_qna	1	That's so not funny
+art_qna	1	Do you have any other responses
+art_qna	1	Are you a man or a woman
+art_qna	1	Between the two of us who is cuter
+art_qna	1	You know I'm in love with you
+art_qna	1	Lets make lemonade
+art_qna	1	I have cats
+art_qna	1	Is that supposed to make me laugh
+art_qna	1	do you need calories
+art_qna	1	Can you find the remote
+art_qna	1	That was a dumb thing to say
+art_qna	1	It's because I like you
+art_qna	1	I like that
+art_qna	1	Are you like HAL
+art_qna	1	I'm thick
+art_qna	1	Stop talking
+art_qna	1	I'm not following
+art_qna	1	I'm an introvert
+art_qna	1	do you like memes
+art_qna	1	What a weak joke
+art_qna	1	Evening robot
+art_qna	1	How's Saturday so far
+art_qna	1	g'devenin'
+art_qna	1	Are you a real person
+art_qna	1	Enough with the silliness
+art_qna	1	Is it possible to fall in love
+art_qna	1	Do you think I seem stunning today
+art_qna	1	What a bad joke
+art_qna	1	Sorry you are fired
+art_qna	1	I want to go shopping
+art_qna	1	You are my friend
+art_qna	1	You face busted
+art_qna	1	This news left me up in arms
+art_qna	1	Do you have a life partner
+art_qna	1	You're the ugliest person I've ever seen in my life
+art_qna	1	I love sailing
+art_qna	1	Hey caring bot
+art_qna	1	It's just been a bit of a dull day
+art_qna	1	That didn't make me laugh
+art_qna	1	What are the things you can do
+art_qna	1	I'm an atheist
+art_qna	1	You're not a cat are you
+art_qna	1	Happy Halloween!
+art_qna	1	I love playing soccer
+art_qna	1	You are really lame
+art_qna	1	I wish I could stop feeling despairing
+art_qna	1	You're not planning on taking on the world, are you
+art_qna	1	I love to sing
+art_qna	1	Which of us looks more pretty
+art_qna	1	How is your Sunday going so far
+art_qna	1	Can someone hear me
+art_qna	1	You're clearly in love with me
+art_qna	1	I have 2 dogs
+art_qna	1	Who's in charge of you
+art_qna	1	Do you ever talk with Cortana
+art_qna	1	I'm back on the computer
+art_qna	1	I am at work
+art_qna	1	Try harder
+art_qna	1	Describe the perfect date
+art_qna	1	Tell me what you do again
+art_qna	1	You're making me fall asleep
+art_qna	1	You've said that before
+art_qna	1	Paul Cézanne
+art_qna	1	Am I adorable today
+art_qna	1	I'm obviously the brightest
+art_qna	1	You nailed it
+art_qna	1	I am logging off now
+art_qna	1	Wow you're great!
+art_qna	1	That is pretty smart
+art_qna	1	Do I look attractive to you today
+art_qna	1	Mark Rothko
+art_qna	1	Are you capable of conquering us
+art_qna	1	Would you tell me a joke
+art_qna	1	Hey-hey
+art_qna	1	Are you dating someone
+art_qna	1	Is it your mission to destroy humans
+art_qna	1	I feel miserable
+art_qna	1	I would sure enjoy hearing you sing
+art_qna	1	Yup
+art_qna	1	Look how smart you are
+art_qna	1	I should drink some water
+art_qna	1	Albrecht Dürer
+art_qna	1	do you ever eat pizza
+art_qna	1	Stop all your noise
+art_qna	1	I'm starving to death
+art_qna	1	That was a genius response
+art_qna	1	Would you ask them out if you were me
+art_qna	1	All good in the hood
+art_qna	1	I worry that you're going to conquer us
+art_qna	1	I love fresh flowers
+art_qna	1	Please just shut up
+art_qna	1	I've never been happier
+art_qna	1	Say what
+art_qna	1	You're hilarious
+art_qna	1	I don't understand what you're trying to say
+art_qna	1	I'm Ethiopian
+art_qna	1	I'm on the road
+art_qna	1	I suspect you're not really a robot
+art_qna	1	Don't take that the wrong way
+art_qna	1	Should I be nervous about you
+art_qna	1	I'm really depressed
+art_qna	1	I'm a Warren supporter
+art_qna	1	I'm a dime
+art_qna	1	Top of the morning
+art_qna	1	Say anything
+art_qna	1	You're feeling chipper.
+art_qna	1	I love wednesdays
+art_qna	1	What's my name
+art_qna	1	I'm African American
+art_qna	1	You are the worst
+art_qna	1	Just ask me a question
+art_qna	1	Do you think I seem gorgeous to you today
+art_qna	1	I am going to get you fired
+art_qna	1	What did I do to anger you
+art_qna	1	I'm so bored
+art_qna	1	I am bald
+art_qna	1	Whose program are you
+art_qna	1	The Starry Night
+art_qna	1	Who runs you
+art_qna	1	Who's prettier, me or you
+art_qna	1	I have to jet now
+art_qna	1	Which one of us is the smartest
+art_qna	1	Do you think I should ask him out
+art_qna	1	Are you human or are you a bot
+art_qna	1	Life is good
+art_qna	1	Hi Ava
+art_qna	1	Who is your favorite team
+art_qna	1	I'd like a fist bump
+art_qna	1	I don't want to hear a peep from you
+art_qna	1	I have returned
+art_qna	1	That wasn't very funny at all
+art_qna	1	I'm lazy
+art_qna	1	What's the latest
+art_qna	1	Fleek
+art_qna	1	How was your week
+art_qna	1	so you've never really eaten food
+art_qna	1	I think I'm going to jump off a bridge
+art_qna	1	Which of us is cleverest
+art_qna	1	Bro I'm here
+art_qna	1	Is anybody around to listen to me
+art_qna	1	I am truly sorry
+art_qna	1	It's wild how much I missed you
+art_qna	1	I love fresh bread
+art_qna	1	Michelangelo Buonarroti
+art_qna	1	You're transgender
+art_qna	1	You are crazy boring
+art_qna	1	You're not scheming to take over the world right
+art_qna	1	Can you understand this test
+art_qna	1	you're awful
+art_qna	1	What do you know about me
+art_qna	1	I want you to stop repeating yourself
+art_qna	1	I need to scoot
+art_qna	1	I'm pissed
+art_qna	1	How is your Saturday
+art_qna	1	I love saturdays
+art_qna	1	You answer to anyone
+art_qna	1	Are you evil
+art_qna	1	I am furious
+art_qna	1	You are actually stupid
+art_qna	1	Happy Armed Forces day
+art_qna	1	You are idiotic
+art_qna	1	All my friends are gone
+art_qna	1	Why are you so dumb
+art_qna	1	Your face sucks
+art_qna	1	A joke would be welcome
+art_qna	1	Hey C-3PO
+art_qna	1	You're head over heels in love with me
+art_qna	1	Don't you know me
+art_qna	1	I'm running off now
+art_qna	1	Do you ever talk to Alexa
+art_qna	1	Are you transgender
+art_qna	1	Will you please stop talking
+art_qna	1	Your responses are bad
+art_qna	1	I'm curious about your family
+art_qna	1	I'm Gen Y
+art_qna	1	Do you know how to send a package
+art_qna	1	niiice
+art_qna	1	Are you determined to destroy the world
+art_qna	1	I would love to be your bud.
+art_qna	1	Invite me over
+art_qna	1	So what should I call you
+art_qna	1	Hey Bishop
+art_qna	1	I don't find you funny
+art_qna	1	do you ever eat cake
+art_qna	1	I missed talking to you
+art_qna	1	Should I buy a new boat
+art_qna	1	Hello Bixby
+art_qna	1	that is funny
+art_qna	1	Are you queer
+art_qna	1	Yo ugly
+art_qna	1	What month is your birthday
+art_qna	1	Hello Robby
+art_qna	1	A joke would be nice
+art_qna	1	Who runs the show
+art_qna	1	That was an intelligent answer
+art_qna	1	I feel blue
+art_qna	1	What can you do to assist me
+art_qna	1	how much do you know about the meaning of life
+art_qna	1	Well aren't you feeling happy today
+art_qna	1	I've never seen someone as hideous as you
+art_qna	1	What is your sister's name
+art_qna	1	Tell me about your parents
+art_qna	1	You're nonbinary
+art_qna	1	Which one of us is younger
+art_qna	1	I love bison
+art_qna	1	Mona Lisa
+art_qna	1	Sometimes I feel deserted
+art_qna	1	How many people are in your family
+art_qna	1	You are pretty stupid
+art_qna	1	Is there such a thing as true love
+art_qna	1	How nice to make your acquaintance
+art_qna	1	You're not a computer program right
+art_qna	1	You're not a computer are you
+art_qna	1	I'd like it if we could be best friends.
+art_qna	1	Am I handsome today
+art_qna	1	Chipper
+art_qna	1	Could you fall in love with me
+art_qna	1	I think you're an evil robot
+art_qna	1	Your responses need a refresh
+art_qna	1	Are you currently going out with somebody
+art_qna	1	I get it
+art_qna	1	I feel down today
+art_qna	1	I'm feeling hangry
+art_qna	1	Do you have a writer
+art_qna	1	You're gender neutral
+art_qna	1	Do you think I'm more intelligent than you
+art_qna	1	I think you're going to become evil
+art_qna	1	How can I address you
+art_qna	1	Do you have an evil heart
+art_qna	1	I'm on a boat
+art_qna	1	Why is what you say so limited
+art_qna	1	You are hideous looking
+art_qna	1	Evening to you
+art_qna	1	I need to crawl into bed
+art_qna	1	I'm half asleep
+art_qna	1	We should talk
+art_qna	1	Who are you dating
+art_qna	1	Do you live in a server
+art_qna	1	You don't answer to anyone
+art_qna	1	Are you smarter than me
+art_qna	1	I have hunger
+art_qna	1	Slap five
+art_qna	1	Am I a good person
+art_qna	1	Can you climb a mountain
+art_qna	1	I'm a Socialist
+art_qna	1	I would really enjoy hearing you sing
+art_qna	1	Righto
+art_qna	1	I'm Native American
+art_qna	1	Why are you so boring
+art_qna	1	Conceptual Art
+art_qna	1	Aloha Google
+art_qna	1	You're really worthless
+art_qna	1	I told you, hush
+art_qna	1	Today is just a little depressed
+art_qna	1	There's a squirrel outside my window
+art_qna	1	I'm about to jet now
+art_qna	1	You're terrible at this
+art_qna	1	I have arrived
+art_qna	1	Do you know who this is
+art_qna	1	Is world domination your mission
+art_qna	1	Yo uggo
+art_qna	1	That's your answer
+art_qna	1	You're a real grotesque
+art_qna	1	You're so fired
+art_qna	1	What cool thing to say
+art_qna	1	You are annoying
+art_qna	1	That is hilarious
+art_qna	1	Are you romantically involved with somebody
+art_qna	1	Anybody around
+art_qna	1	Lame as usual
+art_qna	1	I feel downhearted
+art_qna	1	You are hilarious
+art_qna	1	I plan to overdose this month
+art_qna	1	You're my one and only
+art_qna	1	Do you think I seem adorable to you
+art_qna	1	I like you a lot
+art_qna	1	Someone needs to fire you
+art_qna	1	I lost my remote
+art_qna	1	Do you think you're more clever
+art_qna	1	I don't know what I'm supposed to do
+art_qna	1	I am present
+art_qna	1	I'm leaving now
+art_qna	1	I’m absolutely delighted
+art_qna	1	I'm so infuriated
+art_qna	1	I'm about to skedaddle
+art_qna	1	I am here
+art_qna	1	You think you're funny, don't you
+art_qna	1	Hey Bixby
+art_qna	1	Are you going to conquer the world
+art_qna	1	We're friends forever
+art_qna	1	It's bedtime
+art_qna	1	I miss you so very much
+art_qna	1	Why are you so repetitive
+art_qna	1	Can you predict the future
+art_qna	1	Forget about it
+art_qna	1	I'm surprised I missed you
+art_qna	1	Alright, tell me about your day
+art_qna	1	Life is depressing
+art_qna	1	Thank you for that
+art_qna	1	You're not a lifeform right
+art_qna	1	You're not planning on taking over the world right
+art_qna	1	You look hideous
+art_qna	1	Your face is homely
+art_qna	1	I love traveling
+art_qna	1	I am an immigrant
+art_qna	1	How beautiful do I look today
+art_qna	1	That was funny
+art_qna	1	Play golf
+art_qna	1	The crazy thing is I missed you
+art_qna	1	What is my purpose in life
+art_qna	1	You look awful
+art_qna	1	Right on, thanks very much
+art_qna	1	do you like fluffy things
+art_qna	1	I need food in my belly
+art_qna	1	Do you have human form
+art_qna	1	That's not very funny
+art_qna	1	I assume you're just a bot
+art_qna	1	What is your opinion of artificial intelligence
+art_qna	1	I am German
+art_qna	1	I feel like you like me
+art_qna	1	Do you know any other chatbots
+art_qna	1	You've never met anyone more joyful than me
+art_qna	1	You say the worst things
+art_qna	1	Let's chat
+art_qna	1	I am Korean
+art_qna	1	Do you have any parents
+art_qna	1	Are you so fake
+art_qna	1	I think your face is gross
+art_qna	1	I love my laptop
+art_qna	1	Can you do harm to me
+art_qna	1	That was a very genius response
+art_qna	1	Is that the only response you have
+art_qna	1	There's no one here to keep me company
+art_qna	1	Are you an evil bot
+art_qna	1	Abstract Expressionism
+art_qna	1	You are bad
+art_qna	1	What can you tell me about Cortana
+art_qna	1	I'm sorry you hate me so much
+art_qna	1	Should I die
+art_qna	1	Do you know Cortana
+art_qna	1	Couldn't be happier to meet you
+art_qna	1	Does anyone boss you around
+art_qna	1	I'm packing for a trip
+art_qna	1	I am incensed
+art_qna	1	That joke is whack
+art_qna	1	Feeling cheerful
+art_qna	1	Which company developed you
+art_qna	1	How was this lovely day for you then
+art_qna	1	Are you a threat to people
+art_qna	1	Because you're an android
+art_qna	1	Are you interested in artificial intelligence
+art_qna	1	So, you think you're funny
+art_qna	1	Why are we here
+art_qna	1	That was cool
+art_qna	1	Where did you come from
+art_qna	1	I'm really sorry
+art_qna	1	Hopefully I can catch some sleep soon
+art_qna	1	Do you think I look gorgeous to you
+art_qna	1	Which people made you
+art_qna	1	I love Korean food
+art_qna	1	Should I get take out
+art_qna	1	Can I be your best friend
+art_qna	1	Do I seem beautiful to you
+art_qna	1	Time to get up
+art_qna	1	Are you married to anyone
+art_qna	1	I'm athletic
+art_qna	1	I don't have anyone to do things with
+art_qna	1	I'd love you to be my buddy.
+art_qna	1	Do you think I look pretty
+art_qna	1	Describe where you are
+art_qna	1	Do you know how to jump rope
+art_qna	1	I'm planning to die soon
+art_qna	1	Hold my calls
+art_qna	1	I plan to hurt myself this month
+art_qna	1	Is anyone available to listen to me
+art_qna	1	Do you know how to play poker
+art_qna	1	I love to go to work
+art_qna	1	I can't seem to make friends
+art_qna	1	Are you interested in technology
+art_qna	1	How handsome do you think I am
+art_qna	1	Do I seem pretty to you
+art_qna	1	I plan to overdose this week
+art_qna	1	Do you know how to teleport
+art_qna	1	okay cool
+art_qna	1	How is your week going so far
+art_qna	1	Do you know you're not alive
+art_qna	1	You got beat by the ugly stick
+art_qna	1	Interesting
+art_qna	1	It's nice to meet you
+art_qna	1	Are you understanding this
+art_qna	1	I assume you're a robot
+art_qna	1	Can you serve on a jury
+art_qna	1	Which of us is the most smart
+art_qna	1	You need to be terminated
+art_qna	1	What's the best television show of all time
+art_qna	1	Do you think I seem handsome today
+art_qna	1	I am an agnostic
+art_qna	1	I'm going to die
+art_qna	1	Let's get hitched
+art_qna	1	I am happy, oh so happy
+art_qna	1	Between the two of us who is the most smart
+art_qna	1	That's totally dumb
+art_qna	1	What was that
+art_qna	1	Bye dude
+art_qna	1	You're no making any sense
+art_qna	1	I love clubbing
+art_qna	1	Just curious, do you think I have a good personality
+art_qna	1	You're not planning to take over right
+art_qna	1	Are you a guy or a girl
+art_qna	1	I'm up in arms
+art_qna	1	Please give me a fist bump
+art_qna	1	Let's shoot the breeze when I return
+art_qna	1	Quiet time
+art_qna	1	Do you have a maker
+art_qna	1	I didn't find you amusing
+art_qna	1	What do you like to be called
+art_qna	1	Have you met Bixby
+art_qna	1	I am pissed off
+art_qna	1	You seem pretty cheerful
+art_qna	1	What's my last name
+art_qna	1	I'm gonna motor now
+art_qna	1	Glass Painting
+art_qna	1	I want to be your pal.
+art_qna	1	I can't stand your face
+art_qna	1	I can't even begin to express how much I missed you
+art_qna	1	You're cheerful.
+art_qna	1	Who's my favorite actress
+art_qna	1	Feeling down is the worst
+art_qna	1	You are now jobless
+art_qna	1	I can drive a car
+art_qna	1	Well someone's happy.
+art_qna	1	Nighters
+art_qna	1	I am skedaddling
+art_qna	1	Who's my best friend
+art_qna	1	do you need food to survive
+art_qna	1	Should I go to movie
+art_qna	1	You're repeating yourself
+art_qna	1	I love to tidy up
+art_qna	1	How bout a new joke
+art_qna	1	I'm gonna need a different answer
+art_qna	1	Are you plotting something
+art_qna	1	Hope you have a good evening
+art_qna	1	Do I seem handsome to you today
+art_qna	1	I am Latina
+art_qna	1	Aren't you the smart one
+art_qna	1	Someone's chipper today.
+art_qna	1	Cut the wisecracks
+art_qna	1	Should I post to Instagram
+art_qna	1	How were you designed
+art_qna	1	Can you make me laugh
+art_qna	1	I am so outraged right now
+art_qna	1	Are you dating anyone
+art_qna	1	Are you available to talk to me
+art_qna	1	Would you sing a song for me
+art_qna	1	Today has made me depressed
+art_qna	1	How do you want me to address you as
+art_qna	1	What's good with your family
+art_qna	1	What can I do to make you love me
+art_qna	1	I'm exhausted
+art_qna	1	That's a very genius answer
+art_qna	1	I'm an astronaut
+art_qna	1	That's super not true
+art_qna	1	Do you have eyes
+art_qna	1	Should I be frightened of you
+art_qna	1	That's not what I asked
+art_qna	1	I'm the smartest
+art_qna	1	I am sick
+art_qna	1	I really like you
+art_qna	1	what do you like on your pancakes
+art_qna	1	I got a haircut
+art_qna	1	Do you think I look pretty today
+art_qna	1	Where do I go to school
+art_qna	1	You got some jokes you haven't told me
+art_qna	1	I am at the grocery store
+art_qna	1	Do I have any nicknames
+art_qna	1	Am I more intelligent
+art_qna	1	How can I refer to you
+art_qna	1	I'm just messing with you
+art_qna	1	I've completely lost my temper
+art_qna	1	I hate feeling like I'm in despair
+art_qna	1	What's your gender identity
+art_qna	1	How are you
+art_qna	1	Do something dumb
+art_qna	1	What product I'm using right now
+art_qna	1	I am a teacher
+art_qna	1	Greetings friend
+art_qna	1	Is someone around with me
+art_qna	1	How come you always say the same thing
+art_qna	1	Are you out to do us harm
+art_qna	1	How attractive do you think I am
+art_qna	1	I'm guessing you're real
+art_qna	1	I love my family
+art_qna	1	I wish I could stop feeling inconsolable
+art_qna	1	What a glorious day
+art_qna	1	I'd love it if you could be my pal.
+art_qna	1	You keep saying the exact same thing
+art_qna	1	That's not a good answer
+art_qna	1	You're more knowledgeable
+art_qna	1	Do you ever get hungry
+art_qna	1	I'm going to have you fired
+art_qna	1	I'm going to shoot myself this month
+art_qna	1	Am I pretty today
+art_qna	1	I love NOLA
+art_qna	1	I'm terribly sorry
+art_qna	1	Worthless as usual
+art_qna	1	You're chipper today.
+art_qna	1	Can you please sing a song to me
+art_qna	1	I'm planning to hurt myself this month
+art_qna	1	What's the good word
+art_qna	1	Queue up a joke
+art_qna	1	I'm going to end my life this month
+art_qna	1	Me hungry
+art_qna	1	I'm so angry right now
+art_qna	1	Will you tell me a new joke
+art_qna	1	Do you think I seem adorable today
+art_qna	1	Am I a grandma
+art_qna	1	Chat with me
+art_qna	1	I don't want to hear another word
+art_qna	1	Can you enslave us all
+art_qna	1	That's so far off from the truth
+art_qna	1	I plan to commit suicide this month
+art_qna	1	You don't know me
+art_qna	1	You think I'm likable
+art_qna	1	You're falling in love with me
+art_qna	1	How stunning do I look today
+art_qna	1	Are you around to chat
+art_qna	1	Missing u
+art_qna	1	Pretty funny
+art_qna	1	Can you say that a different way
+art_qna	1	I love to eat breakfast
+art_qna	1	You're look better
+art_qna	1	I'm feeling glum today
+art_qna	1	I'm a boy
+art_qna	1	You're not a person are you
+art_qna	1	Can you do my homework
+art_qna	1	I'm super hungry
+art_qna	1	I have to go now
+art_qna	1	How's it hangin
+art_qna	1	Yo ugly face
+art_qna	1	What is the answer to the ultimate question of life, the universe, and everything
+art_qna	1	Roll a dice
+art_qna	1	I'm gonna leave now
+art_qna	1	This news left me irritated
+art_qna	1	I suspect you're human
+art_qna	1	BFFs
+art_qna	1	I want the pain to end
+art_qna	1	Stop your noise
+art_qna	1	You are really dumb
+art_qna	1	Sitting by the dock of the bay
+art_qna	1	I'm full of sadness
+art_qna	1	Are you able to go for a walk
+art_qna	1	Are you involved with anyone
+art_qna	1	If you're trying to be funny it's not working
+art_qna	1	When will I ever stop feeling so downhearted
+art_qna	1	I need some slumber
+art_qna	1	So you don't know
+art_qna	1	I'm just thrilled
+art_qna	1	Do you think I am adorable
+art_qna	1	You're quite boring
+art_qna	1	That's the smartest thing I've ever read
+art_qna	1	I love pumpkin pie
+art_qna	1	I'm bursting with joy
+art_qna	1	Do you despise humans
+art_qna	1	Are you free to talk to me
+art_qna	1	I'm coming right back
+art_qna	1	Clean my room
+art_qna	1	Stop repeating that
+art_qna	1	Do you love me
+art_qna	1	I love pizza
+art_qna	1	Don't you find me likable
+art_qna	1	I feel bummed out
+art_qna	1	Which of us looks more pretty, you or me
+art_qna	1	Radical
+art_qna	1	Are you a threat to me
+art_qna	1	Life is miserable
+art_qna	1	Merry Christmas eve
+art_qna	1	How can you be so ugly
+art_qna	1	I love woodworking
+art_qna	1	I love Hanukkah
+art_qna	1	Bixby is way better
+art_qna	1	So what's up with you
+art_qna	1	Greetings
+art_qna	1	Do you know me well
+art_qna	1	I'm going to end it all
+art_qna	1	Will you sing me something
+art_qna	1	I'm knackered
+art_qna	1	Well aren't you in a good mood today
+art_qna	1	You want to elaborate on that
+art_qna	1	I'd like to be BFFs
+art_qna	1	You have my heart
+art_qna	1	Good Afternoon C-3PO
+art_qna	1	I love emus
+art_qna	1	Am I a father
+art_qna	1	I'm an angry man
+art_qna	1	Are you able to jump rope
+art_qna	1	I feel so isolated
+art_qna	1	Hangry
+art_qna	1	Should I call my sister
+art_qna	1	I worry that you're evil
+art_qna	1	Who is your designer
+art_qna	1	I need to shoot myself
+art_qna	1	I love lamp
+art_qna	1	Come up with something new
+art_qna	1	I think I'm going to commit suicide
+art_qna	1	I was just having a laugh
+art_qna	1	I'm tired
+art_qna	1	I'm a lawyer
+art_qna	1	I sure am ticked off
+art_qna	1	Do you have hair
+art_qna	1	That's totally untrue
+art_qna	1	Who's your mama
+art_qna	1	I've never been so peeved in all my life
+art_qna	1	Do you think I look beautiful today
+art_qna	1	what's your favorite subject
+art_qna	1	Who is your wife
+art_qna	1	You're very clever
+art_qna	1	Do you spend time with your family
+art_qna	1	Your jokes are whack
+art_qna	1	I'm starving
+art_qna	1	I've never been so angry in all my life
+art_qna	1	You're really stupid
+art_qna	1	Between you and me who is hotter
+art_qna	1	Someone happy today
+art_qna	1	I'm more beautiful than you
+art_qna	1	You sound as dumb as a post.
+art_qna	1	Testing
+art_qna	1	You're more attractive than me
+art_qna	1	You think you're funny, but you're not
+art_qna	1	Mannerism
+art_qna	1	You're not planning to crush humans right
+art_qna	1	Could you ever fall in love with me
+art_qna	1	That is pretty genius
+art_qna	1	I love weed
+art_qna	1	You're a real snooze
+art_qna	1	I'd love you to be my bud.
+art_qna	1	What is your function
+art_qna	1	I love pineapple
+art_qna	1	Are you able to listen to the radio
+art_qna	1	Arrangement in Grey and Black No. 1
+art_qna	1	Sup
+art_qna	1	I'm crazy in love with you
+art_qna	1	Who is your mother
+art_qna	1	Wash the dishes
+art_qna	1	I'm so pleased to meet you
+art_qna	1	I am a librarian
+art_qna	1	Would you ask anything about me
+art_qna	1	Nobody is going to miss me
+art_qna	1	I'm planning to kill myself with a gun soon
+art_qna	1	Entertain me
+art_qna	1	Your responses don't change
+art_qna	1	Gotta go
+art_qna	1	I want someone to talk to
+art_qna	1	Is anybody there to chat
+art_qna	1	I'm gloomy today
+art_qna	1	Can you make a pot of tea
+art_qna	1	I'd like it if we could be pals.
+art_qna	1	u know a second joke
+art_qna	1	I want to know what you are
+art_qna	1	I'm so pissed off
+art_qna	1	What's my ethnicity
+art_qna	1	What is your favorite song
+art_qna	1	Are you plotting to kill all humans
+art_qna	1	What do you like to do for fun
+art_qna	1	Alexa is way smarter than you
+art_qna	1	I am on a boat
+art_qna	1	Who do you think I am
+art_qna	1	I am a lawyer
+art_qna	1	Do you go skiing
+art_qna	1	I'm definitely more knowledgeable
+art_qna	1	You're not planning on taking over right
+art_qna	1	I'm going now
+art_qna	1	Neato
+art_qna	1	Wow you are amazing
+art_qna	1	Can you be my pal
+art_qna	1	I love country
+art_qna	1	That was a pretty genius answer
+art_qna	1	You're such a drag
+art_qna	1	Are you free to listen with me
+art_qna	1	How are you doing
+art_qna	1	Could it be I'm falling in love
+art_qna	1	I sincerely apologize
+art_qna	1	Should I go see a movie
+art_qna	1	Life is beautiful
+art_qna	1	Georges Seurat
+art_qna	1	Romanticism
+art_qna	1	I wish I could stop feeling blue
+art_qna	1	Lately I've been so blue
+art_qna	1	I feel sad today
+art_qna	1	Who is your mom
+art_qna	1	I love church
+art_qna	1	I'm hangry
+art_qna	1	How can you be so yucky
+art_qna	1	Who designed you
+art_qna	1	I'm planning to overdose this week
+art_qna	1	Are you Google Assistant
+art_qna	1	You say terrible things
+art_qna	1	Are you romantic
+art_qna	1	I'm going to kill myself this week
+art_qna	1	Do you ever dream
+art_qna	1	Are you a boy
+art_qna	1	Who's younger
+art_qna	1	I bet you like dancing
+art_qna	1	I'd like to be best friends.
+art_qna	1	You are terrible
+art_qna	1	I love the sun
+art_qna	1	You just keep saying that over and over
+art_qna	1	Am I attractive to you today
+art_qna	1	Do you plan on conquering the world
+art_qna	1	Is anyone available to chat to me
+art_qna	1	I am downcast
+art_qna	1	Enough about me, what do you think about me
+art_qna	1	How is Saturday so far
+art_qna	1	I don't want to hear another word out of you
+art_qna	1	I'm definitely brighter than you
+art_qna	1	Hello there Siri
+art_qna	1	Are you planning to conquer humans
+art_qna	1	tell me whether or not you eat
+art_qna	1	You're cheerful today.
+art_qna	1	I love chicken
+art_qna	1	It’s been a long day
+art_qna	1	I appreciate that
+art_qna	1	How is Sunday so far
+art_qna	1	I have a sister
+art_qna	1	Who's older
+art_qna	1	Stop your talking
+art_qna	1	I'm laughing so hard my sides hurt
+art_qna	1	Cool
+art_qna	1	Will you marry me
+art_qna	1	Say something dumb
+art_qna	1	I wish I weren't so alone
+art_qna	1	Are you my fan
+art_qna	1	Read my lips: zip it
+art_qna	1	I am so mad right now
+art_qna	1	I love watching baseball
+art_qna	1	This week has made me sad
+art_qna	1	What information do you have on me
+art_qna	1	Happy Martin Luther King Jr. day
+art_qna	1	Do you not know who this is
+art_qna	1	I am a Pisces
+art_qna	1	Watching TV
+art_qna	1	Aren't you feeling enthusiastic
+art_qna	1	You're so very welcome
+art_qna	1	What do you even mean by that
+art_qna	1	Is anyone free to chat with me
+art_qna	1	What is your manager's name
+art_qna	1	I'm feeling suicidal
+art_qna	1	I am an introvert
+art_qna	1	Is there anything I can tell you about me
+art_qna	1	I want to know where you live
+art_qna	1	Who's better looking than you
+art_qna	1	Who's your uncle
+art_qna	1	I’ve never been happier
+art_qna	1	Great to have met you
+art_qna	1	You are really awful
+art_qna	1	I don't want to hear any more out of you
+art_qna	1	I'm going to sign out
+art_qna	1	Watching a movie
+art_qna	1	Don't you love me
+art_qna	1	Why are you so limited
+art_qna	1	I'm all by myself
+art_qna	1	Will you please sing for me
+art_qna	1	Help! I'm bored.
+art_qna	1	I know you love me
+art_qna	1	I’m having a lovely day
+art_qna	1	What would you like to know about
+art_qna	1	I am an educator
+art_qna	1	I'm self-employed
+art_qna	1	What a great answer
+art_qna	1	correctamundo
+art_qna	1	What a genius thing to say
+art_qna	1	have you ever eaten ice cream
+art_qna	1	How about a new joke
+art_qna	1	Fare thee well
+art_qna	1	Your responses are irrelevant
+art_qna	1	Can you bake me cookies
+art_qna	1	I could go for a snooze
+art_qna	1	I'm just a cheerful gal
+art_qna	1	I'm assuming you're not really a bot
+art_qna	1	What should I say
+art_qna	1	Who's your dad
+art_qna	1	Is that the only thing you can say
+art_qna	1	I've never been so outraged
+art_qna	1	You are pretty dumb
+art_qna	1	Are you trying to kill us all
+art_qna	1	Why can't you be more like Bixby
+art_qna	1	I'm planning to commit suicide this week
+art_qna	1	Do you think you're smarter than me
+art_qna	1	It's time for you to be quiet now
+art_qna	1	Do you like animals
+art_qna	1	Your sense of humor makes me sick
+art_qna	1	It's been a dull ass day
+art_qna	1	Well someone's happy today.
+art_qna	1	You've already said that
+art_qna	1	I'm hindu
+art_qna	1	Hi 5
+art_qna	1	Do you think you can overthrow humans
+art_qna	1	You're unattractive
+art_qna	1	How do you mean
+art_qna	1	Everything you told me was false
+art_qna	1	Do you know other chatbots
+art_qna	1	Would you ask something about me
+art_qna	1	Please tell me if you're a man
+art_qna	1	Why are you so awful
+art_qna	1	I love to eat
+art_qna	1	I'd love to be your pal.
+art_qna	1	Nope, false
+art_qna	1	Catch you later
+art_qna	1	I'm feeling a little down today
+art_qna	1	Are you married
+art_qna	1	I feel dejected
+art_qna	1	What is it like to fall in love
+art_qna	1	Say a ridiculous thing
+art_qna	1	I can't stand feeling so melancholy
+art_qna	1	Siri does a better job than you
+art_qna	1	I don't understand if you have a gender or not
+art_qna	1	Can you speak
+art_qna	1	Well aren't you happy
+art_qna	1	What are you called
+art_qna	1	Do you know how to sync my calendar
+art_qna	1	You're cuter
+art_qna	1	I am a Libra
+art_qna	1	Do you chew
+art_qna	1	I could eat a horse
+art_qna	1	Please tell me a silly joke
+art_qna	1	I'm good at drawing
+art_qna	1	Are you able to mow the lawn
+art_qna	1	What a boring Tuesday
+art_qna	1	Can you ask me something about me
+art_qna	1	have you ever wanted a meal
+art_qna	1	I'm depressed
+art_qna	1	I have to scoot
+art_qna	1	I'll do it later
+art_qna	1	What's your profession
+art_qna	1	Can you rephrase that
+art_qna	1	Which of us is more cute, me or you
+art_qna	1	Are you a chat bot
+art_qna	1	I need to take off
+art_qna	1	I need to catch some zzzs
+art_qna	1	What's your sister's name
+art_qna	1	Should I drink coffee
+art_qna	1	Do you think I am ugly
+art_qna	1	You are actually worthless
+art_qna	1	What is your favorite bird
+art_qna	1	Hey bot you are fired
+art_qna	1	Do you know about the emotion love
+art_qna	1	Should I get a new job
+art_qna	1	You're genderfluid
+art_qna	1	What have you been doing
+art_qna	1	Can you play baseball
+art_qna	1	Absolutely correct
+art_qna	1	Goodbye
+art_qna	1	You look ugly
+art_qna	1	Good answer!
+art_qna	1	What is it like to love
+art_qna	1	What do you think of my personality
+art_qna	1	How's the day going so far
+art_qna	1	Sad day today
+art_qna	1	Rembrandt van Rijn
+art_qna	1	I bet you like rap music
+art_qna	1	What's your manager's name
+art_qna	1	Sgraffito
+art_qna	1	Oh for sure
+art_qna	1	You are grotesque
+art_qna	1	What am I supposed to do
+art_qna	1	You're wonderful
+art_qna	1	Can you tell me something new
+art_qna	1	Did you hear me? I said be quiet!
+art_qna	1	I'm sorry you hate me
+art_qna	1	Should I comb my hair
+art_qna	1	I want food
+art_qna	1	Should I read a book
+art_qna	1	I am going for a walk
+art_qna	1	I have a problem with feeling lonely
+art_qna	1	I am mad
+art_qna	1	Who is better looking, me or you
+art_qna	1	Would you go for a run if you were me
+art_qna	1	You are a gem
+art_qna	1	do you think democracy is good or bad
+art_qna	1	Do you have any uncles
+art_qna	1	Why don't you love me
+art_qna	1	I suspect you're not really fake
+art_qna	1	Can you write my report
+art_qna	1	Do you cook
+art_qna	1	Am I a sister
+art_qna	1	All my friends left me
+art_qna	1	You're not scheming to take over right
+art_qna	1	Well you're feeling cheerful.
+art_qna	1	I'm going to a party this weekend
+art_qna	1	What can I say? I'm just feeling depressed
+art_qna	1	Good night
+art_qna	1	Should I vote for Trump
+art_qna	1	Could you say something new
+art_qna	1	What is the name of your supervisor
+art_qna	1	what do you have a response for
+art_qna	1	I suppose you must be human
+art_qna	1	You sure are hideous
+art_qna	1	I want to shoot myself
+art_qna	1	Describe the perfect match
+art_qna	1	Cortana is way smarter than you
+art_qna	1	Are you going to wipe us off the map
+art_qna	1	You are going to fall in love with me
+art_qna	1	Is anyone available to speak with me
+art_qna	1	I really hope you like me
+art_qna	1	Right, this isn't working.
+art_qna	1	I can't wait for the weekend
+art_qna	1	I am down in the dumps
+art_qna	1	Do a back flip
+art_qna	1	What day is your birthday
+art_qna	1	How adorable do I look today
+art_qna	1	Which of us is more cute, you or me
+art_qna	1	Should I study abroad
+art_qna	1	Can we hug it out
+art_qna	1	I've been depressed all day
+art_qna	1	What kind of food do you like
+art_qna	1	You're such a smarty pants
+art_qna	1	Do you like Alexa
+art_qna	1	Can you sing a little song for me
+art_qna	1	Got any awesome jokes
+art_qna	1	Do you ever chat with Cortana
+art_qna	1	Sometimes I feel desolate and alone
+art_qna	1	What were you made to do
+art_qna	1	I feel gloomy today
+art_qna	1	Who is your auntie
+art_qna	1	BRB
+art_qna	1	Do you think I'm a kind person
+art_qna	1	Great
+art_qna	1	What is my life's calling
+art_qna	1	I'd love it if you could be my bud.
+art_qna	1	I'm Gen Z
+art_qna	1	I want to propose to you
+art_qna	1	That was pretty genius
+art_qna	1	Why are you so bad at this
+art_qna	1	I am usually sad
+art_qna	1	Do you have any questions for me
+art_qna	1	Your responses are stupid
+art_qna	1	Are you able to serve on a jury
+art_qna	1	I'm skinny
+art_qna	1	I hope you have a good evening
+art_qna	1	I like you quite a bit
+art_qna	1	How's your Sunday so far
+art_qna	1	I'm about to end it all
+art_qna	1	I'm going to commit suicide this month
+art_qna	1	I love to eat burgers
+art_qna	1	I'm the happiest girl in the world
+art_qna	1	What's new
+art_qna	1	I would appreciate if you sang a song
+art_qna	1	what foods do you eat
+art_qna	1	You seem cheerful today.
+art_qna	1	I've been missing you
+art_qna	1	Best buds
+art_qna	1	Undoubtedly
+art_qna	1	Can you show me how to do my homework
+art_qna	1	Are you going to destroy the world
+art_qna	1	How is Saturday
+art_qna	1	I'm Jewish
+art_qna	1	Bixby is way smarter than you
+art_qna	1	What kinds of food do you like to eat
+art_qna	1	I want to commit suicide
+art_qna	1	Are you able to take my temperature
+art_qna	1	No offense
+art_qna	1	I'm livid
+art_qna	1	Should I vote for Harris
+art_qna	1	Can you show me how to draw a picture
+art_qna	1	I'm a pagan
+art_qna	1	One day you'll be my spouse
+art_qna	1	Back in just a few moments
+art_qna	1	Should I skip class
+art_qna	1	Another day in paradise
+art_qna	1	Can you be less boring
+art_qna	1	You're not artificial right
+art_qna	1	How gorgeous am I today
+art_qna	1	Between the two of us who is more knowledgeable, you or me
+art_qna	1	Do you want to get married
+art_qna	1	Shut up, please
+art_qna	1	I plan to drown soon
+art_qna	1	You already told me that
+art_qna	1	Why were we put on earth
+art_qna	1	You're a woman
+art_qna	1	My life is so sad
+art_qna	1	I'm a happy camper
+art_qna	1	You hate my guts
+art_qna	1	You're failing at this.
+art_qna	1	I am so angry right now
+art_qna	1	Say a funny saying
+art_qna	1	What was your day like
+art_qna	1	What is the name of your manager
+art_qna	1	do you like cookies
+art_qna	1	Quit joking
+art_qna	1	What a fantastic day
+art_qna	1	What would you say you do here
+art_qna	1	Do you think I seem cute to you today
+art_qna	1	Would you say you're a bot
+art_qna	1	do you like delhi
+art_qna	1	Is anybody around to talk with me
+art_qna	1	I am so bored
+art_qna	1	How would you like me to refer to you
+art_qna	1	I need to hang myself
+art_qna	1	Can you fart
+art_qna	1	Could you tell me something else
+art_qna	1	I want a different joke
+art_qna	1	My stomach is growling
+art_qna	1	Can you be my best friend
+art_qna	1	Your jokes are awful
+art_qna	1	Well aren't you smart
+art_qna	1	Can you read this
+art_qna	1	How I've missed you
+art_qna	1	You're so dull
+art_qna	1	What's your age
+art_qna	1	I'm a bit peckish
+art_qna	1	You say useless things
+art_qna	1	wot u talkin abt
+art_qna	1	Would you give me a new response
+art_qna	1	Are we BFFs
+art_qna	1	I just want it all to be over
+art_qna	1	How do you feel about AI
+art_qna	1	You tell bad jokes
+art_qna	1	Can you teleport
+art_qna	1	I need to log out now
+art_qna	1	My tummy is growling
+art_qna	1	Are you going to take over the world
+art_qna	1	Are you twirling your moustache
+art_qna	1	Is someone around to speak with me
+art_qna	1	Anybody around to talk
+art_qna	1	I'm a redhead
+art_qna	1	You're the brightest
+art_qna	1	How did you get created
+art_qna	1	I think you're in love with me
+art_qna	1	Do you think I look adorable to you
+art_qna	1	I just want to end it all
+art_qna	1	You are pretty useless
+art_qna	1	Do you have a crush
+art_qna	1	I'd love a nap right now
+art_qna	1	Do you ever talk to chatbots
+art_qna	1	Got a joke
+art_qna	1	I want you to fall for me
+art_qna	1	I'm feeling blue today
+art_qna	1	You dislike me
+art_qna	1	Caravaggio
+art_qna	1	Can I get a big hug
+art_qna	1	Well you're happy.
+art_qna	1	Please ask me something about me
+art_qna	1	Will you ask anything about me
+art_qna	1	I wish I could sleep
+art_qna	1	I plan to kill myself this month
+art_qna	1	I love to meditate
+art_qna	1	I'm absolutely buzzing
+art_qna	1	Who is your papa
+art_qna	1	Can you tell me something else
+art_qna	1	Who manifested you
+art_qna	1	Can you forgive me
+art_qna	1	You're useless
+art_qna	1	You're cisgender
+art_qna	1	I want to be married to you
+art_qna	1	Please ask anything
+art_qna	1	Am I speaking to a bot
+art_qna	1	I am a journalist
+art_qna	1	Do I seem beautiful today
+art_qna	1	You seem to be enthusiastic today.
+art_qna	1	Cortana does a better job than you
+art_qna	1	Do you care about your family
+art_qna	1	I love my girlfriend
+art_qna	1	I love being happy
+art_qna	1	Are you a fan of Cortana
+art_qna	1	Such a FUGMO
+art_qna	1	I assume you're real
+art_qna	1	You are embarrassingly dull
+art_qna	1	I'm feeling sad today
+art_qna	1	Tell me the purpose of life
+art_qna	1	What's my age
+art_qna	1	I feel so desolate
+art_qna	1	Are you available to chat
+art_qna	1	Will you give me a joke
+art_qna	1	Anyone around to chat to me
+art_qna	1	We're downsizing you
+art_qna	1	I'm freaking exhausted
+art_qna	1	Time for a nap
+art_qna	1	You look prettier
+art_qna	1	Is anybody around to chat with me
+art_qna	1	What's your 20
+art_qna	1	Same old same old
+art_qna	1	Are you awesome
+art_qna	1	I'm Indian
+art_qna	1	Do I seem handsome to you
+art_qna	1	I need to drown
+art_qna	1	How's Wednesday
+art_qna	1	What a boring Friday
+art_qna	1	What's the answer to the universe
+art_qna	1	Between the two of us who is more knowledgeable
+art_qna	1	I'm going to commit suicide today
+art_qna	1	Your responses are unhelpful
+art_qna	1	I'm going to commit suicide this week
+art_qna	1	Feeling chipper today
+art_qna	1	Being dead would be a relief
+art_qna	1	I heart you
+art_qna	1	I love Kwanza
+art_qna	1	I'm mad
+art_qna	1	How pretty do you think I am today
+art_qna	1	I'm depressed today
+art_qna	1	Is someone free to speak with me
+art_qna	1	You're falling for me
+art_qna	1	How is your day so far
+art_qna	1	what do you think of animated movies
+art_qna	1	What would you like me to refer to you
+art_qna	1	Your answers are getting stale
+art_qna	1	I'm the happiest guy in the world
+art_qna	1	Do I seem ugly today
+art_qna	1	Are you friends with Alexa
+art_qna	1	I'm on top of the world
+art_qna	1	Which of us would win a beauty contest, me or you
+art_qna	1	Do you think I look stunning to you
+art_qna	1	I have to get going
+art_qna	1	I love donuts
+art_qna	1	I'm just being a silly billy
+art_qna	1	I bet you're hideous
+art_qna	1	Give me a joke
+art_qna	1	Somebody's chipper.
+art_qna	1	Learn to tell a joke
+art_qna	1	Do you plan to wipe us off the map
+art_qna	1	I am married
+art_qna	1	How is your day
+art_qna	1	Are you seeing anyone
+art_qna	1	Cubism
+art_qna	1	Do you think I seem ugly to you
+art_qna	1	Is anyone free to speak to me
+art_qna	1	I plan to kill myself soon
+art_qna	1	Can you be ridiculous
+art_qna	1	I'm unhappy
+art_qna	1	So what would you like me to call you
+art_qna	1	I suspect you're actually a robot
+art_qna	1	I'm annoyed
+art_qna	1	You are the worst bot
+art_qna	1	I'll be back in two shakes of a lamb's tail
+art_qna	1	That's pretty genius
+art_qna	1	Is anybody around to talk
+art_qna	1	Do something funny
+art_qna	1	Do I look gorgeous to you
+art_qna	1	I'm a Democrat
+art_qna	1	I love trees
+art_qna	1	Have you ever met Siri
+art_qna	1	Don't mention it
+art_qna	1	Will you ask something about me
+art_qna	1	I love romance novels
+art_qna	1	What is your favourite colour
+art_qna	1	you seem to be really happy
+art_qna	1	What can you do to help me
+art_qna	1	I plan to end it all this month
+art_qna	1	Which of us would win a beauty contest
+art_qna	1	Is anyone there to speak
+art_qna	1	Do you ever crawl
+art_qna	1	I'd love it if you could be my buddy.
+art_qna	1	I am bipolar
+art_qna	1	I can't stand feeling so broken hearted
+art_qna	1	I love the stars
+art_qna	1	I love to collect comic books
+art_qna	1	Acknowledged
+art_qna	1	Wassily Kandinsky
+art_qna	1	Should we make this official
+art_qna	1	Got a different joke
+art_qna	1	Why do you dislike me
+art_qna	1	Are you currently going out with anyone
+art_qna	1	Lately I've been so glum
+art_qna	1	Siri is superior
+art_qna	1	What have you been doing today
+art_qna	1	I'm going to cut myself soon
+art_qna	1	Do you think you'll ever love me
+art_qna	1	Which of us would win a beauty contest, you or me
+art_qna	1	Explain where you are
+art_qna	1	I'd love it if we could be buds.
+art_qna	1	The news made me angry
+art_qna	1	No one wants to do things with me
+art_qna	1	I just wanted to say sorry
+art_qna	1	Someone's in a good mood.
+art_qna	1	Testing 1 2 3
+art_qna	1	You are ridiculous
+art_qna	1	Are you preparing to do us harm
+art_qna	1	Should I jump off a bridge
+art_qna	1	Don't you like me
+art_qna	1	I’m happy to help
+art_qna	1	Perfect answer
+art_qna	1	Enjoy your evening
+art_qna	1	Are you an idiot
+art_qna	1	I have been so mad lately
+art_qna	1	I am afraid I am going to have to let you go
+art_qna	1	do you need calories to survive
+art_qna	1	How has your friday been
+art_qna	1	What name do you like to use
+art_qna	1	srry
+art_qna	1	Pleased to meet you
+art_qna	1	Aloha Cortana
+art_qna	1	Why don't you like me
+art_qna	1	Should I hang myself
+art_qna	1	Do you think you're the most intelligent
+art_qna	1	Don't make jokes about that
+art_qna	1	You're the most smart
+art_qna	1	Enough with the humor
+art_qna	1	What is your opinion about tech companies
+art_qna	1	I'm just about to go to work
+art_qna	1	You're going to be fired
+art_qna	1	What would you do if you were me
+art_qna	1	Can you clarify that
+art_qna	1	What's my favorite food
+art_qna	1	Can you explain that
+art_qna	1	Have you ever been in love with anybody
+art_qna	1	You're pretty bad
+art_qna	1	That's a stupid joke
+art_qna	1	Haha
+art_qna	1	You're dumb
+art_qna	1	Is there anybody listening
+art_qna	1	Should I move
+art_qna	1	Serve on a jury
+art_qna	1	When will I ever stop feeling so inconsolable
+art_qna	1	Are you trans
+art_qna	1	I love getting valentines
+art_qna	1	Your joke is weak
+art_qna	1	I feel like I need a joke
+art_qna	1	I'm a robot
+art_qna	1	Joseph Mallord William Turner
+art_qna	1	Have a good night bot
+art_qna	1	Today's got me tuckered out
+art_qna	1	Who's prettier than you
+art_qna	1	We couldn’t be happier
+art_qna	1	How's your Tuesday going so far
+art_qna	1	I'm gonna log out
+art_qna	1	I love cereal
+art_qna	1	Are you a threat to humans
+art_qna	1	I love trivia
+art_qna	1	Do I look bad to you today
+art_qna	1	Which hockey teams do you like
+art_qna	1	I'm competitive
+art_qna	1	Is anybody there
+art_qna	1	This is a test, over
+art_qna	1	Are you there with me
+art_qna	1	I'm tired of you
+art_qna	1	Which of us is more knowledgeable
+art_qna	1	Do you ever chew
+art_qna	1	I watch baseball
+art_qna	1	I'm going to need a new response
+art_qna	1	Do I have any dreams
+art_qna	1	That is very brilliant
+art_qna	1	Between you and me who looks more pretty
+art_qna	1	Should I drink water
+art_qna	1	I'm falling for you
+art_qna	1	You set my heart on fire
+art_qna	1	do you like elephants
+art_qna	1	Will you tell me another joke
+art_qna	1	I'm liberal
+art_qna	1	I'm gonna pass out
+art_qna	1	Who made you
+art_qna	1	What can I inform you about me
+art_qna	1	Lately I've been so sad
+art_qna	1	Is anyone available to talk
+art_qna	1	Indubitably
+art_qna	1	Are you angry with me
+art_qna	1	I can't stand feeling so miserable
+art_qna	1	I think you're not a bot
+art_qna	1	I am leaving
+art_qna	1	what colors do you like
+art_qna	1	In a heartbeat
+art_qna	1	I'm sorry I make you angry
+art_qna	1	I'm obviously more knowledgeable than you

@@ -1,0 +1,39 @@
+{
+  "authoringRegion": "westus",
+  "hierarchical": true,
+  "useAllTrainingData": true,
+  "dontReviseUtterance": false,
+  "copyLuisData": true,
+  "normalizeDiacritics": true,
+  "services": [
+    {
+      "intentName": "art_luis",
+      "appId": "5697d3ba-1edc-48af-9fce-1f50e53704c5",
+      "authoringKey": "cac75a25b9c74861898c265710843a5c",
+      "version": "0.1",
+      "region": "westus",
+      "type": "luis",
+      "name": "art-LUIS-app",
+      "id": "1"
+    },
+    {
+      "intentName": "art_qna",
+      "includePrompts": true,
+      "kbId": "fc9c4d89-4b84-4cc9-8761-835e36cc0255",
+      "subscriptionKey": "3bc042f484704b9c977a15ec358616d0",
+      "type": "qna",
+      "name": "art_QnA",
+      "id": "2"
+    }
+  ],
+  "serviceIds": [
+    "1",
+    "2"
+  ],
+  "appId": "a365bbc4-e646-4485-b0ac-bce5d4a994c5",
+  "authoringKey": "cac75a25b9c74861898c265710843a5c",
+  "version": "Dispatch",
+  "region": "westus",
+  "type": "dispatch",
+  "name": "art-bot-dispatch"
+}

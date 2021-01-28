@@ -2,6 +2,7 @@
 // Licensed under the MIT License.
 
 const { ActivityHandler } = require('botbuilder');
+const { LuisRecognizer, QnAMaker } = require('botbuilder-ai');
 
 /**
  * A simple bot that responds to utterances with answers from QnA Maker.
@@ -12,24 +13,49 @@ class QnABot extends ActivityHandler {
      *
      * @param {ConversationState} conversationState
      * @param {UserState} userState
-     * @param {Dialog} dialog
      */
-    constructor(conversationState, userState, dialog) {
+    constructor(conversationState, userState) {
         super();
         if (!conversationState) throw new Error('[QnABot]: Missing parameter. conversationState is required');
         if (!userState) throw new Error('[QnABot]: Missing parameter. userState is required');
-        if (!dialog) throw new Error('[QnABot]: Missing parameter. dialog is required');
 
         this.conversationState = conversationState;
         this.userState = userState;
-        this.dialog = dialog;
-        this.dialogState = this.conversationState.createProperty('DialogState');
+        
+        //參考範例加入
+        
+        const dispatchRecognizer = new LuisRecognizer({
+            applicationId: process.env.LuisAppId,
+            endpointKey: process.env.LuisAPIKey,
+            endpoint: `https://${ process.env.LuisAPIHostName }.api.cognitive.microsoft.com`
+        }, {
+            includeAllIntents: true,
+            includeInstanceData: true
+        }, true);
+
+        const qnaMaker = new QnAMaker({
+            knowledgeBaseId: process.env.QnAKnowledgebaseId,
+            endpointKey: process.env.QnAEndpointKey,
+            host: process.env.QnAEndpointHostName
+        });
+
+        this.dispatchRecognizer = dispatchRecognizer;
+        this.qnaMaker = qnaMaker;
+
+        //參考範例加入
 
         this.onMessage(async (context, next) => {
-            console.log('Running dialog with Message Activity.');
 
-            // Run the Dialog with the new message Activity.
-            await this.dialog.run(context, this.dialogState);
+           //參考範例加入
+            // First, we use the dispatch model to determine which cognitive service (LUIS or QnA) to use.
+            const recognizerResult = await dispatchRecognizer.recognize(context);
+
+            // Top intent tell us which cognitive service to use.
+            const intent = LuisRecognizer.topIntent(recognizerResult);
+
+            // Next, we call the dispatcher with the top intent.
+            await this.dispatchToTopIntentAsync(context, intent, recognizerResult);
+            //參考範例加入
 
             // By calling next() you ensure that the next BotHandler is run.
             await next();
@@ -40,7 +66,7 @@ class QnABot extends ActivityHandler {
             const membersAdded = context.activity.membersAdded;
             for (let cnt = 0; cnt < membersAdded.length; cnt++) {
                 if (membersAdded[cnt].id !== context.activity.recipient.id) {
-                    await context.sendActivity('Welcome to the QnA Maker sample! Ask me a question and I will try to answer it.');
+                    await context.sendActivity('Welcome to the Happy Art Friend Chat Bot! Ask me a question and I will try to answer it.');
                 }
             }
 
@@ -48,15 +74,56 @@ class QnABot extends ActivityHandler {
             await next();
         });
 
-        this.onDialog(async (context, next) => {
-            // Save any state changes. The load happened during the execution of the Dialog.
-            await this.conversationState.saveChanges(context, false);
-            await this.userState.saveChanges(context, false);
-
-            // By calling next() you ensure that the next BotHandler is run.
-            await next();
-        });
+       
     }
+
+     //參考範例加入
+
+    async dispatchToTopIntentAsync(context, intent, recognizerResult) {
+        switch (intent) {
+        case 'art_luis':
+            console.log('sent to art luis')
+            await this.ProcessArtLuis(context, recognizerResult.luisResult);
+            break;
+        case 'art_qna':
+            console.log('sent to art QnA')
+            await this.processArtQnA(context);
+            break;
+        default:
+            console.log(`Dispatch unrecognized intent: ${ intent }.`);
+            await context.sendActivity(`Dispatch unrecognized intent: ${ intent }.`);
+            break;
+        }
+    }
+
+    async ProcessArtLuis(context, luisResult) {
+        console.log('ProcessCovid19Luis');
+
+        // Retrieve LUIS result for Process Automation.
+        const result = luisResult.connectedServiceResult;
+        const intent = result.topScoringIntent.intent;
+
+        await context.sendActivity(`Art_Luis top intent ${ intent }.`);
+        await context.sendActivity(`Art_Luis intents detected:  ${ luisResult.intents.map((intentObj) => intentObj.intent).join('\n\n') }.`);
+
+        if (luisResult.entities.length > 0) {
+            await context.sendActivity(`Ar_tLuis entities were found in the message: ${ luisResult.entities.map((entityObj) => entityObj.entity).join('\n\n') }.`);
+        }
+    }
+
+
+    async processArtQnA(context) {
+        console.log('Art_QnA');
+
+        const results = await this.qnaMaker.getAnswers(context);
+        if (results.length > 0) {
+            await context.sendActivity(`${ results[0].answer }`);
+        } else {
+            await context.sendActivity('Sorry, I am a dummy QnA system');
+        }
+    }
+    //參考範例加入
+
 }
 
 module.exports.QnABot = QnABot;

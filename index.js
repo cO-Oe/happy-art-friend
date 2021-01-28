@@ -12,7 +12,6 @@ const { BotFrameworkAdapter, ConversationState, MemoryStorage, UserState } = req
 const { QnAMaker } = require('botbuilder-ai');
 
 const { QnABot } = require('./bots/QnABot');
-const { RootDialog } = require('./dialogs/rootDialog');
 
 // Note: Ensure you have a .env file and include QnAMakerKnowledgeBaseId, QnAMakerEndpointKey and QnAMakerHost.
 const ENV_FILE = path.join(__dirname, '.env');
@@ -71,12 +70,8 @@ if (!endpointHostName.includes('/v5.0') && !endpointHostName.endsWith('/qnamaker
     endpointHostName = endpointHostName + '/qnamaker';
 }
 
-
-// Create the main dialog.
-const dialog = new RootDialog(process.env.QnAKnowledgebaseId, process.env.QnAAuthKey, endpointHostName);
-
 // Create the bot's main handler.
-const bot = new QnABot(conversationState, userState, dialog);
+const bot = new QnABot(conversationState, userState);
 
 // Listen for incoming requests.
 server.post('/api/messages', (req, res) => {
