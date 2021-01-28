@@ -3,6 +3,9 @@
 
 const { ActivityHandler } = require('botbuilder');
 const { LuisRecognizer, QnAMaker } = require('botbuilder-ai');
+const path = require('path');
+const axios = require('axios');
+const fs = require('fs');
 
 /**
  * A simple bot that responds to utterances with answers from QnA Maker.
@@ -45,18 +48,21 @@ class QnABot extends ActivityHandler {
         //參考範例加入
 
         this.onMessage(async (context, next) => {
+            // If user input is an attachment
+            if (context.activity.attachments && context.activity.attachments.length > 0) {
+              // The user sent an attachment and the bot should handle the incoming attachment.
+              await this.handleIncomingAttachment(context);
+            } 
+            else {
+              // First, we use the dispatch model to determine which cognitive service (LUIS or QnA) to use.
+              const recognizerResult = await dispatchRecognizer.recognize(context);
 
-           //參考範例加入
-            // First, we use the dispatch model to determine which cognitive service (LUIS or QnA) to use.
-            const recognizerResult = await dispatchRecognizer.recognize(context);
+              // Top intent tell us which cognitive service to use.
+              const intent = LuisRecognizer.topIntent(recognizerResult);
 
-            // Top intent tell us which cognitive service to use.
-            const intent = LuisRecognizer.topIntent(recognizerResult);
-
-            // Next, we call the dispatcher with the top intent.
-            await this.dispatchToTopIntentAsync(context, intent, recognizerResult);
-            //參考範例加入
-
+              // Next, we call the dispatcher with the top intent.
+              await this.dispatchToTopIntentAsync(context, intent, recognizerResult);
+            } 
             // By calling next() you ensure that the next BotHandler is run.
             await next();
         });
@@ -96,6 +102,7 @@ class QnABot extends ActivityHandler {
         }
     }
 
+<<<<<<< HEAD
     async ProcessArtLuis(context, luisResult) {
         console.log('ProcessCovid19Luis');
 
@@ -124,6 +131,73 @@ class QnABot extends ActivityHandler {
     }
     //參考範例加入
 
+=======
+    /**
+     * Saves incoming attachments to disk by calling `this.downloadAttachmentAndWrite()` and
+     * responds to the user with information about the saved attachment or an error.
+     * @param {Object} turnContext
+     */
+    async handleIncomingAttachment(turnContext) {
+      // Prepare Promises to download each attachment and then execute each Promise.
+      const promises = turnContext.activity.attachments.map(this.downloadAttachmentAndWrite);
+      const successfulSaves = await Promise.all(promises);
+
+      // Replies back to the user with information about where the attachment is stored on the bot's server,
+      // and what the name of the saved file is.
+      async function replyForReceivedAttachments(localAttachmentData) {
+          if (localAttachmentData) {
+              // Because the TurnContext was bound to this function, the bot can call
+              // `TurnContext.sendActivity` via `this.sendActivity`;
+              await this.sendActivity(`Attachment "${ localAttachmentData.fileName }" ` +
+                  `has been received and saved to "${ localAttachmentData.localPath }".`);
+          } else {
+              await this.sendActivity('Attachment was not successfully saved to disk.');
+          }
+      }
+
+      // Prepare Promises to reply to the user with information about saved attachments.
+      // The current TurnContext is bound so `replyForReceivedAttachments` can also send replies.
+      const replyPromises = successfulSaves.map(replyForReceivedAttachments.bind(turnContext));
+      await Promise.all(replyPromises);
+  }
+
+  /**
+     * Downloads attachment to the disk.
+     * @param {Object} attachment
+     */
+    async downloadAttachmentAndWrite(attachment) {
+      // Retrieve the attachment via the attachment's contentUrl.
+      const url = attachment.contentUrl;
+
+      // Local file path for the bot to save the attachment.
+      const localFileName = path.join(__dirname, attachment.name);
+
+      try {
+          // arraybuffer is necessary for images
+          const response = await axios.get(url, { responseType: 'arraybuffer' });
+          // If user uploads JSON file, this prevents it from being written as "{"type":"Buffer","data":[123,13,10,32,32,34,108..."
+          if (response.headers['content-type'] === 'application/json') {
+              response.data = JSON.parse(response.data, (key, value) => {
+                  return value && value.type === 'Buffer' ? Buffer.from(value.data) : value;
+              });
+          }
+          fs.writeFile(localFileName, response.data, (fsError) => {
+              if (fsError) {
+                  throw fsError;
+              }
+          });
+      } catch (error) {
+          console.error(error);
+          return undefined;
+      }
+      // If no error was thrown while writing to disk, return the attachment's name
+      // and localFilePath for the response back to the user.
+      return {
+          fileName: attachment.name,
+          localPath: localFileName
+      };
+  }
+>>>>>>> aa2b0bcd0781c78b5f625dcbd9e515cbf2f1f366
 }
 
 module.exports.QnABot = QnABot;
