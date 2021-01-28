@@ -7,10 +7,14 @@ const path = require('path');
 const axios = require('axios');
 const fs = require('fs');
 
+const CONVERSATION_DATA_PROPERTY = 'conversationData';
+const USER_PROFILE_PROPERTY = 'userProfile';
 /**
  * A simple bot that responds to utterances with answers from QnA Maker.
  * If an answer is not found for an utterance, the bot responds with help.
  */
+
+
 class QnABot extends ActivityHandler {
     /**
      *
@@ -22,11 +26,14 @@ class QnABot extends ActivityHandler {
         if (!conversationState) throw new Error('[QnABot]: Missing parameter. conversationState is required');
         if (!userState) throw new Error('[QnABot]: Missing parameter. userState is required');
 
+        // Create the state property accessors for the conversation data and user profile.
+        this.conversationDataAccessor = conversationState.createProperty(CONVERSATION_DATA_PROPERTY);
+        this.userProfileAccessor = userState.createProperty(USER_PROFILE_PROPERTY);
+
         this.conversationState = conversationState;
         this.userState = userState;
         
-        //參考範例加入
-        
+    
         const dispatchRecognizer = new LuisRecognizer({
             applicationId: process.env.LuisAppId,
             endpointKey: process.env.LuisAPIKey,
@@ -45,15 +52,24 @@ class QnABot extends ActivityHandler {
         this.dispatchRecognizer = dispatchRecognizer;
         this.qnaMaker = qnaMaker;
 
-        //參考範例加入
 
         this.onMessage(async (context, next) => {
+
+            console.log(this.conversationState)
+            console.log(this.userState)
+
+            // Get the state properties from the turn context.
+            const userProfile = await this.userProfileAccessor.get(context, {});
+            const conversationData = await this.conversationDataAccessor.get(
+                context, { promptedForUserName: false });
+
             // If user input is an attachment
             if (context.activity.attachments && context.activity.attachments.length > 0) {
               // The user sent an attachment and the bot should handle the incoming attachment.
               await this.handleIncomingAttachment(context);
             } 
             else {
+
               // First, we use the dispatch model to determine which cognitive service (LUIS or QnA) to use.
               const recognizerResult = await dispatchRecognizer.recognize(context);
 
@@ -61,7 +77,28 @@ class QnABot extends ActivityHandler {
               const intent = LuisRecognizer.topIntent(recognizerResult);
 
               // Next, we call the dispatcher with the top intent.
-              await this.dispatchToTopIntentAsync(context, intent, recognizerResult);
+              //await this.dispatchToTopIntentAsync(context, intent, recognizerResult);
+              switch (intent) {
+                case 'art_luis':
+                    console.log('sent to art luis')
+                    if(!userProfile.paintingID) {
+                      await context.sendActivity(`Please provide a Picture First!`);
+                    }
+                    else {
+                        await context.sendActivity(`Test paintingID take from latest QnA request: ${ userProfile.paintingID }.`);
+                        await this.ProcessArtLuis(context, recognizerResult.luisResult);
+                    }
+                    break;
+                case 'art_qna':
+                    console.log('sent to art QnA')
+                    userProfile.paintingID = context.activity.text;
+                    await this.processArtQnA(context);
+                    break;
+                default:
+                    console.log(`Dispatch unrecognized intent: ${ intent }.`);
+                    await context.sendActivity(`Dispatch unrecognized intent: ${ intent }.`);
+                    break;
+              }
             } 
             // By calling next() you ensure that the next BotHandler is run.
             await next();
@@ -69,6 +106,9 @@ class QnABot extends ActivityHandler {
 
         // If a new user is added to the conversation, send them a greeting message
         this.onMembersAdded(async (context, next) => {
+            console.log(this.conversationState)
+            console.log(this.userState)
+
             const membersAdded = context.activity.membersAdded;
             for (let cnt = 0; cnt < membersAdded.length; cnt++) {
                 if (membersAdded[cnt].id !== context.activity.recipient.id) {
@@ -83,8 +123,7 @@ class QnABot extends ActivityHandler {
        
     }
 
-     //參考範例加入
-
+    /*
     async dispatchToTopIntentAsync(context, intent, recognizerResult) {
         switch (intent) {
         case 'art_luis':
@@ -100,11 +139,12 @@ class QnABot extends ActivityHandler {
             await context.sendActivity(`Dispatch unrecognized intent: ${ intent }.`);
             break;
         }
-    }
+    }*/
 
-<<<<<<< HEAD
     async ProcessArtLuis(context, luisResult) {
         console.log('ProcessCovid19Luis');
+            console.log(this.conversationState)
+            console.log(this.userState)
 
         // Retrieve LUIS result for Process Automation.
         const result = luisResult.connectedServiceResult;
@@ -114,13 +154,15 @@ class QnABot extends ActivityHandler {
         await context.sendActivity(`Art_Luis intents detected:  ${ luisResult.intents.map((intentObj) => intentObj.intent).join('\n\n') }.`);
 
         if (luisResult.entities.length > 0) {
-            await context.sendActivity(`Ar_tLuis entities were found in the message: ${ luisResult.entities.map((entityObj) => entityObj.entity).join('\n\n') }.`);
+            await context.sendActivity(`Art_Luis entities were found in the message: ${ luisResult.entities.map((entityObj) => entityObj.entity).join('\n\n') }.`);
         }
     }
 
 
     async processArtQnA(context) {
         console.log('Art_QnA');
+            console.log(this.conversationState)
+            console.log(this.userState)
 
         const results = await this.qnaMaker.getAnswers(context);
         if (results.length > 0) {
@@ -129,9 +171,7 @@ class QnABot extends ActivityHandler {
             await context.sendActivity('Sorry, I am a dummy QnA system');
         }
     }
-    //參考範例加入
 
-=======
     /**
      * Saves incoming attachments to disk by calling `this.downloadAttachmentAndWrite()` and
      * responds to the user with information about the saved attachment or an error.
@@ -197,9 +237,18 @@ class QnABot extends ActivityHandler {
           localPath: localFileName
       };
   }
->>>>>>> aa2b0bcd0781c78b5f625dcbd9e515cbf2f1f366
-}
+  async run(context) {
+        await super.run(context);
 
+        // Save any state changes. The load happened during the execution of the Dialog.
+        await this.conversationState.saveChanges(context, false);
+        await this.userState.saveChanges(context, false);
+    }
+}
+/**
+     * Override the ActivityHandler.run() method to save state changes after the bot logic completes.
+     */
+    
 module.exports.QnABot = QnABot;
 
 // SIG // Begin signature block
