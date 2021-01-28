@@ -6,9 +6,6 @@
 // Import required packages
 const path = require('path');
 const restify = require('restify');
-const https = require('https');
-const createReadStream = require('fs').createReadStream
-const sleep = require('util').promisify(setTimeout);
 const ComputerVisionClient = require('@azure/cognitiveservices-computervision').ComputerVisionClient;
 const ApiKeyCredentials = require('@azure/ms-rest-js').ApiKeyCredentials;
 

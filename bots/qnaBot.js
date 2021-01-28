@@ -3,10 +3,12 @@
 
 const { ActivityHandler } = require('botbuilder');
 const { LuisRecognizer, QnAMaker } = require('botbuilder-ai');
+const { BlobServiceClient } = require('@azure/storage-blob');
 const path = require('path');
 const axios = require('axios');
 const fs = require('fs');
-const async = require('async');
+const uuid = require('uuid');
+
 
 
 const CONVERSATION_DATA_PROPERTY = 'conversationData';
@@ -152,9 +154,10 @@ class QnABot extends ActivityHandler {
      */
     async handleIncomingAttachment(turnContext) {
       // Prepare Promises to download each attachment and then execute each Promise.
-      const promises = turnContext.activity.attachments.map(this.downloadAttachmentAndWrite);
+      // const promises = turnContext.activity.attachments.map(this.downloadAttachmentAndWrite);
+      const promises = turnContext.activity.attachments.map(this.writeAttachmentToBlob);
       const successfulSaves = await Promise.all(promises);
-
+      
       // Replies back to the user with information about where the attachment is stored on the bot's server,
       // and what the name of the saved file is.
       async function replyForReceivedAttachments(localAttachmentData) {
@@ -168,11 +171,23 @@ class QnABot extends ActivityHandler {
           }
       }
 
+      async function replyForBlobAttachments(blobAttachmentData) {
+        if (blobAttachmentData) {
+            // Because the TurnContext was bound to this function, the bot can call
+            // `TurnContext.sendActivity` via `this.sendActivity`;
+            await this.sendActivity(`Attachment "${ blobAttachmentData.fileName }" ` +
+                `has been received and saved to "${ blobAttachmentData.urlPath }".`);
+        } else {
+            await this.sendActivity('Attachment was not successfully saved to blob.');
+        }
+      }
+
       // Prepare Promises to reply to the user with information about saved attachments.
       // The current TurnContext is bound so `replyForReceivedAttachments` can also send replies.
-      const replyPromises = successfulSaves.map(replyForReceivedAttachments.bind(turnContext));
+      // const replyPromises = successfulSaves.map(replyForReceivedAttachments.bind(turnContext));
+      const replyPromises = successfulSaves.map(replyForBlobAttachments.bind(turnContext));
 
-      this.computerVision();
+      this.computerVision(successfulSaves[0].urlPath);
 
       await Promise.all(replyPromises);
   }
@@ -215,9 +230,50 @@ class QnABot extends ActivityHandler {
       };
   }
 
-  async computerVision () {
+  async writeAttachmentToBlob(attachment) {
+    // Retrieve the attachment via the attachment's contentUrl.
+    const url = attachment.contentUrl;
+
+    // File name to save to the blob
+    const blobName = "photo" + uuid.v1() + ".jpg";
+
+    // Create the BlobServiceClient object which will be used to create a container client
+    const blobServiceClient = BlobServiceClient.fromConnectionString(process.env.AZURE_STORAGE_CONNECTION_STRING);
+    const containerName = 'photos';
+    // Get a reference to a container
+    const containerClient = blobServiceClient.getContainerClient(containerName);
+
     try {
-      const tagsURL = 'https://moderatorsampleimages.blob.core.windows.net/samples/sample16.png';
+        // arraybuffer is necessary for images
+        const response = await axios.get(url, { responseType: 'arraybuffer' });
+        // If user uploads JSON file, this prevents it from being written as "{"type":"Buffer","data":[123,13,10,32,32,34,108..."
+        if (response.headers['content-type'] === 'application/json') {
+            response.data = JSON.parse(response.data, (key, value) => {
+                return value && value.type === 'Buffer' ? Buffer.from(value.data) : value;
+            });
+        }
+
+        // Get a block blob client
+        const blockBlobClient = containerClient.getBlockBlobClient(blobName);
+
+        // Upload data to the blob
+        const uploadBlobResponse = await blockBlobClient.upload(response.data, response.data.length);
+        console.log("Blob was uploaded successfully. requestId: ", uploadBlobResponse.requestId);
+    } catch (error) {
+        console.error(error);
+        return undefined;
+    }
+    // If no error was thrown while writing to blob, return the attachment's name
+    // and url to the file for the response back to the user.
+    return {
+        fileName: blobName,
+        urlPath: "https://artbotstore.blob.core.windows.net/photos/" + blobName
+    };
+  }
+
+  async computerVision (url) {
+    try {
+      const tagsURL = url;
 
       function formatTags(tags) {
         return tags.map(tag => (`${tag.name} (${tag.confidence.toFixed(2)})`)).join(', ');
