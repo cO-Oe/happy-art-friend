@@ -82,7 +82,7 @@ class QnABot extends ActivityHandler {
             // If user input is an attachment
             if (context.activity.attachments && context.activity.attachments.length > 0) {
               // The user sent an attachment and the bot should handle the incoming attachment.
-              await this.handleIncomingAttachment(context);
+              await this.handleIncomingAttachment(context,userProfile);
             } 
             else {
 
@@ -101,13 +101,21 @@ class QnABot extends ActivityHandler {
                       await context.sendActivity(`Please provide a Picture First!`);
                     }
                     else {
-                        await context.sendActivity(`Test paintingID take from latest QnA request: ${ userProfile.paintingID }.`);
-                        await this.ProcessArtLuis(context, recognizerResult.luisResult);
+                        /*
+                        await context.sendActivity(`Useres paintingID is: ${ userProfile.paintingID }.`);
+                        await context.sendActivity(`Useres paintingTitle is: ${ userProfile.paintingTitle }.`);
+                        await context.sendActivity(`Useres paintingAuthor is: ${ userProfile.paintingAuthor }.`);
+                        await context.sendActivity(`Useres paintingYear is: ${ userProfile.paintingYear }.`);
+                        await context.sendActivity(`Useres paintingStyle is: ${ userProfile.paintingStyle }.`);
+                        */
+
+
+                        await this.ProcessArtLuis(context, recognizerResult.luisResult,userProfile);
                     }
                     break;
                 case 'art_qna':
                     console.log('sent to art QnA')
-                    userProfile.paintingID = context.activity.text;
+                    //userProfile.paintingID = context.activity.text;
                     await this.processArtQnA(context);
                     break;
                 default:
@@ -140,17 +148,35 @@ class QnABot extends ActivityHandler {
 
     
 
-    async ProcessArtLuis(context, luisResult) {
+    async ProcessArtLuis(context, luisResult,userProfile) {
         console.log('ProcessArtLuis');
          
 
         // Retrieve LUIS result for Process Automation.
         const result = luisResult.connectedServiceResult;
         const intent = result.topScoringIntent.intent;
+        //await context.sendActivity(`Art_Luis top intent ${ intent }.`);
 
-        await context.sendActivity(`Art_Luis top intent ${ intent }.`);
-        await context.sendActivity(`Art_Luis intents detected:  ${ luisResult.intents.map((intentObj) => intentObj.intent).join('\n\n') }.`);
-
+        switch (intent) {
+          case 'paintingAuthor':
+              await context.sendActivity(`Author of the painting is ${ userProfile.paintingAuthor }.`);
+              break;
+          case 'paintingDate':
+              await context.sendActivity(`Date of the painting is ${ userProfile.paintingYear }.`);
+              break;
+          case 'paintingName':
+              await context.sendActivity(`Name of the painting is ${ userProfile.paintingTitle }.`);
+              break;
+          case 'paintingStyle':
+              await context.sendActivity(`Style of the painting is ${ userProfile.paintingStyle }.`);
+              break;
+          case 'paintingTechnique':
+              await context.sendActivity(`Technique of the painting is ${ userProfile.paintingTechnique}.`);
+              break;
+          default:
+              await context.sendActivity(`Sorry, I didn't get that.`);
+              break;
+        }
         if (luisResult.entities.length > 0) {
             await context.sendActivity(`Art_Luis entities were found in the message: ${ luisResult.entities.map((entityObj) => entityObj.entity).join('\n\n') }.`);
         }
@@ -174,7 +200,7 @@ class QnABot extends ActivityHandler {
      * responds to the user with information about the saved attachment or an error.
      * @param {Object} turnContext
      */
-    async handleIncomingAttachment(turnContext) {
+    async handleIncomingAttachment(turnContext,userProfile) {
       // Prepare Promises to download each attachment and then execute each Promise.
       const promises = turnContext.activity.attachments.map(this.writeAttachmentToBlob);
       const successfulSaves = await Promise.all(promises);
@@ -259,6 +285,14 @@ class QnABot extends ActivityHandler {
         .fetchAll();
 
       const reply = { type: ActivityTypes.Message };
+
+
+      userProfile.paintingID = items[0].paintid;
+      userProfile.paintingTitle = items[0].title;
+      userProfile.paintingAuthor = items[0].author;
+      userProfile.paintingYear = items[0].year;
+      userProfile.paintingStyle = items[0].style;
+      userProfile.paintingTechnique = items[0].technique;
 
       reply.attachments = [this.getInternetAttachment(items[0].url)];
 
