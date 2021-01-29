@@ -363,6 +363,7 @@ class QnABot extends ActivityHandler {
     async handleIncomingURL(turnContext,userProfile) {
       let tags = await(this.computerVision(turnContext.activity.text));
 
+      let paintNum = 33;
       let maxTag = 0;
       let maxId = 1;
 
@@ -373,7 +374,7 @@ class QnABot extends ActivityHandler {
           queryString += " OR "; 
       }
 
-      for ( let i = 1; i < 33; i++ ) {
+      for ( let i = 1; i < paintNum; i++ ) {
         // query to return all items
         const querySpec = {
           query: queryString,
@@ -486,6 +487,7 @@ class QnABot extends ActivityHandler {
 
       let tags = await(this.computerVision(successfulSaves[0].urlPath));
 
+      let paintNum = 33;
       let maxTag = 0;
       let maxId = 1;
 
@@ -496,7 +498,7 @@ class QnABot extends ActivityHandler {
           queryString += " OR "; 
       }
 
-      for ( let i = 1; i < 33; i++ ) {
+      for ( let i = 1; i < paintNum; i++ ) {
         // query to return all items
         const querySpec = {
           query: queryString,
