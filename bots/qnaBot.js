@@ -287,6 +287,12 @@ class QnABot extends ActivityHandler {
       const reply = { type: ActivityTypes.Message };
 
 
+      let tagString = "Tags: "
+
+      for ( let i = 0; i < tags.length; i++ ) {
+        tagString += `"${tags[i].name}" ` 
+      }
+
       userProfile.paintingID = items[0].paintid;
       userProfile.paintingTitle = items[0].title;
       userProfile.paintingAuthor = items[0].author;
@@ -296,6 +302,8 @@ class QnABot extends ActivityHandler {
 
       reply.attachments = [this.getInternetAttachment(items[0].url)];
 
+
+      await turnContext.sendActivity(tagString);
       await turnContext.sendActivity(reply);
     }
 
@@ -373,7 +381,11 @@ class QnABot extends ActivityHandler {
         .fetchAll();
 
       const reply = { type: ActivityTypes.Message };
+      let tagString = "Tags: "
 
+      for ( let i = 0; i < tags.length; i++ ) {
+        tagString += `"${tags[i].name}" ` 
+      }
 
       userProfile.paintingID = items[0].paintid;
       userProfile.paintingTitle = items[0].title;
@@ -384,6 +396,7 @@ class QnABot extends ActivityHandler {
 
       reply.attachments = [this.getInternetAttachment(items[0].url)];
 
+      await turnContext.sendActivity(tagString)
       await turnContext.sendActivity(reply);
       await Promise.all(replyPromises);
   }
@@ -409,11 +422,11 @@ class QnABot extends ActivityHandler {
     const url = attachment.contentUrl;
 
     // File name to save to the blob
-    const blobName = "photo" + uuid.v1() + ".jpg";
+    const blobName = "paintings" + uuid.v1() + ".jpg";
 
     // Create the BlobServiceClient object which will be used to create a container client
     const blobServiceClient = BlobServiceClient.fromConnectionString(process.env.AZURE_STORAGE_CONNECTION_STRING);
-    const containerName = 'photos';
+    const containerName = 'paintings';
     // Get a reference to a container
     const containerClient = blobServiceClient.getContainerClient(containerName);
 
@@ -441,7 +454,7 @@ class QnABot extends ActivityHandler {
     // and url to the file for the response back to the user.
     return {
         fileName: blobName,
-        urlPath: "https://artbotstore.blob.core.windows.net/photos/" + blobName
+        urlPath: "https://artbotstore.blob.core.windows.net/paintings/" + blobName
     };
   }
 
