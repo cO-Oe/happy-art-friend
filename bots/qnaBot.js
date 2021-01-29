@@ -482,7 +482,7 @@ class QnABot extends ActivityHandler {
 
       // Prepare Promises to reply to the user with information about saved attachments.
       // The current TurnContext is bound so `replyForReceivedAttachments` can also send replies.
-      const replyPromises = successfulSaves.map(replyForBlobAttachments.bind(turnContext));
+      // const replyPromises = successfulSaves.map(replyForBlobAttachments.bind(turnContext));
 
       let tags = await(this.computerVision(successfulSaves[0].urlPath));
 
@@ -532,13 +532,10 @@ class QnABot extends ActivityHandler {
         .query(querySpec)
         .fetchAll();
 
-      const reply = { type: ActivityTypes.Message };
-      let tagString = "Tags: "
+      const replyPaint = { type: ActivityTypes.Message };
+      const replyPhoto = { type: ActivityTypes.Message };
 
-      for ( let i = 0; i < tags.length; i++ ) {
-        tagString += `"${tags[i].name}" ` 
-      }
-
+      
       userProfile.paintingID = items[0].paintid;
       userProfile.paintingTitle = items[0].title;
       userProfile.paintingAuthor = items[0].author;
@@ -546,11 +543,44 @@ class QnABot extends ActivityHandler {
       userProfile.paintingStyle = items[0].style;
       userProfile.paintingTechnique = items[0].technique;
 
-      reply.attachments = [this.getInternetAttachment(items[0].url)];
+      replyPaint.attachments = [this.getInternetAttachment(items[0].url)];
+      replyPhoto.attachments = [this.getInternetAttachment(turnContext.activity.text)];
 
-      await turnContext.sendActivity(tagString)
-      await turnContext.sendActivity(reply);
-      await Promise.all(replyPromises);
+      if(userProfile.language=="en"){
+
+        let tagString = "Hmm... I see these features in your photo: "
+        for ( let i = 0; i < tags.length; i++ ) {
+          tagString += `"${tags[i].name}"`
+          if (i != tags.length - 1)
+            tagString += ", ";  
+        }
+
+        await turnContext.sendActivity("I received your photo!")
+        await turnContext.sendActivity(tagString);
+        await turnContext.sendActivity("Aha! I got you your masterpiece!")
+        await turnContext.sendActivity(replyPaint);
+        await turnContext.sendActivity("You can ask me for more details such as author, date, and so on ...")
+      }
+      else{
+
+        let tagString = "Hmm... I see these characteristics in your photo: "
+        for ( let i = 0; i < tags.length; i++ ) {
+          tagString += `"${tags[i].name}"`
+          if (i != tags.length - 1)
+            tagString += ", ";  
+        }
+        tagString = await this.englishToOther(tagString,userProfile);
+
+        const reply1 = await this.englishToOther("I received your photo!",userProfile);
+        const reply2 = await this.englishToOther("Aha! I found your painting!",userProfile);
+        const reply3 = await this.englishToOther("You can ask me for more details such as author, date, and so on ...",userProfile);
+
+        await turnContext.sendActivity(reply1);
+        await turnContext.sendActivity(tagString);
+        await turnContext.sendActivity(reply2);
+        await turnContext.sendActivity(replyPaint);
+        await turnContext.sendActivity(reply3);
+      }
   }
 
 /**
