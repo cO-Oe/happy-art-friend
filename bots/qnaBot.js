@@ -10,6 +10,7 @@ const ApiKeyCredentials = require('@azure/ms-rest-js').ApiKeyCredentials;
 const CosmosClient = require("@azure/cosmos").CosmosClient;
 const axios = require('axios');
 const uuid = require('uuid');
+const https = require('https')
 
 const CONVERSATION_DATA_PROPERTY = 'conversationData';
 const USER_PROFILE_PROPERTY = 'userProfile';
@@ -226,9 +227,42 @@ class QnABot extends ActivityHandler {
             await context.sendActivity(reply);
           }
         } else {
-            const reply = await this.englishToOther("Sorry, I didn't find the answer in QnA system",transObj);
-            await context.sendActivity(reply);
+            const query = process.argv[2] || context.activity.text
+            const reply = await this.bingWebSearch(query)
+
+            await context.sendActivity(`Sorry, I don't know ${context.activity.text}, but I searched it for you!`)
+
+            for ( let i = 0; i < 3; i++ ) {
+              await context.sendActivity(reply.value[i].name + '\n' + reply.value[i].url)
+            }
         }
+    }
+
+    bingWebSearch(query) {
+      return new Promise((resolve, reject) => {
+        var req = https.get({
+          hostname: 'api.bing.microsoft.com',
+          path:     '/v7.0/search?q=' + encodeURIComponent(query),
+          headers:  { 'Ocp-Apim-Subscription-Key': process.env.SearchKey },
+        }, res => {
+          let body = ''
+          res.on('data', part => body += part)
+          res.on('end', () => {
+            try {
+              resolve(JSON.parse(body).webPages)
+            }
+            catch (err) {
+              reject(err.message)
+            }
+            // console.dir(JSON.parse(body).webPages, { colors: false, depth: null })
+          })
+        })
+        req.on('error', e => {
+          console.log('Error: ' + e.message)
+          reject(e.message)
+        })
+        req.end()
+      });
     }
 
     async otherToEnglish(text,transObj){
