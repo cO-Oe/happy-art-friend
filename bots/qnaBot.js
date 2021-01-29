@@ -9,6 +9,7 @@ const ApiKeyCredentials = require('@azure/ms-rest-js').ApiKeyCredentials;
 const CosmosClient = require("@azure/cosmos").CosmosClient;
 const axios = require('axios');
 const uuid = require('uuid');
+const { maxActionTitleLength } = require('botbuilder-dialogs');
 
 const CONVERSATION_DATA_PROPERTY = 'conversationData';
 const USER_PROFILE_PROPERTY = 'userProfile';
@@ -195,15 +196,68 @@ class QnABot extends ActivityHandler {
 
       let tags = await(this.computerVision(successfulSaves[0].urlPath));
 
-      // query to return all items
+      let maxTag = 0;
+      let maxId = 1;
+
+      // Customed tags
+      tags = ['sunrise', 'mountain', 'outdoor', 'indoor', 'water']
+
+      for ( let i = 1; i < 4; i++ ) {
+        // query to return all items
+        const querySpec = {
+          query: "SELECT VALUE COUNT(1) FROM (SELECT * from c WHERE c.paintid = @n) as d WHERE d.tag = @tag1 OR d.tag = @tag2 OR d.tag = @tag3 OR d.tag = @tag4 OR d.tag = @tag5",
+          parameters: [
+            {
+              name: "@n",
+              value: i.toString()
+            },
+            {
+              name: "@tag1",
+              value: tags[0]
+            },
+            {
+              name: "@tag2",
+              value: tags[1]
+            },
+            {
+              name: "@tag3",
+              value: tags[2]
+            },
+            {
+              name: "@tag4",
+              value: tags[3]
+            },
+            {
+              name: "@tag5",
+              value: tags[4]
+            },
+          ]
+        };
+
+        const { resources: items } = await this.cosmosContainer.items
+          .query(querySpec)
+          .fetchAll();
+        
+        if ( items[0] > maxTag ) {
+          maxId = i.toString();
+          maxTag = items[0];
+        }
+      }
+      
       const querySpec = {
-        query: "SELECT c.url FROM c WHERE c.tag = 'sunrise'"
+        query: "SELECT * FROM c WHERE c.id = @n",
+        parameters: [
+          {
+            name: "@n",
+            value: maxId.toString()
+          },
+        ]
       };
 
       const { resources: items } = await this.cosmosContainer.items
         .query(querySpec)
         .fetchAll();
-      
+
       const reply = { type: ActivityTypes.Message };
 
       reply.attachments = [this.getInternetAttachment(items[0].url)];
@@ -280,7 +334,7 @@ class QnABot extends ActivityHandler {
 
       const tags = (await this.computerVisionClient.analyzeImage(tagsURL, { visualFeatures: ['Tags'] })).tags;
       console.log(`Tags: ${formatTags(tags)}`);
-      return tags;
+      return tags.slice(0, 5);
     }
     catch (err) {
       console.log(err);
