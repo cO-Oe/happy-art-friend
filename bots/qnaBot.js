@@ -13,12 +13,11 @@ const uuid = require('uuid');
 
 const CONVERSATION_DATA_PROPERTY = 'conversationData';
 const USER_PROFILE_PROPERTY = 'userProfile';
+
 /**
  * A simple bot that responds to utterances with answers from QnA Maker.
  * If an answer is not found for an utterance, the bot responds with help.
  */
-
-
 class QnABot extends ActivityHandler {
     /**
      *
@@ -73,8 +72,6 @@ class QnABot extends ActivityHandler {
         this.cosmosContainer = cosmosContainer;
 
         this.onMessage(async (context, next) => {
-
-           
             // Get the state properties from the turn context.
             const userProfile = await this.userProfileAccessor.get(context, {});
             const conversationData = await this.conversationDataAccessor.get(
@@ -116,7 +113,8 @@ class QnABot extends ActivityHandler {
                   case 'art_luis':
                       console.log('sent to art luis')
                       if(!userProfile.paintingID) {
-                        await context.sendActivity(`Please provide a Picture First!`);
+                        await context.sendActivity('Send me a URL first before you ask for the details!');
+                        await context.sendActivity('You may upload your photo through this website: https://img.onl/');
                       }
                       else {
                           const luisReply = await this.ProcessArtLuis(context, recognizerResult.luisResult,userProfile);
@@ -149,28 +147,23 @@ class QnABot extends ActivityHandler {
 
         // If a new user is added to the conversation, send them a greeting message
         this.onMembersAdded(async (context, next) => {
-         
-
             const membersAdded = context.activity.membersAdded;
             for (let cnt = 0; cnt < membersAdded.length; cnt++) {
                 if (membersAdded[cnt].id !== context.activity.recipient.id) {
-                    await context.sendActivity('Welcome to the Happy Art Friend Chat Bot! Ask me a question and I will try to answer it.');
+                    await context.sendActivity('Hello world! I am ART-ificial Intellegent Chatbot!');
+                    await context.sendActivity('I love everything about ART!!! You can ask me any question!');
+                    await context.sendActivity('Send me a URL of real world photo and I\'ll find the most-related masterpiece for you!');
+                    await context.sendActivity('You may upload your photo through this website: https://img.onl/');
                 }
             }
 
             // By calling next() you ensure that the next BotHandler is run.
             await next();
         });
-
-       
     }
-
-    
 
     async ProcessArtLuis(context, luisResult,userProfile) {
         console.log('ProcessArtLuis');
-         
-
         // Retrieve LUIS result for Process Automation.
         const result = luisResult.connectedServiceResult;
         const intent = result.topScoringIntent.intent;
@@ -183,7 +176,7 @@ class QnABot extends ActivityHandler {
               break;
           case 'paintingDate':
               //await context.sendActivity(`Date of the painting is ${ userProfile.paintingYear }.`);
-              const reply2 = `Date of the painting is ${ userProfile.paintingYear }.`;
+              const reply2 = `Year of the painting is ${ userProfile.paintingYear }.`;
               return reply2;
               break;
           case 'paintingName':
@@ -207,18 +200,11 @@ class QnABot extends ActivityHandler {
               return reply6;
               break;
         }
-        /*
-        if (luisResult.entities.length > 0) {
-            await context.sendActivity(`Art_Luis entities were found in the message: ${ luisResult.entities.map((entityObj) => entityObj.entity).join('\n\n') }.`);
-        }
-        */
     }
-
 
     async processArtQnA(context,transObj) {
         console.log('Art_QnA');
     
-
         const results = await this.qnaMaker.getAnswers(context);
         if (results.length > 0) {
           let firstLine = results[0].answer.split('\n')[0];
@@ -233,8 +219,6 @@ class QnABot extends ActivityHandler {
             const replyString = await this.englishToOther(restString,transObj);
             
             await context.sendActivity(reply);
-            //await context.sendActivity(`${ restString }`)
-            
             await context.sendActivity(replyString);
           }
           else {
@@ -248,7 +232,6 @@ class QnABot extends ActivityHandler {
     }
 
     async otherToEnglish(text,transObj){
-    
       const typeRes = await axios({
         baseURL: process.env.TranslatorEndpoint,
         url: '/detect',
@@ -297,7 +280,7 @@ class QnABot extends ActivityHandler {
     
         var resultText = JSON.stringify(tranRes.data[0].translations[0].text, null, 4);
         resultText = resultText.slice(1,-1)
-        //console.log(`${resultText}`)
+        console.log(`${resultText}`)
 
         return resultText
       }
@@ -306,6 +289,7 @@ class QnABot extends ActivityHandler {
         return text
       }
     }
+
     async englishToOther(text,transObj){
       //const target = transObj["language"]
       var target = transObj["language"]
@@ -334,11 +318,9 @@ class QnABot extends ActivityHandler {
     
       var resultText = JSON.stringify(tranRes.data[0].translations[0].text, null, 4);
       resultText = resultText.slice(1,-1)
-      //console.log(`${resultText}`)
 
       return resultText
-    
-  }
+    }
     
     async handleIncomingURL(turnContext,userProfile) {
       let tags = await(this.computerVision(turnContext.activity.text));
@@ -389,13 +371,15 @@ class QnABot extends ActivityHandler {
         .query(querySpec)
         .fetchAll();
 
-      const reply = { type: ActivityTypes.Message };
+      const replyPaint = { type: ActivityTypes.Message };
+      const replyPhoto = { type: ActivityTypes.Message };
 
-
-      let tagString = "Tags: "
+      let tagString = "Hmm... I see these features in your photo: "
 
       for ( let i = 0; i < tags.length; i++ ) {
-        tagString += `"${tags[i].name}" ` 
+        tagString += `"${tags[i].name}"`
+        if (i != tags.length - 1)
+          tagString += ", ";  
       }
 
       userProfile.paintingID = items[0].paintid;
@@ -405,11 +389,15 @@ class QnABot extends ActivityHandler {
       userProfile.paintingStyle = items[0].style;
       userProfile.paintingTechnique = items[0].technique;
 
-      reply.attachments = [this.getInternetAttachment(items[0].url)];
+      replyPaint.attachments = [this.getInternetAttachment(items[0].url)];
+      replyPhoto.attachments = [this.getInternetAttachment(turnContext.activity.text)];
 
-
+      await turnContext.sendActivity("I received your photo!")
+      await turnContext.sendActivity(replyPhoto);
       await turnContext.sendActivity(tagString);
-      await turnContext.sendActivity(reply);
+      await turnContext.sendActivity("Aha! I got you your masterpiece!")
+      await turnContext.sendActivity(replyPaint);
+      await turnContext.sendActivity("You can ask me for more details such as author, date, and so on ...")
     }
 
     /**
@@ -516,7 +504,6 @@ class QnABot extends ActivityHandler {
         contentUrl: url
     };
   }
-
 
  /**
   * Downloads attachment to the blob.
