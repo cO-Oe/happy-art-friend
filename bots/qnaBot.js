@@ -74,6 +74,25 @@ class QnABot extends ActivityHandler {
 
         this.onMessage(async (context, next) => {
 
+            //test line attachment
+            /*
+            await context.sendActivity(`Channed id is : ${ context.activity.channelId }`);
+            string replaymessage = string.Empty;
+            var Channeldata = ((Newtonsoft.Json.Linq.JContainer)((Microsoft.Bot.Builder.DelegatingTurnContext<Microsoft.Bot.Schema.IMessageActivity>)turnContext).Activity.ChannelData).Root;
+            var Message = JsonSerializer.Deserialize<Model.Line.LineChannel>(Channeldata.ToString());
+            switch (Message.message.type){
+              case "image":
+                  await context.sendActivity(`I got a picture`);
+                  break;
+              case "text":
+                  await context.sendActivity(`I got a test message`);
+                  break;
+              default:
+                  await context.sendActivity(`I don't do the message type. Please input the images`);
+                  break;
+            }
+            */
+            //test line attachment
             // Get the state properties from the turn context.
             const userProfile = await this.userProfileAccessor.get(context, {});
             const conversationData = await this.conversationDataAccessor.get(
@@ -101,14 +120,6 @@ class QnABot extends ActivityHandler {
                       await context.sendActivity(`Please provide a Picture First!`);
                     }
                     else {
-                        /*
-                        await context.sendActivity(`Useres paintingID is: ${ userProfile.paintingID }.`);
-                        await context.sendActivity(`Useres paintingTitle is: ${ userProfile.paintingTitle }.`);
-                        await context.sendActivity(`Useres paintingAuthor is: ${ userProfile.paintingAuthor }.`);
-                        await context.sendActivity(`Useres paintingYear is: ${ userProfile.paintingYear }.`);
-                        await context.sendActivity(`Useres paintingStyle is: ${ userProfile.paintingStyle }.`);
-                        */
-
 
                         await this.ProcessArtLuis(context, recognizerResult.luisResult,userProfile);
                     }
