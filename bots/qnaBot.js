@@ -3,13 +3,13 @@
 
 const { ActivityHandler, ActivityTypes, teamsGetChannelId, ConsoleTranscriptLogger } = require('botbuilder');
 const { LuisRecognizer, QnAMaker } = require('botbuilder-ai');
+const { maxActionTitleLength } = require('botbuilder-dialogs');
 const { BlobServiceClient } = require('@azure/storage-blob');
 const ComputerVisionClient = require('@azure/cognitiveservices-computervision').ComputerVisionClient;
 const ApiKeyCredentials = require('@azure/ms-rest-js').ApiKeyCredentials;
 const CosmosClient = require("@azure/cosmos").CosmosClient;
 const axios = require('axios');
 const uuid = require('uuid');
-const { maxActionTitleLength } = require('botbuilder-dialogs');
 
 const CONVERSATION_DATA_PROPERTY = 'conversationData';
 const USER_PROFILE_PROPERTY = 'userProfile';
@@ -104,36 +104,51 @@ class QnABot extends ActivityHandler {
               await this.handleIncomingAttachment(context,userProfile);
             } 
             else {
-
-              // First, we use the dispatch model to determine which cognitive service (LUIS or QnA) to use.
-              const recognizerResult = await dispatchRecognizer.recognize(context);
-
-              // Top intent tell us which cognitive service to use.
-              const intent = LuisRecognizer.topIntent(recognizerResult);
-
-              // Next, we call the dispatcher with the top intent.
-              //await this.dispatchToTopIntentAsync(context, intent, recognizerResult);
-              switch (intent) {
-                case 'art_luis':
-                    console.log('sent to art luis')
-                    if(!userProfile.paintingID) {
-                      await context.sendActivity(`Please provide a Picture First!`);
-                    }
-                    else {
-
-                        await this.ProcessArtLuis(context, recognizerResult.luisResult,userProfile);
-                    }
-                    break;
-                case 'art_qna':
-                    console.log('sent to art QnA')
-                    //userProfile.paintingID = context.activity.text;
-                    await this.processArtQnA(context);
-                    break;
-                default:
-                    console.log(`Dispatch unrecognized intent: ${ intent }.`);
-                    await context.sendActivity(`Dispatch unrecognized intent: ${ intent }.`);
-                    break;
+              function validURL(str) {
+                var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
+                  '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
+                  '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
+                  '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
+                  '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
+                  '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+                return !!pattern.test(str);
               }
+
+              if (validURL(context.activity.text)) {
+                await this.handleIncomingURL(context,userProfile);
+              }
+              else {
+                // First, we use the dispatch model to determine which cognitive service (LUIS or QnA) to use.
+                const recognizerResult = await dispatchRecognizer.recognize(context);
+
+                // Top intent tell us which cognitive service to use.
+                const intent = LuisRecognizer.topIntent(recognizerResult);
+
+                // Next, we call the dispatcher with the top intent.
+                //await this.dispatchToTopIntentAsync(context, intent, recognizerResult);
+                switch (intent) {
+                  case 'art_luis':
+                      console.log('sent to art luis')
+                      if(!userProfile.paintingID) {
+                        await context.sendActivity(`Please provide a Picture First!`);
+                      }
+                      else {
+
+                          await this.ProcessArtLuis(context, recognizerResult.luisResult,userProfile);
+                      }
+                      break;
+                  case 'art_qna':
+                      console.log('sent to art QnA')
+                      //userProfile.paintingID = context.activity.text;
+                      await this.processArtQnA(context);
+                      break;
+                  default:
+                      console.log(`Dispatch unrecognized intent: ${ intent }.`);
+                      await context.sendActivity(`Dispatch unrecognized intent: ${ intent }.`);
+                      break;
+                }
+              }
+              
             } 
             // By calling next() you ensure that the next BotHandler is run.
             await next();
@@ -200,10 +215,88 @@ class QnABot extends ActivityHandler {
 
         const results = await this.qnaMaker.getAnswers(context);
         if (results.length > 0) {
+          let firstLine = results[0].answer.split('\n')[0];
+
+          if (firstLine.substring(0, 8) === "![Image]") {
+            let restString = results[0].answer.substring(results[0].answer.indexOf('\n')+1)
+
+            const reply = { type: ActivityTypes.Message };
+
+            reply.attachments = [this.getInternetAttachment(firstLine.substring(9, firstLine.indexOf(')')))];
+            
+            await context.sendActivity(reply);
+            await context.sendActivity(`${ restString }`)
+          }
+          else {
             await context.sendActivity(`${ results[0].answer }`);
+          }
         } else {
             await context.sendActivity('Sorry, I am a dummy QnA system');
         }
+    }
+
+    async handleIncomingURL(turnContext,userProfile) {
+      let tags = await(this.computerVision(turnContext.activity.text));
+
+      let maxTag = 0;
+      let maxId = 1;
+
+      let queryString = "SELECT VALUE COUNT(1) FROM (SELECT * from c WHERE c.paintid = @n) as d WHERE ";
+      for ( let i = 0; i < tags.length; i++ ) {
+        queryString += `d.tag = \"${tags[i].name}\"`;
+        if ( i != tags.length - 1 )
+          queryString += " OR "; 
+      }
+
+      for ( let i = 1; i < 4; i++ ) {
+        // query to return all items
+        const querySpec = {
+          query: queryString,
+          parameters: [
+            {
+              name: "@n",
+              value: i.toString()
+            }
+          ]
+        };
+
+        const { resources: items } = await this.cosmosContainer.items
+          .query(querySpec)
+          .fetchAll();
+        
+        if ( items[0] > maxTag ) {
+          maxId = i.toString();
+          maxTag = items[0];
+        }
+      }
+      
+      const querySpec = {
+        query: "SELECT * FROM c WHERE c.id = @n",
+        parameters: [
+          {
+            name: "@n",
+            value: maxId.toString()
+          },
+        ]
+      };
+
+      const { resources: items } = await this.cosmosContainer.items
+        .query(querySpec)
+        .fetchAll();
+
+      const reply = { type: ActivityTypes.Message };
+
+
+      userProfile.paintingID = items[0].paintid;
+      userProfile.paintingTitle = items[0].title;
+      userProfile.paintingAuthor = items[0].author;
+      userProfile.paintingYear = items[0].year;
+      userProfile.paintingStyle = items[0].style;
+      userProfile.paintingTechnique = items[0].technique;
+
+      reply.attachments = [this.getInternetAttachment(items[0].url)];
+
+      await turnContext.sendActivity(reply);
     }
 
     /**
@@ -301,7 +394,6 @@ class QnABot extends ActivityHandler {
   getInternetAttachment(url) {
     // NOTE: The contentUrl must be HTTPS.
     return {
-        name: 'response.png',
         contentType: 'image/jpg',
         contentUrl: url
     };
