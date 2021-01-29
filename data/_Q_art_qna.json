@@ -291,7 +291,7 @@
     },
     {
       "id": 19,
-      "answer": "![Image](https://media.timeout.com/images/105222683/1372/772/image.jpg)\n\n**Claude Monet, Impression, Sunrise, 1874**\n\nThe defining figure of Impressionism, Monet virtually gave the movement its name with his painting of daybreak over the port of Le Havre, the artist’s hometown. Monet was known for his studies of light and color, and this canvas offers a splendid example with its flurry of brush strokes depicting the sun as an orange orb breaking through a hazy blue melding of water and sky.",
+      "answer": "![Image](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/1200px-Monet_-_Impression%2C_Sunrise.jpg)\n\n**Claude Monet, Impression, Sunrise, 1874**\n\nThe defining figure of Impressionism, Monet virtually gave the movement its name with his painting of daybreak over the port of Le Havre, the artist’s hometown. Monet was known for his studies of light and color, and this canvas offers a splendid example with its flurry of brush strokes depicting the sun as an orange orb breaking through a hazy blue melding of water and sky.",
       "source": "famous art piece.docx",
       "questions": [
         "Impression, Sunrise",
@@ -304,7 +304,7 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:08:51.343+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
@@ -773,10 +773,10 @@
     },
     {
       "id": 49,
-      "answer": "**22. Phad Painting:**\n\nPhad painting or Phad is a unique style of religious scroll painting and [folk painting](https://en.wikipedia.org/wiki/Folk_painting) practiced in the state of Rajasthan.\n\nThis painting is traditionally done on a long piece of cloth or canvas which is known as phad .\n\nThe portrait of the folk deities of Rajasthan is illustrated on the phads.\n\nThe Bhopas carried the painted phads along with them.\n\nThey used and worshipped these as temples of the folk deities.\n\nThe phads of Pabuji and Devnarayan were normally about 15 and 30 feet long.\n\nThe phads were painted using vegetable colors .",
+      "answer": "**Phad Painting:**\n\nPhad painting or Phad is a unique style of religious scroll painting and [folk painting](https://en.wikipedia.org/wiki/Folk_painting) practiced in the state of Rajasthan.\n\nThis painting is traditionally done on a long piece of cloth or canvas which is known as phad .\n\nThe portrait of the folk deities of Rajasthan is illustrated on the phads.\n\nThe Bhopas carried the painted phads along with them.\n\nThey used and worshipped these as temples of the folk deities.\n\nThe phads of Pabuji and Devnarayan were normally about 15 and 30 feet long.\n\nThe phads were painted using vegetable colors .",
       "source": "49 Types Of Painting Styles And Techniques.docx",
       "questions": [
-        "22. Phad Painting:"
+        "Phad Painting:"
       ],
       "metadata": [],
       "alternateQuestionClusters": [],
@@ -784,7 +784,7 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T08:58:12.872+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:13:19.114+00:00",
       "isDocumentText": false
     },
     {
@@ -821,10 +821,10 @@
     },
     {
       "id": 52,
-      "answer": "**25. Gond Painting:**\n\n[Gond painting](https://www.utsavpedia.com/motifs-embroideries/gond-painting/)\n\nis basically originated from Madhya Pradesh.\n\nIt’s a form of folk and tribal art that is practiced by the largest tribe in India.\n\nThe very striking facet of Gond paintings has to be the use of bright vivid colors such as white, red, blue and yellow.\n\nThe paints are usually derived naturally from objects such as charcoal, colored soil, plant sap, leaves, and even cow dung.\n\nThe colors were obtained from the various sand-like Yellow from Chui mitti which is a type of local sand, brown from Gheru mitti which is another type of sand.\n\nOther colors were obtained from different sources like green from leaves and red from Hibiscus flower.\n\nThey used painting as a way to record their history.",
+      "answer": "[Gond painting](https://www.utsavpedia.com/motifs-embroideries/gond-painting/)\n\nis basically originated from Madhya Pradesh.\n\nIt’s a form of folk and tribal art that is practiced by the largest tribe in India.\n\nThe very striking facet of Gond paintings has to be the use of bright vivid colors such as white, red, blue and yellow.\n\nThe paints are usually derived naturally from objects such as charcoal, colored soil, plant sap, leaves, and even cow dung.\n\nThe colors were obtained from the various sand-like Yellow from Chui mitti which is a type of local sand, brown from Gheru mitti which is another type of sand.\n\nOther colors were obtained from different sources like green from leaves and red from Hibiscus flower.\n\nThey used painting as a way to record their history.",
       "source": "49 Types Of Painting Styles And Techniques.docx",
       "questions": [
-        "25. Gond Painting:"
+        "Gond Painting:"
       ],
       "metadata": [],
       "alternateQuestionClusters": [],
@@ -832,7 +832,7 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T08:58:12.872+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:13:19.114+00:00",
       "isDocumentText": false
     },
     {
@@ -1237,7 +1237,7 @@
     },
     {
       "id": 78,
-      "answer": "**Pablo Picasso (1881-1973)**\n\nPicasso is to Art History a giant earthquake with eternal aftermaths. With the possible exception of Michelangelo (who focused his greatest efforts in sculpture and architecture), no other artist had such ambitions at the time of placing his oeuvre in the history of art. Picasso created the avant-garde. Picasso destroyed the avant-garde. He looked back at the masters and surpassed them all. He faced the whole history of art and single-handedly redefined the tortuous relationship between work and spectator",
+      "answer": "![image](https://www.curzoncinemas.com/image/?url=http://curzon.filmdb.peachcinemas.com/FilmImages/36/3/72316/Young-PicassoSmall.jpg)\n\n**Pablo Picasso (1881-1973)**\n\nPicasso is to Art History a giant earthquake with eternal aftermaths. With the possible exception of Michelangelo (who focused his greatest efforts in sculpture and architecture), no other artist had such ambitions at the time of placing his oeuvre in the history of art. Picasso created the avant-garde. Picasso destroyed the avant-garde. He looked back at the masters and surpassed them all. He faced the whole history of art and single-handedly redefined the tortuous relationship between work and spectator",
       "source": "artist.docx",
       "questions": [
         "Pablo Picasso (1881-1973)"
@@ -1248,12 +1248,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T08:58:12.872+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:23:41.77+00:00",
       "isDocumentText": false
     },
     {
       "id": 79,
-      "answer": "**Giotto di Bondone (1267-1337)**\n\nIt has been said that Giotto was the first real painter, like Adam was the first man. We agree with the first part. Giotto continued the Byzantine style of Cimabue and other predecessors, but he earned the right to be included in gold letters in the history of painting when he added a quality unknown to date: emotion",
+      "answer": "![image](https://artscolumbia.org/wp-content/uploads/2018/08/giotti.png)\n\n**Giotto di Bondone (1267-1337)**\n\nIt has been said that Giotto was the first real painter, like Adam was the first man. We agree with the first part. Giotto continued the Byzantine style of Cimabue and other predecessors, but he earned the right to be included in gold letters in the history of painting when he added a quality unknown to date: emotion",
       "source": "artist.docx",
       "questions": [
         "Giotto di Bondone (1267-1337)"
@@ -1264,12 +1264,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T08:58:12.872+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 80,
-      "answer": "**Leonardo da Vinci (1452-1519)**\n\nFor better or for worse, Leonardo will be forever known as the author of the most famous painting of all time, the \"Gioconda\" or \"Mona Lisa\". But he is more, much more. His humanist, almost scientific gaze, entered the art of the quattrocento and revoluted it with his sfumetto that nobody was ever able to imitate",
+      "answer": "![image](https://www.biography.com/.image/t_share/MTY2MzU4MjUzMDA4MDcwMzE4/portrait-of-leonardo-da-vinci-1452-1519-getty.jpg)\n\n**Leonardo da Vinci (1452-1519)**\n\nFor better or for worse, Leonardo will be forever known as the author of the most famous painting of all time, the \"Gioconda\" or \"Mona Lisa\". But he is more, much more. His humanist, almost scientific gaze, entered the art of the quattrocento and revoluted it with his sfumetto that nobody was ever able to imitate",
       "source": "artist.docx",
       "questions": [
         "Leonardo da Vinci (1452-1519)"
@@ -1280,12 +1280,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T08:58:12.872+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 81,
-      "answer": "**Paul Cézanne (1839-1906)**\n\n\"Cezanne is the father of us all.\" This famous quote has been attributed to both Picasso and Matisse, and certainly it does not matter who actually said it, because in either case would be appropriate. While he exhibited with the Impressionist painters, Cézanne left behind the whole group and developed a style of painting never seen so far, which opened the door for the arrival of Cubism and the rest of the vanguards of the twentieth century",
+      "answer": "![image](https://media.newyorker.com/photos/5abd7107e4b526446411b381/1:1/w_2064,h_2064,c_limit/180409_r31842.jpg)\n\n**Paul Cézanne (1839-1906)**\n\n\"Cezanne is the father of us all.\" This famous quote has been attributed to both Picasso and Matisse, and certainly it does not matter who actually said it, because in either case would be appropriate. While he exhibited with the Impressionist painters, Cézanne left behind the whole group and developed a style of painting never seen so far, which opened the door for the arrival of Cubism and the rest of the vanguards of the twentieth century",
       "source": "artist.docx",
       "questions": [
         "Paul Cézanne"
@@ -1296,12 +1296,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 82,
-      "answer": "**Rembrandt van Rijn (1606-1669)**\n\nThe fascinating use of the light and shadows in Rembrandt's works seem to reflect his own life, moving from fame to oblivion. Rembrandt is the great master of Dutch painting, and, along with Velázquez, the main figure of 17th century European Painting. He is, in addition, the great master of the self-portrait of all time, an artist who had never show mercy at the time of depicting himself",
+      "answer": "![image](https://muurmeesters.nl/wp-content/uploads/2018/05/%C2%A9-MUURMEESTERS-Rijn-Rembrandt-van-zelfportret-als-de-apostel-paulus.jpg)\n\n**Rembrandt van Rijn (1606-1669)**\n\nThe fascinating use of the light and shadows in Rembrandt's works seem to reflect his own life, moving from fame to oblivion. Rembrandt is the great master of Dutch painting, and, along with Velázquez, the main figure of 17th century European Painting. He is, in addition, the great master of the self-portrait of all time, an artist who had never show mercy at the time of depicting himself",
       "source": "artist.docx",
       "questions": [
         "Rembrandt van Rijn"
@@ -1312,12 +1312,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 83,
-      "answer": "**Diego Velázquez (1599-1660)**\n\nAlong with Rembrandt, one of the summits of Baroque painting. But unlike the Dutch artist, the Sevillan painter spent most of his life in the comfortable but rigid courtesan society. Nevertheless, Velázquez was an innovator, a \"painter of atmospheres\" two centuries before Turner and the Impressionists, which it is shown in his colossal 'royal paintings' (\"Meninas\", \"The Forge of Vulcan\"), but also in his small and memorable sketches of the Villa Medici.",
+      "answer": "![image](https://www.biografiasyvidas.com/monografia/velazquez/fotos/velazquez_auto_1645.jpg)\n\n**Diego Velázquez (1599-1660)**\n\nAlong with Rembrandt, one of the summits of Baroque painting. But unlike the Dutch artist, the Sevillan painter spent most of his life in the comfortable but rigid courtesan society. Nevertheless, Velázquez was an innovator, a \"painter of atmospheres\" two centuries before Turner and the Impressionists, which it is shown in his colossal 'royal paintings' (\"Meninas\", \"The Forge of Vulcan\"), but also in his small and memorable sketches of the Villa Medici.",
       "source": "artist.docx",
       "questions": [
         "Diego Velázquez"
@@ -1328,12 +1328,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 84,
-      "answer": "**Wassily Kandinsky (1866-1944)**\n\nAlthough the title of \"father of abstraction\" has been assigned to several artists, from Picasso to Turner, few painters could claim it with as much justice as Kandinsky. Many artists have succeeded in painting emotion, but very few have changed the way we understand art. Wassily Kandinsky is one of them.",
+      "answer": "![image](https://i.pinimg.com/originals/21/de/4c/21de4cc14531b99fbdc9adb1603f900b.jpg)\n\n**Wassily Kandinsky (1866-1944)**\n\nAlthough the title of \"father of abstraction\" has been assigned to several artists, from Picasso to Turner, few painters could claim it with as much justice as Kandinsky. Many artists have succeeded in painting emotion, but very few have changed the way we understand art. Wassily Kandinsky is one of them.",
       "source": "artist.docx",
       "questions": [
         "Wassily Kandinsky"
@@ -1344,12 +1344,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 85,
-      "answer": "**Claude Monet (1840-1926)**\n\nThe importance of Monet in the history of art is sometimes \"underrated\", as Art lovers tend to see only the overwhelming beauty that emanates from his canvases, ignoring the complex technique and composition of the work (a \"defect\" somehow caused by Monet himself, when he declared that \"I do not understand why everyone discusses my art and pretends to understand, as if it were necessary to understand, when it is simply necessary to love\"). However, Monet's experiments, including studies on the changes in an object caused by daylight at different times of the day; and the almost abstract quality of his \"water lilies\", are clearly a prologue to the art of the twentieth century.",
+      "answer": "![image](https://i.pinimg.com/originals/38/db/4e/38db4e68e7458c9c2bc7118a7f4c3922.jpg)\n\n**Claude Monet (1840-1926)**\n\nThe importance of Monet in the history of art is sometimes \"underrated\", as Art lovers tend to see only the overwhelming beauty that emanates from his canvases, ignoring the complex technique and composition of the work (a \"defect\" somehow caused by Monet himself, when he declared that \"I do not understand why everyone discusses my art and pretends to understand, as if it were necessary to understand, when it is simply necessary to love\"). However, Monet's experiments, including studies on the changes in an object caused by daylight at different times of the day; and the almost abstract quality of his \"water lilies\", are clearly a prologue to the art of the twentieth century.",
       "source": "artist.docx",
       "questions": [
         "Claude Monet"
@@ -1360,12 +1360,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 86,
-      "answer": "**Caravaggio (1571-1610)**\n\nThe tough and violent Caravaggio is considered the father of Baroque painting, with his spectacular use of lights and shadows. Caravaggio’s chiaroscuro became so famous that many painters started to copy his paintings, creating the 'Caravaggisti' style.",
+      "answer": "![image](https://www.artble.com/imgs/a/5/d/320796/simon_vouet.jpg)\n\n**Caravaggio (1571-1610)**\n\nThe tough and violent Caravaggio is considered the father of Baroque painting, with his spectacular use of lights and shadows. Caravaggio’s chiaroscuro became so famous that many painters started to copy his paintings, creating the 'Caravaggisti' style.",
       "source": "artist.docx",
       "questions": [
         "Caravaggio"
@@ -1376,12 +1376,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 87,
-      "answer": "**Joseph Mallord William Turner (1775-1851)**\n\nTurner is the best landscape painter of Western painting. Whereas he had been at his beginnings an academic painter, Turner was slowly but unstoppably evolving towards a free, atmospheric style, sometimes even outlining the abstraction, which was misunderstood and rejected by the same critics who had admired him for decades",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/1/19/Joseph_Mallord_William_Turner_Self_Portrait_1799.jpg)\n\n**Joseph Mallord William Turner (1775-1851)**\n\nTurner is the best landscape painter of Western painting. Whereas he had been at his beginnings an academic painter, Turner was slowly but unstoppably evolving towards a free, atmospheric style, sometimes even outlining the abstraction, which was misunderstood and rejected by the same critics who had admired him for decades",
       "source": "artist.docx",
       "questions": [
         "Joseph Mallord William Turner"
@@ -1392,12 +1392,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 88,
-      "answer": "**Jan van Eyck (1390-1441)**\n\nVan Eyck is the colossal pillar on which rests the whole Flemish paintings from later centuries, the genius of accuracy, thoroughness and perspective, well above any other artist of his time, either Flemish or Italian.",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Portrait_of_a_Man_in_a_Turban_%28Jan_van_Eyck%29_with_frame.jpg/1200px-Portrait_of_a_Man_in_a_Turban_%28Jan_van_Eyck%29_with_frame.jpg)\n\n**Jan van Eyck (1390-1441)**\n\nVan Eyck is the colossal pillar on which rests the whole Flemish paintings from later centuries, the genius of accuracy, thoroughness and perspective, well above any other artist of his time, either Flemish or Italian.",
       "source": "artist.docx",
       "questions": [
         "Jan van Eyck"
@@ -1408,12 +1408,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 89,
-      "answer": "**Albrecht Dürer (1471-1528)**\n\nThe real Leonardo da Vinci of Northern European Rennaisance was Albrecht Dürer, a restless and innovative genious, master of drawing and color. He is one of the first artists to represent nature without artifice, either in his painted landscapes or in his drawings of plants and animals",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/1/1d/Self-portrait_by_Albrecht_D%C3%BCrer.jpg)\n\n**Albrecht Dürer (1471-1528)**\n\nThe real Leonardo da Vinci of Northern European Rennaisance was Albrecht Dürer, a restless and innovative genious, master of drawing and color. He is one of the first artists to represent nature without artifice, either in his painted landscapes or in his drawings of plants and animals",
       "source": "artist.docx",
       "questions": [
         "Albrecht Dürer"
@@ -1424,12 +1424,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 90,
-      "answer": "**Jackson Pollock (1912-1956)**\n\nThe major figure of American Abstract Expressionism, Pollock created his best works, his famous drips, between 1947 and 1950. After those fascinating years, comparable to Picasso’s blue period or van Gogh’s final months in Auvers, he abandoned the drip, and his latest works are often bold, unexciting works.",
+      "answer": "![image](https://i1.wp.com/auralcrave.com/wp-content/uploads/2018/11/cropped-pollock1.jpg?fit=915%2C514&ssl=1)\n\n**Jackson Pollock (1912-1956)**\n\nThe major figure of American Abstract Expressionism, Pollock created his best works, his famous drips, between 1947 and 1950. After those fascinating years, comparable to Picasso’s blue period or van Gogh’s final months in Auvers, he abandoned the drip, and his latest works are often bold, unexciting works.",
       "source": "artist.docx",
       "questions": [
         "Jackson Pollock"
@@ -1440,12 +1440,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 91,
-      "answer": "**Michelangelo Buonarroti (1475-1564)**\n\nSome readers will be quite surprised to see the man who is, along with Picasso, the greatest artistic genius of all time, out of the \"top ten\" of this list, but the fact is that even Michelangelo defined himself as \"sculptor\", and even his painted masterpiece (the frescoes in the Sistine Chapel) are often defined as 'painted sculptures'. Nevertheless, that unforgettable masterpiece is enough to guarantee him a place of honor in the history of painting",
+      "answer": "![image](https://cdn.britannica.com/46/75046-050-0973B0E8/Michelangelo.jpg)\n\n**Michelangelo Buonarroti (1475-1564)**\n\nSome readers will be quite surprised to see the man who is, along with Picasso, the greatest artistic genius of all time, out of the \"top ten\" of this list, but the fact is that even Michelangelo defined himself as \"sculptor\", and even his painted masterpiece (the frescoes in the Sistine Chapel) are often defined as 'painted sculptures'. Nevertheless, that unforgettable masterpiece is enough to guarantee him a place of honor in the history of painting",
       "source": "artist.docx",
       "questions": [
         "Michelangelo Buonarroti"
@@ -1456,12 +1456,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 92,
-      "answer": "**Paul Gauguin (1848-1903)**\n\nOne of the most fascinating figures in the history of painting, his works moved from Impressionism (soon abandoned) to a colorful and vigorous symbolism, as can be seen in his 'Polynesian paintings'. Matisse and Fauvism could not be understood without the works of Paul Gauguin",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/4/4f/Paul_Gauguin_111.jpg)\n\n**Paul Gauguin (1848-1903)**\n\nOne of the most fascinating figures in the history of painting, his works moved from Impressionism (soon abandoned) to a colorful and vigorous symbolism, as can be seen in his 'Polynesian paintings'. Matisse and Fauvism could not be understood without the works of Paul Gauguin",
       "source": "artist.docx",
       "questions": [
         "Paul Gauguin"
@@ -1472,12 +1472,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 93,
-      "answer": "**Francisco de Goya (1746-1828)**\n\nGoya is an enigma. In the whole History of Art few figures are as complex as the artist born in Fuendetodos, Spain. Enterprising and indefinable, a painter with no rival in all his life, Goya was the painter of the Court and the painter of the people. He was a religious painter and a mystical painter. He was the author of the beauty and eroticism of the 'Maja desnuda' and the creator of the explicit horror of 'The Third of May, 1808'. He was an oil painter, a fresco painter, a sketcher and an engraver. And he never stopped his metamorphosis",
+      "answer": "![image](https://content3.cdnprado.net/imagenes/Documentos/imgsem/a3/a3bf/a3bf3226-62ba-44f2-9b94-aa7155c3c488/b02d839a-2483-43ff-aac6-f0360dc569c2.jpg)\n\n**Francisco de Goya (1746-1828)**\n\nGoya is an enigma. In the whole History of Art few figures are as complex as the artist born in Fuendetodos, Spain. Enterprising and indefinable, a painter with no rival in all his life, Goya was the painter of the Court and the painter of the people. He was a religious painter and a mystical painter. He was the author of the beauty and eroticism of the 'Maja desnuda' and the creator of the explicit horror of 'The Third of May, 1808'. He was an oil painter, a fresco painter, a sketcher and an engraver. And he never stopped his metamorphosis",
       "source": "artist.docx",
       "questions": [
         "Francisco de Goya"
@@ -1488,12 +1488,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 94,
-      "answer": "**Vincent van Gogh (1853-1890)**\n\nFew names in the history of painting are now as famous as Van Gogh, despite the complete neglect he suffered in life. His works, strong and personal, are one of the greatest influences in the twentieth century painting, especially in German Expressionism",
+      "answer": "![image](https://www.literarytraveler.com/wp-content/uploads/2013/05/Vincent_van_Gogh_Self_Portrait_1887_ChicagoArtInstitute.jpg)\n\n**Vincent van Gogh (1853-1890)**\n\nFew names in the history of painting are now as famous as Van Gogh, despite the complete neglect he suffered in life. His works, strong and personal, are one of the greatest influences in the twentieth century painting, especially in German Expressionism",
       "source": "artist.docx",
       "questions": [
         "Vincent van Gogh"
@@ -1504,12 +1504,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 95,
-      "answer": "**Édouard Manet (1832-1883)**\n\nManet was the origin of Impressionism, a revolutionary in a time of great artistic revolutions. His (at the time) quite polemical \"Olympia\" or \"Déjeuner sur l'Herbe\" opened the way for the great figures of Impressionism",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/%C3%89douard_Manet%2C_en_buste%2C_de_face_-_Nadar.jpg/1200px-%C3%89douard_Manet%2C_en_buste%2C_de_face_-_Nadar.jpg)\n\n**Édouard Manet (1832-1883)**\n\nManet was the origin of Impressionism, a revolutionary in a time of great artistic revolutions. His (at the time) quite polemical \"Olympia\" or \"Déjeuner sur l'Herbe\" opened the way for the great figures of Impressionism",
       "source": "artist.docx",
       "questions": [
         "Édouard Manet"
@@ -1520,12 +1520,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 96,
-      "answer": "**Mark Rothko (1903-1970)**\n\nThe influence of Rothko in the history of painting is yet to be quantified, because the truth is that almost 40 years after his death the influence of Rothko's large, dazzling and emotional masses of color continues to increase in many painters of the 21st century",
+      "answer": "![image](https://www.biography.com/.image/t_share/MTE5NDg0MDU1MTE3MzM0MDMx/mark-rothko-9465194-1-402.jpg)\n\n**Mark Rothko (1903-1970)**\n\nThe influence of Rothko in the history of painting is yet to be quantified, because the truth is that almost 40 years after his death the influence of Rothko's large, dazzling and emotional masses of color continues to increase in many painters of the 21st century",
       "source": "artist.docx",
       "questions": [
         "Mark Rothko"
@@ -1536,12 +1536,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 97,
-      "answer": "**Henri Matisse (1869-1954)**\n\nArt critics tend to regard Matisse as the greatest exponent of twentieth century painting, only surpassed by Picasso. This is an exaggeration, although the almost pure use of color in some of his works strongly influenced many of the following avant-gardes",
+      "answer": "![image](https://cdn.britannica.com/23/189523-050-214F59F1/Henri-Matisse-photograph-Alvin-Langdon-Coburn-1913.jpg)\n\n**Henri Matisse (1869-1954)**\n\nArt critics tend to regard Matisse as the greatest exponent of twentieth century painting, only surpassed by Picasso. This is an exaggeration, although the almost pure use of color in some of his works strongly influenced many of the following avant-gardes",
       "source": "artist.docx",
       "questions": [
         "Henri Matisse"
@@ -1552,12 +1552,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 98,
-      "answer": "**Raphael (1483-1520)**\n\nEqually loved and hated in different eras, no one can doubt that Raphael is one of the greatest geniuses of the Renaissance, with an excellent technique in terms of drawing and color",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Raffaello_Sanzio.jpg/330px-Raffaello_Sanzio.jpg)\n\n**Raphael (1483-1520)**\n\nEqually loved and hated in different eras, no one can doubt that Raphael is one of the greatest geniuses of the Renaissance, with an excellent technique in terms of drawing and color",
       "source": "artist.docx",
       "questions": [
         "Raphael"
@@ -1568,12 +1568,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 99,
-      "answer": "**Jean-Michel Basquiat (1960-1988)**\n\nBasquiat is undoubtedly the most important and famous member of the \"graffiti movement\" that appeared in the New York scene in the early'80s, an artistic movement whose enormous influence on later painting is still to be measured",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/en/6/6e/Jean-Michel_Basquiat_1986_by_William_Coupon.jpg)\n\n**Jean-Michel Basquiat (1960-1988)**\n\nBasquiat is undoubtedly the most important and famous member of the \"graffiti movement\" that appeared in the New York scene in the early'80s, an artistic movement whose enormous influence on later painting is still to be measured",
       "source": "artist.docx",
       "questions": [
         "Jean-Michel Basquiat"
@@ -1584,12 +1584,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 100,
-      "answer": "**Edvard Munch (1863-1944)**\n\nModernist in his context, Munch could be also considered the first expressionist painter in history. Works like \"The Scream\" are vital to understanding the twentieth century painting.",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Portrett_av_Edvard_Munch_%28cropped%29.jpg/330px-Portrett_av_Edvard_Munch_%28cropped%29.jpg)\n\n**Edvard Munch (1863-1944)**\n\nModernist in his context, Munch could be also considered the first expressionist painter in history. Works like \"The Scream\" are vital to understanding the twentieth century painting.",
       "source": "artist.docx",
       "questions": [
         "Edvard Munch"
@@ -1600,12 +1600,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 101,
-      "answer": "**Titian (c.1476-1576)**\n\nAfter the premature death of Giorgione, Titian became the leading figure of Venetian painting of his time. His use of color and his taste for mythological themes defined the main features of 16th century Venetian Art. His influence on later artists -Rubens, Velázquez...- is extremely important",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Tizian_090.jpg/330px-Tizian_090.jpg)\n\n**Titian (c.1476-1576)**\n\nAfter the premature death of Giorgione, Titian became the leading figure of Venetian painting of his time. His use of color and his taste for mythological themes defined the main features of 16th century Venetian Art. His influence on later artists -Rubens, Velázquez...- is extremely important",
       "source": "artist.docx",
       "questions": [
         "Titian"
@@ -1616,12 +1616,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 102,
-      "answer": "**Piet Mondrian (1872 -1944)**\n\nAlong with Kandinsky and Malevich, Mondrian is the leading figure of early abstract painting. After emigrating to New York, Mondrian filled his abstract paintings with a fascinating emotional quality, as we can se in his series of \"boogie-woogies\" created in the mid-40s",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Piet_Mondriaan.jpg/330px-Piet_Mondriaan.jpg)\n\n**Piet Mondrian (1872 -1944)**\n\nAlong with Kandinsky and Malevich, Mondrian is the leading figure of early abstract painting. After emigrating to New York, Mondrian filled his abstract paintings with a fascinating emotional quality, as we can se in his series of \"boogie-woogies\" created in the mid-40s",
       "source": "artist.docx",
       "questions": [
         "Piet Mondrian"
@@ -1632,12 +1632,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 103,
-      "answer": "**Piero della Francesca (1416-1492)**\n\nDespite being one of the most important figures of the quattrocento, the Art of Piero della Francesca has been described as “cold”, “hieratic” or even “impersonal”. But with the apparition of Berenson and the great historians of his era, like Michel Hérubel -who defended the “metaphysical dimension” of the paintings by Piero-, his precise and detailed Art finally occupied the place that it deserves in the Art history",
+      "answer": "![image](https://t2.gstatic.com/images?q=tbn:ANd9GcT8VNdgvpSoZj-YygfbL-R2d0I8-Y7bQoZZVa_oT7oLsanQ8xQL4mqBK2xyauC3)\n\n**Piero della Francesca (1416-1492)**\n\nDespite being one of the most important figures of the quattrocento, the Art of Piero della Francesca has been described as “cold”, “hieratic” or even “impersonal”. But with the apparition of Berenson and the great historians of his era, like Michel Hérubel -who defended the “metaphysical dimension” of the paintings by Piero-, his precise and detailed Art finally occupied the place that it deserves in the Art history",
       "source": "artist.docx",
       "questions": [
         "Piero della Francesca"
@@ -1648,12 +1648,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 104,
-      "answer": "**Peter Paul Rubens (1577-1640)**\n\nRubens was one of the most prolific painters of all time, thanks in part to the collaboration of his study. Very famous in life, he traveled around Europe to meet orders from very wealthy and important clients. His female nudes are still amazing in our days",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Self-portrait_by_Peter_Paul_Rubens.jpg/375px-Self-portrait_by_Peter_Paul_Rubens.jpg)\n\n**Peter Paul Rubens (1577-1640)**\n\nRubens was one of the most prolific painters of all time, thanks in part to the collaboration of his study. Very famous in life, he traveled around Europe to meet orders from very wealthy and important clients. His female nudes are still amazing in our days",
       "source": "artist.docx",
       "questions": [
         "Peter Paul Rubens"
@@ -1664,12 +1664,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 105,
-      "answer": "**Andy Warhol (1928-1987)**\n\nBrilliant and controversial, Warhol is the leading figure of pop-art and one of the icons of contemporary art. His silkscreen series depicting icons of the mass-media (as a reinterpretation of Monet's series of Water lilies or the Rouen Cathedral) are one of the milestones of contemporary Art, with a huge influence in the Art of our days",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/4/42/Andy_Warhol_1975.jpg)\n\n**Andy Warhol (1928-1987)**\n\nBrilliant and controversial, Warhol is the leading figure of pop-art and one of the icons of contemporary art. His silkscreen series depicting icons of the mass-media (as a reinterpretation of Monet's series of Water lilies or the Rouen Cathedral) are one of the milestones of contemporary Art, with a huge influence in the Art of our days",
       "source": "artist.docx",
       "questions": [
         "Andy Warhol"
@@ -1680,12 +1680,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 106,
-      "answer": "**Joan Miró (1893-1983)**\n\nLike most geniuses, Miro is an unclassificable artist. His interest in the world of the unconscious, those hidden in the depths of the mind, link him with Surrealism, but with a personal style, sometimes closer to Fauvism and Expressionism. His most important works are those from the series of \"Constellations\", created in the early 40s",
+      "answer": "![image](https://uploads4.wikiart.org/images/joan-miro(1).jpg!Portrait.jpg)\n\n**Joan Miró (1893-1983)**\n\nLike most geniuses, Miro is an unclassificable artist. His interest in the world of the unconscious, those hidden in the depths of the mind, link him with Surrealism, but with a personal style, sometimes closer to Fauvism and Expressionism. His most important works are those from the series of \"Constellations\", created in the early 40s",
       "source": "artist.docx",
       "questions": [
         "Joan Miró"
@@ -1696,12 +1696,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 107,
-      "answer": "**Tommaso Masaccio (1401-1428)**\n\nMasaccio was one of the first old masters to use the laws of scientific perspective in his works. One of the greatest innovative painters of the Early Renaissance",
+      "answer": "![image](https://t3.gstatic.com/images?q=tbn:ANd9GcQYQCvG7nFYKj1vHzB2Hfsnq8l8b-1CleUdupkZBpqEe9fJL6FHB0pGzopwsPz7)\n\n**Tommaso Masaccio (1401-1428)**\n\nMasaccio was one of the first old masters to use the laws of scientific perspective in his works. One of the greatest innovative painters of the Early Renaissance",
       "source": "artist.docx",
       "questions": [
         "Tommaso Masaccio"
@@ -1712,12 +1712,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 108,
-      "answer": "**Marc Chagall (1887-1985)**\n\nArtist of dreams and fantasies, Chagall was for all his life an immigrant fascinated by the lights and colors of the places he visited. Few names from the School of Paris of the early twentieth century have contributed so much -and with such variety of ideas- to change modern Art as this man \"impressed by the light,\" as he defined himself",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Shagal_Choumoff.jpg/1200px-Shagal_Choumoff.jpg)\n\n**Marc Chagall (1887-1985)**\n\nArtist of dreams and fantasies, Chagall was for all his life an immigrant fascinated by the lights and colors of the places he visited. Few names from the School of Paris of the early twentieth century have contributed so much -and with such variety of ideas- to change modern Art as this man \"impressed by the light,\" as he defined himself",
       "source": "artist.docx",
       "questions": [
         "Marc Chagall"
@@ -1728,12 +1728,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 109,
-      "answer": "**Gustave Courbet (1819-1877)**\n\nLeading figure of realism, and a clear precedent for the impressionists, Courbet was one of the greatest revolutionaries, both as an artist and as a social-activist, of the history of painting. Like Rembrandt and other predecessors, Courbet did not seek to create beauty, but believed that beauty is achieved when and artist represents the purest reality without artifice",
+      "answer": "![image](https://t0.gstatic.com/images?q=tbn:ANd9GcQ023Wh0IvFcWDIFhmmTiyeF3dYJEnaCF0FsQAYJGsMuqynz3ou9SHsYVnsC1Ai)\n\n**Gustave Courbet (1819-1877)**\n\nLeading figure of realism, and a clear precedent for the impressionists, Courbet was one of the greatest revolutionaries, both as an artist and as a social-activist, of the history of painting. Like Rembrandt and other predecessors, Courbet did not seek to create beauty, but believed that beauty is achieved when and artist represents the purest reality without artifice",
       "source": "artist.docx",
       "questions": [
         "Gustave Courbet"
@@ -1744,12 +1744,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 110,
-      "answer": "**Nicolas Poussin (1594-1665)**\n\nThe greatest among the great French Baroque painters, Poussin had a vital influence on French painting for many centuries. His use of color is unique among all the painters of his era",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/d/d9/Nicolas_Poussin_078.jpg)\n\n**Nicolas Poussin (1594-1665)**\n\nThe greatest among the great French Baroque painters, Poussin had a vital influence on French painting for many centuries. His use of color is unique among all the painters of his era",
       "source": "artist.docx",
       "questions": [
         "Nicolas Poussin"
@@ -1760,12 +1760,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 111,
-      "answer": "**Willem de Kooning (1904-1997)**\n\nAfter Pollock, the leading figure of abstract expressionism, though one of his greatest contributions was not to feel limited by the abstraction, often resorting to a heartbreaking figurative painting (his series of \"Women\" are the best example) with a major influence on later artists such as Francis Bacon or Lucian Freud",
+      "answer": "![image](https://www.villagepreservation.org/wp-content/uploads/2018/04/de-koon-lead-photo.jpg)\n\n**Willem de Kooning (1904-1997)**\n\nAfter Pollock, the leading figure of abstract expressionism, though one of his greatest contributions was not to feel limited by the abstraction, often resorting to a heartbreaking figurative painting (his series of \"Women\" are the best example) with a major influence on later artists such as Francis Bacon or Lucian Freud",
       "source": "artist.docx",
       "questions": [
         "Willem de Kooning"
@@ -1776,12 +1776,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 112,
-      "answer": "**Paul Klee (1879-1940)**\n\nIn a period of artistic revolutions and innovations, few artists were as crucial as Paul Klee. His studies of color, widely taught at the Bauhaus, are unique among all the artists of his time",
+      "answer": "![image](https://t0.gstatic.com/images?q=tbn:ANd9GcSKfDMNo2L2h63lxGrgmQiX-MFjObVGHDJuelE4pmact82tPt7fCEYBP5MCi_6D)\n\n**Paul Klee (1879-1940)**\n\nIn a period of artistic revolutions and innovations, few artists were as crucial as Paul Klee. His studies of color, widely taught at the Bauhaus, are unique among all the artists of his time",
       "source": "artist.docx",
       "questions": [
         "Paul Klee"
@@ -1792,12 +1792,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 113,
-      "answer": "**Francis Bacon (1909-1992)**\n\nMaximum exponent, along with Lucian Freud, of the so-called \"School of London\", Bacon's style was totally against all canons of painting, not only in those terms related to beauty, but also against the dominance of the Abstract Expressionism of his time",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/zh/thumb/d/dc/Francis-bacon-artist.jpg/250px-Francis-bacon-artist.jpg)\n\n**Francis Bacon (1909-1992)**\n\nMaximum exponent, along with Lucian Freud, of the so-called \"School of London\", Bacon's style was totally against all canons of painting, not only in those terms related to beauty, but also against the dominance of the Abstract Expressionism of his time",
       "source": "artist.docx",
       "questions": [
         "Francis Bacon"
@@ -1808,12 +1808,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 114,
-      "answer": "**Gustav Klimt (1862-1918)**\n\nHalf way between modernism and symbolism appears the figure of Gustav Klimt, who was also devoted to the industrial arts. His nearly abstract landscapes also make him a forerunner of geometric abstraction",
+      "answer": "![image](https://fine-art-print.tw/e-master400/Gustav%20Klimt.jpg)\n\n**Gustav Klimt (1862-1918)**\n\nHalf way between modernism and symbolism appears the figure of Gustav Klimt, who was also devoted to the industrial arts. His nearly abstract landscapes also make him a forerunner of geometric abstraction",
       "source": "artist.docx",
       "questions": [
         "Gustav Klimt"
@@ -1824,12 +1824,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 115,
-      "answer": "**Eugène Delacroix (1798-1863)**\n\nEugène Delacroix is the French romanticism painter \"par excellence\" and one of the most important names in the European painting of the first half of the 19th century. His famous “Liberty leading the People” also demonstrates the capacity of Painting to become the symbol of an era.",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/6/62/F%C3%A9lix_Nadar_1820-1910_portraits_Eug%C3%A8ne_Delacroix.jpg)\n\n**Eugène Delacroix (1798-1863)**\n\nEugène Delacroix is the French romanticism painter \"par excellence\" and one of the most important names in the European painting of the first half of the 19th century. His famous “Liberty leading the People” also demonstrates the capacity of Painting to become the symbol of an era.",
       "source": "artist.docx",
       "questions": [
         "Eugène Delacroix"
@@ -1840,12 +1840,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 116,
-      "answer": "**Paolo Uccello (1397-1475)**\n\n“Solitary, eccentric, melancholic and poor”. Giorgio Vasari described with these four words one of the most audacious geniuses of the early Florentine Renaissance, Paolo Uccello.",
+      "answer": "![image](https://t1.gstatic.com/images?q=tbn:ANd9GcQRx6I1tzlG2JIGnNxcSfACq0Row6Yh0Q8ohNDHM7P4Bt6ZGuNSOWTI0Iee_INk)\n\n**Paolo Uccello (1397-1475)**\n\n“Solitary, eccentric, melancholic and poor”. Giorgio Vasari described with these four words one of the most audacious geniuses of the early Florentine Renaissance, Paolo Uccello.",
       "source": "artist.docx",
       "questions": [
         "Paolo Uccello"
@@ -1856,12 +1856,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 117,
-      "answer": "**William Blake (1757-1827)**\n\nRevolutionary and mystic, painter and poet, Blake is one of the most fascinating artists of any era. His watercolors, prints and temperas are filled with a wild imagination (almost crazyness), unique among the artists of his era",
+      "answer": "![image](https://t2.gstatic.com/images?q=tbn:ANd9GcTWh23TLZ7fy8qseZrvYYGrlHqMmQoJuQfnnhKncaPCspwuLteWXxsvOelPvoIq)\n\n**William Blake (1757-1827)**\n\nRevolutionary and mystic, painter and poet, Blake is one of the most fascinating artists of any era. His watercolors, prints and temperas are filled with a wild imagination (almost crazyness), unique among the artists of his era",
       "source": "artist.docx",
       "questions": [
         "William Blake"
@@ -1872,12 +1872,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 118,
-      "answer": "**Kazimir Malevich (1878-1935)**\n\nCreator of Suprematism, Malevich will forever be one of the most controversial figures of the history of art among the general public, divided between those who consider him an essential renewal and those who consider that his works based on polygons of pure colors do not deserve to be considered Art",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Casimir_Malevich_photo.jpg/800px-Casimir_Malevich_photo.jpg)\n\n**Kazimir Malevich (1878-1935)**\n\nCreator of Suprematism, Malevich will forever be one of the most controversial figures of the history of art among the general public, divided between those who consider him an essential renewal and those who consider that his works based on polygons of pure colors do not deserve to be considered Art",
       "source": "artist.docx",
       "questions": [
         "Kazimir Malevich"
@@ -1888,12 +1888,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 119,
-      "answer": "**Andrea Mantegna (1431-1506)**\n\nOne of the greatest exponents of the Quattrocento, interested in the human figure, which he often represented under extreme perspectives (\"The Dead Christ\")",
+      "answer": "![image](https://m.theartstory.org/images20/new_design/bio/bio_mantegna_andrea.jpg)\n\n**Andrea Mantegna (1431-1506)**\n\nOne of the greatest exponents of the Quattrocento, interested in the human figure, which he often represented under extreme perspectives (\"The Dead Christ\")",
       "source": "artist.docx",
       "questions": [
         "Andrea Mantegna"
@@ -1904,12 +1904,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 120,
-      "answer": "**Jan Vermeer (1632-1675)**\n\nVermeer was the leading figure of the Delft School, and for sure one of the greatest landscape painters of all time. Works such as \"View of the Delft\" are considered almost \"impressionist\" due to the liveliness of his brushwork. He was also a skilled portraitist",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Cropped_version_of_Jan_Vermeer_van_Delft_002.jpg/800px-Cropped_version_of_Jan_Vermeer_van_Delft_002.jpg)\n\n**Jan Vermeer (1632-1675)**\n\nVermeer was the leading figure of the Delft School, and for sure one of the greatest landscape painters of all time. Works such as \"View of the Delft\" are considered almost \"impressionist\" due to the liveliness of his brushwork. He was also a skilled portraitist",
       "source": "artist.docx",
       "questions": [
         "Jan Vermeer"
@@ -1920,12 +1920,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 121,
-      "answer": "**El Greco (1541-1614)**\n\nOne of the most original and fascinating artists of his era, with a very personal technique that was admired, three centuries later, by the impressionist painters",
+      "answer": "![image](https://t1.gstatic.com/images?q=tbn:ANd9GcTGMYm1t2qZszPrt6ZYttQOSsibR3FOCdmr8VFYhTyEpLX0eAADzjMXSVLCTx-F)\n\n**El Greco (1541-1614)**\n\nOne of the most original and fascinating artists of his era, with a very personal technique that was admired, three centuries later, by the impressionist painters",
       "source": "artist.docx",
       "questions": [
         "El Greco"
@@ -1936,12 +1936,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 122,
-      "answer": "**Caspar David Friedrich (1774-1840)**\n\nLeading figure of German Romantic painting, Friedrich is still identified as the painter of landscapes of loneliness and distress, with human figures facing the terrible magnificence of nature.",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Gerhard_von_K%C3%BCgelgen_portrait_of_Friedrich.jpg/800px-Gerhard_von_K%C3%BCgelgen_portrait_of_Friedrich.jpg)\n\n**Caspar David Friedrich (1774-1840)**\n\nLeading figure of German Romantic painting, Friedrich is still identified as the painter of landscapes of loneliness and distress, with human figures facing the terrible magnificence of nature.",
       "source": "artist.docx",
       "questions": [
         "Caspar David Friedrich"
@@ -1952,12 +1952,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 123,
-      "answer": "**Winslow Homer (1836-1910)**\n\nThe main figure of American painting of his era, Homer was a breath of fresh air for the American artistic scene, which was \"stuck\" in academic painting and the more romantic Hudson River School. Homer's loose and lively brushstroke is almost impressionistic.",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Winslow_Homer_by_Sarony.jpeg/330px-Winslow_Homer_by_Sarony.jpeg)\n\n**Winslow Homer (1836-1910)**\n\nThe main figure of American painting of his era, Homer was a breath of fresh air for the American artistic scene, which was \"stuck\" in academic painting and the more romantic Hudson River School. Homer's loose and lively brushstroke is almost impressionistic.",
       "source": "artist.docx",
       "questions": [
         "Winslow Homer"
@@ -1968,12 +1968,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 124,
-      "answer": "**Marcel Duchamp (1887-1968)**\n\nOne of the major figures of Dadaism and a prototype of \"total artist\", Duchamp is one of the most important and controversial figures of his era. His contribution to painting is just a small part of his huge contribution to the art world.",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Marcel_Duchamp_01.jpg/220px-Marcel_Duchamp_01.jpg)\n\n**Marcel Duchamp (1887-1968)**\n\nOne of the major figures of Dadaism and a prototype of \"total artist\", Duchamp is one of the most important and controversial figures of his era. His contribution to painting is just a small part of his huge contribution to the art world.",
       "source": "artist.docx",
       "questions": [
         "Marcel Duchamp"
@@ -1984,12 +1984,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 125,
-      "answer": "**Giorgione (1478-1510)**\n\nLike so many other painters who died at young age, Giorgione (1477-1510) makes us wonder what place would his exquisite painting occupy in the history of Art if he had enjoyed a long existence, just like his direct artistic heir - Titian.",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Giorgione_059.jpg/800px-Giorgione_059.jpg)\n\n**Giorgione (1478-1510)**\n\nLike so many other painters who died at young age, Giorgione (1477-1510) makes us wonder what place would his exquisite painting occupy in the history of Art if he had enjoyed a long existence, just like his direct artistic heir - Titian.",
       "source": "artist.docx",
       "questions": [
         "Giorgione"
@@ -2000,12 +2000,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 126,
-      "answer": "**Frida Kahlo (1907-1954)**\n\nIn recent years, Frida's increasing fame seems to have obscured her importance in Latin American art. On September 17th, 1925, Kahlo was almost killed in a terrible bus accident. She did not died, but the violent crash had terrible sequels, breaking her spinal column, pelvis, and right leg.. After this accident, Kahlo's self-portraits can be considered as quiet but terrible moans",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg/800px-Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg)\n\n**Frida Kahlo (1907-1954)**\n\nIn recent years, Frida's increasing fame seems to have obscured her importance in Latin American art. On September 17th, 1925, Kahlo was almost killed in a terrible bus accident. She did not died, but the violent crash had terrible sequels, breaking her spinal column, pelvis, and right leg.. After this accident, Kahlo's self-portraits can be considered as quiet but terrible moans",
       "source": "artist.docx",
       "questions": [
         "Frida Kahlo"
@@ -2016,12 +2016,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 127,
-      "answer": "**Hans Holbein the Younger (1497-1543)**\n\nAfter Dürer, Holbein is the greatest of the German painters of his time. The fascinating portrait of \"The Ambassadors\" is still considered one of the most enigmatic paintings of art history",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Hans_Holbein_the_Younger%2C_self-portrait.jpg/330px-Hans_Holbein_the_Younger%2C_self-portrait.jpg)\n\n**Hans Holbein the Younger (1497-1543)**\n\nAfter Dürer, Holbein is the greatest of the German painters of his time. The fascinating portrait of \"The Ambassadors\" is still considered one of the most enigmatic paintings of art history",
       "source": "artist.docx",
       "questions": [
         "Hans Holbein the Younger"
@@ -2032,12 +2032,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 128,
-      "answer": "**Edgar Degas (1834-1917)**\n\nThough Degas was not a \"pure\" impressionist painter, his works shared the ideals of that artistic movement. Degas paintings of young dancers or ballerinas are icons of late 19th century painting",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Edgar_Degas_self_portrait_1855.jpeg/360px-Edgar_Degas_self_portrait_1855.jpeg)\n\n**Edgar Degas (1834-1917)**\n\nThough Degas was not a \"pure\" impressionist painter, his works shared the ideals of that artistic movement. Degas paintings of young dancers or ballerinas are icons of late 19th century painting",
       "source": "artist.docx",
       "questions": [
         "Edgar Degas"
@@ -2048,12 +2048,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 129,
-      "answer": "**Fra Angelico (1387-1455)**\n\nOne of the great colorists from the early Renaissance. Initially trained as an illuminator, he is the author of masterpieces such as \"The Annunciation\" in the Prado Museum.",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Fra_Angelico_portrait.jpg/450px-Fra_Angelico_portrait.jpg)\n\n**Fra Angelico (1387-1455)**\n\nOne of the great colorists from the early Renaissance. Initially trained as an illuminator, he is the author of masterpieces such as \"The Annunciation\" in the Prado Museum.",
       "source": "artist.docx",
       "questions": [
         "Fra Angelico"
@@ -2064,12 +2064,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 130,
-      "answer": "**Georges Seurat (1859-1891)**\n\nGeorges Seurat is one of the most important post-impressionist painters, and he is considered the creator of the \"pointillism\", a style of painting in which small distinct points of primary colors create the impression of a wide selection of secondary and intermediate colors.",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Georges_Seurat_1888.jpg/300px-Georges_Seurat_1888.jpg)\n\n**Georges Seurat (1859-1891)**\n\nGeorges Seurat is one of the most important post-impressionist painters, and he is considered the creator of the \"pointillism\", a style of painting in which small distinct points of primary colors create the impression of a wide selection of secondary and intermediate colors.",
       "source": "artist.docx",
       "questions": [
         "Georges Seurat"
@@ -2080,12 +2080,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 131,
-      "answer": "**Jean-Antoine Watteau (1684-1721)**\n\nWatteau is today considered one of the pioneers of rococo. Unfortunately, he died at the height of his powers, as it is evidenced in the great portrait of \"Gilles\" painted in the year of his death",
+      "answer": "![image](https://t3.gstatic.com/images?q=tbn:ANd9GcQX8ryK9ER303kDcHDwPl0IJDG-FwpcabRMrgJIUSlKGMtASpHnq4X9PSWMFMqp)\n\n**Jean-Antoine Watteau (1684-1721)**\n\nWatteau is today considered one of the pioneers of rococo. Unfortunately, he died at the height of his powers, as it is evidenced in the great portrait of \"Gilles\" painted in the year of his death",
       "source": "artist.docx",
       "questions": [
         "Jean-Antoine Watteau"
@@ -2096,12 +2096,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 132,
-      "answer": "**Salvador Dali (1904-1989)**\n\n\"I am Surrealism!\" shouted Dalí when he was expelled from the surrealist movement by André Breton. Although the quote sounds presumptuous (which was not unusual in Dalí), the fact is that Dalí's paintings are now the most famous images of all the surrealist movement.",
+      "answer": "![image](https://uploads5.wikiart.org/images/salvador-dali.jpg!Portrait.jpg)\n\n**Salvador Dali (1904-1989)**\n\n\"I am Surrealism!\" shouted Dalí when he was expelled from the surrealist movement by André Breton. Although the quote sounds presumptuous (which was not unusual in Dalí), the fact is that Dalí's paintings are now the most famous images of all the surrealist movement.",
       "source": "artist.docx",
       "questions": [
         "Salvador Dali"
@@ -2112,12 +2112,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 133,
-      "answer": "**Max Ernst (1891-1976)**\n\nHalfway between Surrealism and Dadaism appears Max Ernst, important in both movements. Ernst was a brave artistic explorer thanks in part to the support of his wife and patron, Peggy Guggenheim",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Max_Ernst_1968.jpg/345px-Max_Ernst_1968.jpg)\n\n**Max Ernst (1891-1976)**\n\nHalfway between Surrealism and Dadaism appears Max Ernst, important in both movements. Ernst was a brave artistic explorer thanks in part to the support of his wife and patron, Peggy Guggenheim",
       "source": "artist.docx",
       "questions": [
         "Max Ernst"
@@ -2128,12 +2128,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 134,
-      "answer": "**Tintoretto (1518-1594)**\n\nTintoretto is the most flamboyant of all Venetian masters (not the best, such honor can only be reclaimed by Titian or Giorgione) and his remarkable oeuvre not only closed the Venetian splendor till the apparition of Canaletto and his contemporaries, but also makes him the last of the Cinquecento masters.",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Jacopo_Tintoretto_031-2.jpg/800px-Jacopo_Tintoretto_031-2.jpg)\n\n**Tintoretto (1518-1594)**\n\nTintoretto is the most flamboyant of all Venetian masters (not the best, such honor can only be reclaimed by Titian or Giorgione) and his remarkable oeuvre not only closed the Venetian splendor till the apparition of Canaletto and his contemporaries, but also makes him the last of the Cinquecento masters.",
       "source": "artist.docx",
       "questions": [
         "Tintoretto"
@@ -2144,12 +2144,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 135,
-      "answer": "**Jasper Johns (born 1930)**\n\nThe last living legend of the early Pop Art, although he has never considered himself a \"pop artist\". His most famous works are the series of \"Flags\" and \"Targets\".",
+      "answer": "![image](https://t0.gstatic.com/images?q=tbn:ANd9GcSrWOnOYhA1kCN_i51KG3xWJHNmfoPRKtqsSwS-03vVdSW3f7q2hBqbZw0vsRR_)\n\n**Jasper Johns (born 1930)**\n\nThe last living legend of the early Pop Art, although he has never considered himself a \"pop artist\". His most famous works are the series of \"Flags\" and \"Targets\".",
       "source": "artist.docx",
       "questions": [
         "Jasper Johns"
@@ -2160,12 +2160,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 136,
-      "answer": "**Sandro Botticelli (1445-1510)**\n\n\"If Botticelli were alive now he would be working for Vogue\", said actor Peter Ustinov. As well as Raphael, Botticelli had been equally loved or hated in different eras, but his use of color is one of the most fascinating among all old masters.",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Sandro_Botticelli_083.jpg/330px-Sandro_Botticelli_083.jpg)\n\n**Sandro Botticelli (1445-1510)**\n\n\"If Botticelli were alive now he would be working for Vogue\", said actor Peter Ustinov. As well as Raphael, Botticelli had been equally loved or hated in different eras, but his use of color is one of the most fascinating among all old masters.",
       "source": "artist.docx",
       "questions": [
         "Sandro Botticelli"
@@ -2176,12 +2176,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 137,
-      "answer": "**David Hockney (born 1937)**\n\nDavid Hockney is one of the living myths of the Pop Art. Born in Great Britain, he moved to California, where he immediately felt identified with the light, the culture and the urban landscape of the 'Golden State'",
+      "answer": "![image](https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2020%2F05%2Fdavid-hockney-hope-in-spring-drawing-competition-1.jpg?quality=95&w=1170&cbr=1&q=90&fit=max)\n\n**David Hockney (born 1937)**\n\nDavid Hockney is one of the living myths of the Pop Art. Born in Great Britain, he moved to California, where he immediately felt identified with the light, the culture and the urban landscape of the 'Golden State'",
       "source": "artist.docx",
       "questions": [
         "David Hockney"
@@ -2192,12 +2192,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 138,
-      "answer": "**Umberto Boccioni (1882-1916)**\n\nThe maximum figure of Italian Futurism, fascinated by the world of the machine, and the movement as a symbol of contemporary times.",
+      "answer": "![image](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Umberto_Boccioni%2C_portrait_photograph.jpg/315px-Umberto_Boccioni%2C_portrait_photograph.jpg)\n\n**Umberto Boccioni (1882-1916)**\n\nThe maximum figure of Italian Futurism, fascinated by the world of the machine, and the movement as a symbol of contemporary times.",
       "source": "artist.docx",
       "questions": [
         "Umberto Boccioni"
@@ -2208,12 +2208,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 139,
-      "answer": "**Joachim Patinir (1480-1524)**\n\nMuch less technically gifted than other Flemish painters like Memling or van der Weyden, his contribution to the history of art is vital for the incorporation of landscape as a major element in the painting.",
+      "answer": "![image](https://cdn.britannica.com/71/172571-050-0BB13B81/Joachim-Patinir.jpg)\n\n**Joachim Patinir (1480-1524)**\n\nMuch less technically gifted than other Flemish painters like Memling or van der Weyden, his contribution to the history of art is vital for the incorporation of landscape as a major element in the painting.",
       "source": "artist.docx",
       "questions": [
         "Joachim Patinir"
@@ -2224,12 +2224,12 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {
       "id": 140,
-      "answer": "**Duccio di Buoninsegna (c.1255/60 – 1318/19)**\n\nWhile in Florence Giotto di Bondone was changing the history of painting, Duccio of Buoninsegna provided a breath of fresh air to the important Sienese School.",
+      "answer": "![image](https://uploads4.wikiart.org/00288/images/duccio/the-position-of-mary-in-the-tomb-fragment-1311.jpg!Portrait.jpg)\n\n**Duccio di Buoninsegna (c.1255/60 – 1318/19)**\n\nWhile in Florence Giotto di Bondone was changing the history of painting, Duccio of Buoninsegna provided a breath of fresh air to the important Sienese School.",
       "source": "artist.docx",
       "questions": [
         "Duccio di Buoninsegna"
@@ -2240,7 +2240,7 @@
         "isContextOnly": false,
         "prompts": []
       },
-      "lastUpdatedTimestamp": "2021-01-28T09:20:44.064+00:00",
+      "lastUpdatedTimestamp": "2021-01-29T22:04:53.749+00:00",
       "isDocumentText": false
     },
     {

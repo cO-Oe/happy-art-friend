@@ -78,6 +78,11 @@
       "entities": []
     },
     {
+      "text": "how does it drawn?",
+      "intent": "paintingTechnique",
+      "entities": []
+    },
+    {
       "text": "how was this work painted?",
       "intent": "paintingTechnique",
       "entities": []
@@ -89,6 +94,11 @@
     },
     {
       "text": "name",
+      "intent": "paintingName",
+      "entities": []
+    },
+    {
+      "text": "name of the painting",
       "intent": "paintingName",
       "entities": []
     },
@@ -108,6 +118,16 @@
       "entities": []
     },
     {
+      "text": "period",
+      "intent": "paintingStyle",
+      "entities": []
+    },
+    {
+      "text": "period of the painting",
+      "intent": "paintingStyle",
+      "entities": []
+    },
+    {
       "text": "style",
       "intent": "paintingStyle",
       "entities": []
@@ -123,7 +143,17 @@
       "entities": []
     },
     {
+      "text": "time",
+      "intent": "paintingDate",
+      "entities": []
+    },
+    {
       "text": "title",
+      "intent": "paintingName",
+      "entities": []
+    },
+    {
+      "text": "title of the painting",
       "intent": "paintingName",
       "entities": []
     },
@@ -148,7 +178,27 @@
       "entities": []
     },
     {
+      "text": "what is it's name",
+      "intent": "paintingName",
+      "entities": []
+    },
+    {
+      "text": "what is it's style?",
+      "intent": "paintingStyle",
+      "entities": []
+    },
+    {
+      "text": "what is it's title",
+      "intent": "paintingName",
+      "entities": []
+    },
+    {
       "text": "what is the name of the painting?",
+      "intent": "paintingName",
+      "entities": []
+    },
+    {
+      "text": "what is the name?",
       "intent": "paintingName",
       "entities": []
     },
@@ -163,6 +213,11 @@
       "entities": []
     },
     {
+      "text": "what is the period",
+      "intent": "paintingStyle",
+      "entities": []
+    },
+    {
       "text": "what is the style?",
       "intent": "paintingStyle",
       "entities": []
@@ -170,6 +225,11 @@
     {
       "text": "what is the technique?",
       "intent": "paintingTechnique",
+      "entities": []
+    },
+    {
+      "text": "what is the title",
+      "intent": "paintingName",
       "entities": []
     },
     {
@@ -198,7 +258,17 @@
       "entities": []
     },
     {
+      "text": "what year",
+      "intent": "paintingDate",
+      "entities": []
+    },
+    {
       "text": "when",
+      "intent": "paintingDate",
+      "entities": []
+    },
+    {
+      "text": "when was it done?",
       "intent": "paintingDate",
       "entities": []
     },
@@ -230,6 +300,11 @@
     {
       "text": "which technique is this?",
       "intent": "paintingTechnique",
+      "entities": []
+    },
+    {
+      "text": "which year",
+      "intent": "paintingDate",
       "entities": []
     },
     {
@@ -268,6 +343,16 @@
       "entities": []
     },
     {
+      "text": "who is it's author?",
+      "intent": "paintingAuthor",
+      "entities": []
+    },
+    {
+      "text": "who is it's painter?",
+      "intent": "paintingAuthor",
+      "entities": []
+    },
+    {
       "text": "who is the author?",
       "intent": "paintingAuthor",
       "entities": []
@@ -290,6 +375,11 @@
     {
       "text": "work title",
       "intent": "paintingName",
+      "entities": []
+    },
+    {
+      "text": "year",
+      "intent": "paintingDate",
       "entities": []
     }
   ],

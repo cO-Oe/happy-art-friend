@@ -1,14 +1,18 @@
 Label	Weight	Text
-art_luis	1	which style is this
-art_luis	1	when was this work finished
-art_luis	1	title
-art_luis	1	what is the name of the painting
-art_luis	1	title of this work
-art_luis	1	which technique is this
-art_luis	1	what style
-art_luis	1	what is the title of the painting
+art_luis	1	what is it's style
+art_luis	1	time
+art_luis	1	when was the painting completed
+art_luis	1	who accomplished the painting
+art_luis	1	how was this work painted
+art_luis	1	method
+art_luis	1	who is it's author
+art_luis	1	how
+art_luis	1	date
+art_luis	1	what is the style
+art_luis	1	which year
+art_luis	1	what year
 art_luis	1	completed time
-art_luis	1	completed year
+art_luis	1	painter
 art_qna	1	I'd like to be your bud.
 art_qna	1	Do you know other bots
 art_qna	1	How high can you count
@@ -1722,7 +1726,7 @@ art_qna	1	I suspect you're not really a person
 art_qna	1	Do I go to school
 art_qna	1	Want to learn more about me
 art_qna	1	do you ever eat pasta
-art_qna	1	22. Phad Painting:
+art_qna	1	Phad Painting:
 art_qna	1	How is Monday going so far
 art_qna	1	Titian
 art_qna	1	Feeling chipper

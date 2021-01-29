@@ -211,7 +211,7 @@ class QnABot extends ActivityHandler {
         if (results.length > 0) {
           let firstLine = results[0].answer.split('\n')[0];
 
-          if (firstLine.substring(0, 8) === "![Image]") {
+          if (firstLine.substring(0, 8) === "![Image]" || firstLine.substring(0, 8) === "![image]") {
             let restString = results[0].answer.substring(results[0].answer.indexOf('\n')+1)
 
             const reply = { type: ActivityTypes.Message };

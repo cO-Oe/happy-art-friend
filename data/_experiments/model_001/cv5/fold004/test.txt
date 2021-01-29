@@ -1,14 +1,18 @@
 Label	Weight	Text
-art_luis	1	when was the painting completed
-art_luis	1	who
-art_luis	1	painter
-art_luis	1	which year was this work painted
-art_luis	1	how
-art_luis	1	when was this work created
-art_luis	1	work title
-art_luis	1	technique
-art_luis	1	what method
+art_luis	1	what is the name of the painting
+art_luis	1	what is the name
+art_luis	1	what is the painting's style
 art_luis	1	who is the painter
+art_luis	1	work title
+art_luis	1	who is the author
+art_luis	1	what kind
+art_luis	1	what is it's name
+art_luis	1	which technique is this
+art_luis	1	what time
+art_luis	1	what is the period
+art_luis	1	style
+art_luis	1	accomplished year
+art_luis	1	completed year
 art_qna	1	I am usually depressed
 art_qna	1	You know I'm falling in love with you
 art_qna	1	Which football teams do you like

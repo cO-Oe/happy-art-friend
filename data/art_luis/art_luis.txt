@@ -7,37 +7,52 @@ created time
 date
 finish year
 how
+how does it drawn
 how was this work painted
 method
 name
+name of the painting
 name of this work
 painted date
 painter
+period
+period of the painting
 style
 technique
 this painting was painted by who
+time
 title
+title of the painting
 title of this work
 type of painting technique
 type of the painting style
 way
+what is it's name
+what is it's style
+what is it's title
 what is the name of the painting
+what is the name
 what is the painting method
 what is the painting's style
+what is the period
 what is the style
 what is the technique
+what is the title
 what is the title of the painting
 what kind
 what method
 what style
 what time
+what year
 when
+when was it done
 when was the painting accomplished
 when was the painting completed
 when was this work created
 when was this work finished
 which style is this
 which technique is this
+which year
 which year was this work painted
 which year
 who
@@ -45,8 +60,11 @@ who accomplished the painting
 who created this work
 who done this work
 who drew it
+who is it's author
+who is it's painter
 who is the author
 who is the painter
 who painted it
 work name
 work title
+year

@@ -1,4 +1,4 @@
 No	Intent	Utterance Count	Utterance Average Length	Utterance Maximum Length	Utterance Minimum Length	Utterance Length StdDev
-0	art_luis	52	16.05769	34	3	9.54949
-1	art_qna	9942	22.79582	81	1	8.8129
- 	__ALL__	9994	22.76076	81	1	8.82969
+0	art_luis	69	15.86957	34	3	8.73787
+1	art_qna	9942	22.79501	81	1	8.81352
+ 	__ALL__	10011	22.74728	81	1	8.83118
