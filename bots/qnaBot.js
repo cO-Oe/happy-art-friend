@@ -68,15 +68,17 @@ class QnABot extends ActivityHandler {
 
         const cosmosDatabase = cosmosClient.database("PaintingDB");
         const cosmosContainer = cosmosDatabase.container("paintings");
-
         this.cosmosContainer = cosmosContainer;
+
+
 
         this.onMessage(async (context, next) => {
             // Get the state properties from the turn context.
             const userProfile = await this.userProfileAccessor.get(context, {});
-            const conversationData = await this.conversationDataAccessor.get(
-                context, { promptedForUserName: false });
-
+            const conversationData = await this.conversationDataAccessor.get(context, {});
+            if (!userProfile.language){
+              userProfile.language = "en"
+            }
             // If user input is an attachment
             if (context.activity.attachments && context.activity.attachments.length > 0) {
               // The user sent an attachment and the bot should handle the incoming attachment.
@@ -97,9 +99,8 @@ class QnABot extends ActivityHandler {
                 await this.handleIncomingURL(context,userProfile);
               }
               else {
-                var transObj = {language:"en"}  //  default is English
                 // First, we use the dispatch model to determine which cognitive service (LUIS or QnA) to use.
-                context.activity.text = await this.otherToEnglish(context.activity.text,transObj);
+                context.activity.text = await this.otherToEnglish(context.activity.text,userProfile);
 
                 //console.log(`${context.activity.text}`)
                 //console.log(JSON.stringify(context, null, 4))
@@ -118,8 +119,8 @@ class QnABot extends ActivityHandler {
                       }
                       else {
                           const luisReply = await this.ProcessArtLuis(context, recognizerResult.luisResult,userProfile);
-                          if (transObj["language"]!="en"){
-                            const reply = await this.englishToOther(luisReply,transObj);
+                          if (userProfile.language!="en"){
+                            const reply = await this.englishToOther(luisReply,userProfile);
                             console.log(`${reply}`)
                             await context.sendActivity(reply);
                           }
@@ -131,7 +132,7 @@ class QnABot extends ActivityHandler {
                   case 'art_qna':
                       console.log('sent to art QnA')
                       //userProfile.paintingID = context.activity.text;
-                      await this.processArtQnA(context,transObj);
+                      await this.processArtQnA(context,userProfile);
                       break;
                   default:
                       console.log(`Dispatch unrecognized intent: ${ intent }.`);
@@ -202,7 +203,7 @@ class QnABot extends ActivityHandler {
         }
     }
 
-    async processArtQnA(context,transObj) {
+    async processArtQnA(context,userProfile) {
         console.log('Art_QnA');
     
         const results = await this.qnaMaker.getAnswers(context);
@@ -216,22 +217,22 @@ class QnABot extends ActivityHandler {
 
             reply.attachments = [this.getInternetAttachment(firstLine.substring(9, firstLine.indexOf(')')))];
             
-            const replyString = await this.englishToOther(restString,transObj);
+            const replyString = await this.englishToOther(restString,userProfile);
             
             await context.sendActivity(reply);
             await context.sendActivity(replyString);
           }
           else {
-            const reply = await this.englishToOther(results[0].answer,transObj);
+            const reply = await this.englishToOther(results[0].answer,userProfile);
             await context.sendActivity(reply);
           }
         } else {
-            const reply = await this.englishToOther("Sorry, I didn't find the answer in QnA system",transObj);
+            const reply = await this.englishToOther("Sorry, I didn't find the answer in QnA system",userProfile);
             await context.sendActivity(reply);
         }
     }
 
-    async otherToEnglish(text,transObj){
+    async otherToEnglish(text,userProfile){
       const typeRes = await axios({
         baseURL: process.env.TranslatorEndpoint,
         url: '/detect',
@@ -254,7 +255,7 @@ class QnABot extends ActivityHandler {
       
       if (languageType != "en"){
 
-        transObj["language"]=languageType
+        userProfile.language=languageType
         languageType = languageType.slice(1,-1)
 
         const tranRes = await axios({
@@ -285,14 +286,17 @@ class QnABot extends ActivityHandler {
         return resultText
       }
       else{
-        transObj["language"]="en"
+        userProfile.language="en"
         return text
       }
     }
 
-    async englishToOther(text,transObj){
-      //const target = transObj["language"]
-      var target = transObj["language"]
+    async englishToOther(text,userProfile){
+      //const target = userProfile.language
+      var target = userProfile.language;
+      if (target == "en"){
+        return text;
+      }
       target = target.slice(1,-1)
 
       const tranRes = await axios({
@@ -374,14 +378,7 @@ class QnABot extends ActivityHandler {
       const replyPaint = { type: ActivityTypes.Message };
       const replyPhoto = { type: ActivityTypes.Message };
 
-      let tagString = "Hmm... I see these features in your photo: "
-
-      for ( let i = 0; i < tags.length; i++ ) {
-        tagString += `"${tags[i].name}"`
-        if (i != tags.length - 1)
-          tagString += ", ";  
-      }
-
+      
       userProfile.paintingID = items[0].paintid;
       userProfile.paintingTitle = items[0].title;
       userProfile.paintingAuthor = items[0].author;
@@ -391,13 +388,41 @@ class QnABot extends ActivityHandler {
 
       replyPaint.attachments = [this.getInternetAttachment(items[0].url)];
       replyPhoto.attachments = [this.getInternetAttachment(turnContext.activity.text)];
+      if(userProfile.language=="en"){
 
-      await turnContext.sendActivity("I received your photo!")
-      await turnContext.sendActivity(replyPhoto);
-      await turnContext.sendActivity(tagString);
-      await turnContext.sendActivity("Aha! I got you your masterpiece!")
-      await turnContext.sendActivity(replyPaint);
-      await turnContext.sendActivity("You can ask me for more details such as author, date, and so on ...")
+        let tagString = "Hmm... I see these features in your photo: "
+        for ( let i = 0; i < tags.length; i++ ) {
+          tagString += `"${tags[i].name}"`
+          if (i != tags.length - 1)
+            tagString += ", ";  
+        }
+
+        await turnContext.sendActivity("I received your photo!")
+        await turnContext.sendActivity(replyPhoto);
+        await turnContext.sendActivity(tagString);
+        await turnContext.sendActivity("Aha! I got you your masterpiece!")
+        await turnContext.sendActivity(replyPaint);
+        await turnContext.sendActivity("You can ask me for more details such as author, date, and so on ...")
+      }
+      else{
+
+        let tagString = await this.englishToOther("Hmm... I see these characteristics in your photo: ",userProfile);
+        for ( let i = 0; i < tags.length; i++ ) {
+          tagString += `"${tags[i].name}"`
+          if (i != tags.length - 1)
+            tagString += ", ";  
+        }
+        const reply1 = await this.englishToOther("I received your photo!",userProfile);
+        const reply2 = await this.englishToOther("Aha! I found your painting!",userProfile);
+        const reply3 = await this.englishToOther("You can ask me for more details such as author, date, and so on ...",userProfile);
+
+        await turnContext.sendActivity(reply1);
+        await turnContext.sendActivity(replyPhoto);
+        await turnContext.sendActivity(tagString);
+        await turnContext.sendActivity(reply2);
+        await turnContext.sendActivity(replyPaint);
+        await turnContext.sendActivity(reply3);
+      }
     }
 
     /**
