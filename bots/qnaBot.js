@@ -468,7 +468,7 @@ class QnABot extends ActivityHandler {
 
       const tags = (await this.computerVisionClient.analyzeImage(tagsURL, { visualFeatures: ['Tags'] })).tags;
       console.log(`Tags: ${formatTags(tags)}`);
-      return tags.slice(0, 5);
+      return tags;
     }
     catch (err) {
       console.log(err);
