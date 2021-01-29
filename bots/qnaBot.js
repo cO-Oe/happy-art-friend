@@ -225,38 +225,22 @@ class QnABot extends ActivityHandler {
       let maxTag = 0;
       let maxId = 1;
 
-      // Customed tags
-      tags = ['sunrise', 'mountain', 'outdoor', 'indoor', 'water']
+      let queryString = "SELECT VALUE COUNT(1) FROM (SELECT * from c WHERE c.paintid = @n) as d WHERE ";
+      for ( let i = 0; i < tags.length; i++ ) {
+        queryString += `d.tag = \"${tags[i].name}\"`;
+        if ( i != tags.length - 1 )
+          queryString += " OR "; 
+      }
 
       for ( let i = 1; i < 4; i++ ) {
         // query to return all items
         const querySpec = {
-          query: "SELECT VALUE COUNT(1) FROM (SELECT * from c WHERE c.paintid = @n) as d WHERE d.tag = @tag1 OR d.tag = @tag2 OR d.tag = @tag3 OR d.tag = @tag4 OR d.tag = @tag5",
+          query: queryString,
           parameters: [
             {
               name: "@n",
               value: i.toString()
-            },
-            {
-              name: "@tag1",
-              value: tags[0]
-            },
-            {
-              name: "@tag2",
-              value: tags[1]
-            },
-            {
-              name: "@tag3",
-              value: tags[2]
-            },
-            {
-              name: "@tag4",
-              value: tags[3]
-            },
-            {
-              name: "@tag5",
-              value: tags[4]
-            },
+            }
           ]
         };
 
