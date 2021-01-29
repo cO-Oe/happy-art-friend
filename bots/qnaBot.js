@@ -3,13 +3,14 @@
 
 const { ActivityHandler, ActivityTypes, teamsGetChannelId, ConsoleTranscriptLogger } = require('botbuilder');
 const { LuisRecognizer, QnAMaker } = require('botbuilder-ai');
+const { maxActionTitleLength } = require('botbuilder-dialogs');
 const { BlobServiceClient } = require('@azure/storage-blob');
 const ComputerVisionClient = require('@azure/cognitiveservices-computervision').ComputerVisionClient;
 const ApiKeyCredentials = require('@azure/ms-rest-js').ApiKeyCredentials;
 const CosmosClient = require("@azure/cosmos").CosmosClient;
 const axios = require('axios');
 const uuid = require('uuid');
-const { maxActionTitleLength } = require('botbuilder-dialogs');
+const line = require('@line/bot-sdk');
 
 const CONVERSATION_DATA_PROPERTY = 'conversationData';
 const USER_PROFILE_PROPERTY = 'userProfile';
@@ -37,6 +38,11 @@ class QnABot extends ActivityHandler {
         this.conversationState = conversationState;
         this.userState = userState;
 
+        // Create Linebot Client
+        const lineClient = new line.Client({
+          channelAccessToken: '<channel access token>'
+        });
+        
         // Create computer vision model 
         const computerVisionClient = new ComputerVisionClient(
           new ApiKeyCredentials({ inHeader: { 'Ocp-Apim-Subscription-Key': process.env.CVAPIKey } }), process.env.CVEndpointHostName);
@@ -101,9 +107,12 @@ class QnABot extends ActivityHandler {
             // If user input is an attachment
             if (context.activity.attachments && context.activity.attachments.length > 0) {
               // The user sent an attachment and the bot should handle the incoming attachment.
+              await this.sendActivity('Picture');
               await this.handleIncomingAttachment(context,userProfile);
             } 
             else {
+
+              await this.sendActivity('Text');
 
               // First, we use the dispatch model to determine which cognitive service (LUIS or QnA) to use.
               const recognizerResult = await dispatchRecognizer.recognize(context);
