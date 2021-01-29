@@ -10,7 +10,6 @@ const ApiKeyCredentials = require('@azure/ms-rest-js').ApiKeyCredentials;
 const CosmosClient = require("@azure/cosmos").CosmosClient;
 const axios = require('axios');
 const uuid = require('uuid');
-const line = require('@line/bot-sdk');
 
 const CONVERSATION_DATA_PROPERTY = 'conversationData';
 const USER_PROFILE_PROPERTY = 'userProfile';
@@ -38,11 +37,6 @@ class QnABot extends ActivityHandler {
         this.conversationState = conversationState;
         this.userState = userState;
 
-        // Create Linebot Client
-        const lineClient = new line.Client({
-          channelAccessToken: '<channel access token>'
-        });
-        
         // Create computer vision model 
         const computerVisionClient = new ComputerVisionClient(
           new ApiKeyCredentials({ inHeader: { 'Ocp-Apim-Subscription-Key': process.env.CVAPIKey } }), process.env.CVEndpointHostName);
