@@ -376,7 +376,7 @@ class QnABot extends ActivityHandler {
       }
       
       const querySpec = {
-        query: "SELECT * FROM c WHERE c.id = @n",
+        query: "SELECT * FROM c WHERE c.paintid = @n",
         parameters: [
           {
             name: "@n",
@@ -449,7 +449,7 @@ class QnABot extends ActivityHandler {
           queryString += " OR "; 
       }
 
-      for ( let i = 1; i < 4; i++ ) {
+      for ( let i = 1; i < 33; i++ ) {
         // query to return all items
         const querySpec = {
           query: queryString,
@@ -472,7 +472,7 @@ class QnABot extends ActivityHandler {
       }
       
       const querySpec = {
-        query: "SELECT * FROM c WHERE c.id = @n",
+        query: "SELECT * FROM c WHERE c.paintid = @n",
         parameters: [
           {
             name: "@n",
