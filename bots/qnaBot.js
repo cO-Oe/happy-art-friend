@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
 
-const { ActivityHandler, teamsGetChannelId } = require('botbuilder');
+const { ActivityHandler, ActivityTypes, teamsGetChannelId, ConsoleTranscriptLogger } = require('botbuilder');
 const { LuisRecognizer, QnAMaker } = require('botbuilder-ai');
 const { BlobServiceClient } = require('@azure/storage-blob');
 const ComputerVisionClient = require('@azure/cognitiveservices-computervision').ComputerVisionClient;
@@ -197,16 +197,33 @@ class QnABot extends ActivityHandler {
 
       // query to return all items
       const querySpec = {
-        query: `"SELECT * from c"`
+        query: "SELECT c.url FROM c WHERE c.tag = 'sunrise'"
       };
 
       const { resources: items } = await this.cosmosContainer.items
         .query(querySpec)
         .fetchAll();
+      
+      const reply = { type: ActivityTypes.Message };
 
-      console.log(items);
+      reply.attachments = [this.getInternetAttachment(items[0].url)];
+
+      await turnContext.sendActivity(reply);
       await Promise.all(replyPromises);
   }
+
+/**
+   * Returns an attachment to be sent to the user from a HTTPS URL.
+   */
+  getInternetAttachment(url) {
+    // NOTE: The contentUrl must be HTTPS.
+    return {
+        name: 'response.png',
+        contentType: 'image/jpg',
+        contentUrl: url
+    };
+  }
+
 
  /**
   * Downloads attachment to the blob.
