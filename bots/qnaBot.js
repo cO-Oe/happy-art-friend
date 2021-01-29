@@ -74,25 +74,7 @@ class QnABot extends ActivityHandler {
 
         this.onMessage(async (context, next) => {
 
-            //test line attachment
-            /*
-            await context.sendActivity(`Channed id is : ${ context.activity.channelId }`);
-            string replaymessage = string.Empty;
-            var Channeldata = ((Newtonsoft.Json.Linq.JContainer)((Microsoft.Bot.Builder.DelegatingTurnContext<Microsoft.Bot.Schema.IMessageActivity>)turnContext).Activity.ChannelData).Root;
-            var Message = JsonSerializer.Deserialize<Model.Line.LineChannel>(Channeldata.ToString());
-            switch (Message.message.type){
-              case "image":
-                  await context.sendActivity(`I got a picture`);
-                  break;
-              case "text":
-                  await context.sendActivity(`I got a test message`);
-                  break;
-              default:
-                  await context.sendActivity(`I don't do the message type. Please input the images`);
-                  break;
-            }
-            */
-            //test line attachment
+           
             // Get the state properties from the turn context.
             const userProfile = await this.userProfileAccessor.get(context, {});
             const conversationData = await this.conversationDataAccessor.get(
@@ -118,9 +100,13 @@ class QnABot extends ActivityHandler {
                 await this.handleIncomingURL(context,userProfile);
               }
               else {
+                var transObj = {language:"en"}  //  default is English
                 // First, we use the dispatch model to determine which cognitive service (LUIS or QnA) to use.
-                const recognizerResult = await dispatchRecognizer.recognize(context);
+                context.activity.text = await this.otherToEnglish(context.activity.text,transObj);
 
+                //console.log(`${context.activity.text}`)
+                //console.log(JSON.stringify(context, null, 4))
+                const recognizerResult = await dispatchRecognizer.recognize(context);
                 // Top intent tell us which cognitive service to use.
                 const intent = LuisRecognizer.topIntent(recognizerResult);
 
@@ -133,14 +119,21 @@ class QnABot extends ActivityHandler {
                         await context.sendActivity(`Please provide a Picture First!`);
                       }
                       else {
-
-                          await this.ProcessArtLuis(context, recognizerResult.luisResult,userProfile);
+                          const luisReply = await this.ProcessArtLuis(context, recognizerResult.luisResult,userProfile);
+                          if (transObj["language"]!="en"){
+                            const reply = await this.englishToOther(luisReply,transObj);
+                            console.log(`${reply}`)
+                            await context.sendActivity(reply);
+                          }
+                          else{
+                            await context.sendActivity(luisReply);
+                          }
                       }
                       break;
                   case 'art_qna':
                       console.log('sent to art QnA')
                       //userProfile.paintingID = context.activity.text;
-                      await this.processArtQnA(context);
+                      await this.processArtQnA(context,transObj);
                       break;
                   default:
                       console.log(`Dispatch unrecognized intent: ${ intent }.`);
@@ -182,34 +175,47 @@ class QnABot extends ActivityHandler {
         const result = luisResult.connectedServiceResult;
         const intent = result.topScoringIntent.intent;
         //await context.sendActivity(`Art_Luis top intent ${ intent }.`);
-
         switch (intent) {
           case 'paintingAuthor':
-              await context.sendActivity(`Author of the painting is ${ userProfile.paintingAuthor }.`);
+              //await context.sendActivity(`Author of the painting is ${ userProfile.paintingAuthor }.`);
+              const reply1 = `Author of the painting is ${ userProfile.paintingAuthor }.`;
+              return reply1;
               break;
           case 'paintingDate':
-              await context.sendActivity(`Date of the painting is ${ userProfile.paintingYear }.`);
+              //await context.sendActivity(`Date of the painting is ${ userProfile.paintingYear }.`);
+              const reply2 = `Date of the painting is ${ userProfile.paintingYear }.`;
+              return reply2;
               break;
           case 'paintingName':
-              await context.sendActivity(`Name of the painting is ${ userProfile.paintingTitle }.`);
+              //await context.sendActivity(`Name of the painting is ${ userProfile.paintingTitle }.`);
+              const reply3 = `Name of the painting is ${ userProfile.paintingTitle }.`;
+              return reply3;
               break;
           case 'paintingStyle':
-              await context.sendActivity(`Style of the painting is ${ userProfile.paintingStyle }.`);
+              //await context.sendActivity(`Style of the painting is ${ userProfile.paintingStyle }.`);
+              const reply4 = `Style of the painting is ${ userProfile.paintingStyle }.`;
+              return reply4;
               break;
           case 'paintingTechnique':
-              await context.sendActivity(`Technique of the painting is ${ userProfile.paintingTechnique}.`);
+              //await context.sendActivity(`Technique of the painting is ${ userProfile.paintingTechnique}.`);
+              const reply5 = `Technique of the painting is ${ userProfile.paintingTechnique}.`;
+              return reply5;
               break;
           default:
-              await context.sendActivity(`Sorry, I didn't get that.`);
+              //await context.sendActivity(`Sorry, I didn't get that.`);
+              const reply6 = "Sorry, I didn't get that.";
+              return reply6;
               break;
         }
+        /*
         if (luisResult.entities.length > 0) {
             await context.sendActivity(`Art_Luis entities were found in the message: ${ luisResult.entities.map((entityObj) => entityObj.entity).join('\n\n') }.`);
         }
+        */
     }
 
 
-    async processArtQnA(context) {
+    async processArtQnA(context,transObj) {
         console.log('Art_QnA');
     
 
@@ -224,17 +230,116 @@ class QnABot extends ActivityHandler {
 
             reply.attachments = [this.getInternetAttachment(firstLine.substring(9, firstLine.indexOf(')')))];
             
+            const replyString = await this.englishToOther(restString,transObj);
+            
             await context.sendActivity(reply);
-            await context.sendActivity(`${ restString }`)
+            //await context.sendActivity(`${ restString }`)
+            
+            await context.sendActivity(replyString);
           }
           else {
-            await context.sendActivity(`${ results[0].answer }`);
+            const reply = await this.englishToOther(results[0].answer,transObj);
+            await context.sendActivity(reply);
           }
         } else {
-            await context.sendActivity('Sorry, I am a dummy QnA system');
+            const reply = await this.englishToOther("Sorry, I didn't find the answer in QnA system",transObj);
+            await context.sendActivity(reply);
         }
     }
 
+    async otherToEnglish(text,transObj){
+    
+      const typeRes = await axios({
+        baseURL: process.env.TranslatorEndpoint,
+        url: '/detect',
+        method: 'post',
+        headers: {
+          'Ocp-Apim-Subscription-Key': process.env.TranslatorKey,
+          'Ocp-Apim-Subscription-Region': process.env.TranslatorLocation,
+          'Content-type': 'application/json',
+          'X-ClientTraceId': uuid.v4().toString()
+        },
+        params: {
+          'api-version': '3.0',
+        },
+        data: [{
+          'text': `${text}`
+        }],
+        responseType: 'json'
+      })
+      var languageType = JSON.stringify(typeRes.data[0].language, null, 4); 
+      
+      if (languageType != "en"){
+
+        transObj["language"]=languageType
+        languageType = languageType.slice(1,-1)
+
+        const tranRes = await axios({
+          baseURL: process.env.TranslatorEndpoint,
+          url: '/translate',
+          method: 'post',
+          headers: {
+            'Ocp-Apim-Subscription-Key': process.env.TranslatorKey,
+            'Ocp-Apim-Subscription-Region': process.env.TranslatorLocation,
+            'Content-type': 'application/json',
+            'X-ClientTraceId': uuid.v4().toString()
+          },
+          params: {
+            'api-version': '3.0',
+            'from': `${languageType}`,
+            'to': ['en']
+          },
+          data: [{
+            'text': `${text}`
+          }],
+          responseType: 'json'
+        })
+    
+        var resultText = JSON.stringify(tranRes.data[0].translations[0].text, null, 4);
+        resultText = resultText.slice(1,-1)
+        //console.log(`${resultText}`)
+
+        return resultText
+      }
+      else{
+        transObj["language"]="en"
+        return text
+      }
+    }
+    async englishToOther(text,transObj){
+      //const target = transObj["language"]
+      var target = transObj["language"]
+      target = target.slice(1,-1)
+
+      const tranRes = await axios({
+        baseURL: process.env.TranslatorEndpoint,
+        url: '/translate',
+        method: 'post',
+        headers: {
+          'Ocp-Apim-Subscription-Key': process.env.TranslatorKey,
+          'Ocp-Apim-Subscription-Region': process.env.TranslatorLocation,
+          'Content-type': 'application/json',
+          'X-ClientTraceId': uuid.v4().toString()
+        },
+        params: {
+          'api-version': '3.0',
+          'from': "en",
+          'to': target
+        },
+        data: [{
+          'text': `${text}`
+        }],
+        responseType: 'json'
+      })
+    
+      var resultText = JSON.stringify(tranRes.data[0].translations[0].text, null, 4);
+      resultText = resultText.slice(1,-1)
+      //console.log(`${resultText}`)
+
+      return resultText
+    
+  }
+    
     async handleIncomingURL(turnContext,userProfile) {
       let tags = await(this.computerVision(turnContext.activity.text));
 
@@ -248,7 +353,7 @@ class QnABot extends ActivityHandler {
           queryString += " OR "; 
       }
 
-      for ( let i = 1; i < 4; i++ ) {
+      for ( let i = 1; i < 33; i++ ) {
         // query to return all items
         const querySpec = {
           query: queryString,
