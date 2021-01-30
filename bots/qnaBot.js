@@ -77,9 +77,9 @@ class QnABot extends ActivityHandler {
             // Get the state properties from the turn context.
             const userProfile = await this.userProfileAccessor.get(context, {});
             const conversationData = await this.conversationDataAccessor.get(context, {});
-            //if (!userProfile.language){
-            //  userProfile.language = "en"
-            //}
+            if (!userProfile.language){
+              userProfile.language = "\"en\""
+            }
             // If user input is an attachment
             if (context.activity.attachments && context.activity.attachments.length > 0) {
               // The user sent an attachment and the bot should handle the incoming attachment.
@@ -334,11 +334,15 @@ class QnABot extends ActivityHandler {
 
     async englishToOther(text,userProfile){
       //const target = userProfile.language
+      console.log(userProfile)
+
       var target = userProfile.language;
       if (target === "\"en\""){
         return text;
       }
+
       target = target.slice(1,-1)
+      console.log(target)
 
       const tranRes = await axios({
         baseURL: process.env.TranslatorEndpoint,
@@ -436,7 +440,6 @@ class QnABot extends ActivityHandler {
       userProfile.paintingTechnique = items[0].technique;
 
       replyPaint.attachments = [this.getInternetAttachment(items[0].url)];
-      replyPhoto.attachments = [this.getInternetAttachment(turnContext.activity.text)];
       if(userProfile.language=="\"en\""){
 
         let tagString = "Hmm... I see these features in your photo: "
@@ -447,7 +450,6 @@ class QnABot extends ActivityHandler {
         }
 
         await turnContext.sendActivity("I received your photo!")
-        await turnContext.sendActivity(replyPhoto);
         await turnContext.sendActivity(tagString);
         await turnContext.sendActivity("Aha! I got you your masterpiece!")
         await turnContext.sendActivity(replyPaint);
@@ -557,7 +559,6 @@ class QnABot extends ActivityHandler {
         .fetchAll();
 
       const replyPaint = { type: ActivityTypes.Message };
-      const replyPhoto = { type: ActivityTypes.Message };
 
       
       userProfile.paintingID = items[0].paintid;
@@ -568,7 +569,6 @@ class QnABot extends ActivityHandler {
       userProfile.paintingTechnique = items[0].technique;
 
       replyPaint.attachments = [this.getInternetAttachment(items[0].url)];
-      replyPhoto.attachments = [this.getInternetAttachment(turnContext.activity.text)];
 
       if(userProfile.language=="\"en\""){
 
