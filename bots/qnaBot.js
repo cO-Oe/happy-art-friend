@@ -77,9 +77,9 @@ class QnABot extends ActivityHandler {
             // Get the state properties from the turn context.
             const userProfile = await this.userProfileAccessor.get(context, {});
             const conversationData = await this.conversationDataAccessor.get(context, {});
-            if (!userProfile.language){
-              userProfile.language = "en"
-            }
+            //if (!userProfile.language){
+            //  userProfile.language = "en"
+            //}
             // If user input is an attachment
             if (context.activity.attachments && context.activity.attachments.length > 0) {
               // The user sent an attachment and the bot should handle the incoming attachment.
@@ -115,12 +115,16 @@ class QnABot extends ActivityHandler {
                   case 'art_luis':
                       console.log('sent to art luis')
                       if(!userProfile.paintingID) {
-                        await context.sendActivity('Send me a URL first before you ask for the details!');
-                        await context.sendActivity('You may upload your photo through this website: https://img.onl/');
+                        const reply1 = await this.englishToOther('Send me a URL first before you ask for the details!',userProfile);
+                        var reply2 = await this.englishToOther('You may upload your photo through this website:',userProfile);
+                        reply2 += " https://img.onl/"
+                        await context.sendActivity(reply1);
+                        await context.sendActivity(reply2);
                       }
                       else {
                           const luisReply = await this.ProcessArtLuis(context, recognizerResult.luisResult,userProfile);
-                          if (userProfile.language!="en"){
+                          if (userProfile.language!="\"en\""){
+                            console.log('not en')
                             const reply = await this.englishToOther(luisReply,userProfile);
                             console.log(`${reply}`)
                             await context.sendActivity(reply);
@@ -289,10 +293,10 @@ class QnABot extends ActivityHandler {
         responseType: 'json'
       })
       var languageType = JSON.stringify(typeRes.data[0].language, null, 4); 
-      
-      if (languageType != "en"){
-
-        userProfile.language=languageType
+      userProfile.language=languageType
+      console.log(userProfile.language)
+      if (languageType != "\"en\""){
+        //userProfile.language=languageType
         languageType = languageType.slice(1,-1)
 
         const tranRes = await axios({
@@ -323,7 +327,7 @@ class QnABot extends ActivityHandler {
         return resultText
       }
       else{
-        userProfile.language="en"
+        //userProfile.language=languageType
         return text
       }
     }
@@ -331,7 +335,7 @@ class QnABot extends ActivityHandler {
     async englishToOther(text,userProfile){
       //const target = userProfile.language
       var target = userProfile.language;
-      if (target == "en"){
+      if (target === "\"en\""){
         return text;
       }
       target = target.slice(1,-1)
