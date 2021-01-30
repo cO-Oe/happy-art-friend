@@ -368,7 +368,7 @@ class QnABot extends ActivityHandler {
 
       let paintNum = 33;
       let maxTag = 0;
-      let maxId = 1;
+      let matchCnt = [];
 
       let queryString = "SELECT VALUE COUNT(1) FROM (SELECT * from c WHERE c.paintid = @n) as d WHERE ";
       for ( let i = 0; i < tags.length; i++ ) {
@@ -394,11 +394,18 @@ class QnABot extends ActivityHandler {
           .fetchAll();
         
         if ( items[0] > maxTag ) {
-          maxId = i.toString();
           maxTag = items[0];
         }
+        matchCnt.push(items[0]);
       }
       
+      let matchIds = [];
+      for ( let i = 0; i < matchCnt.length; ++i ) {
+        if (matchCnt[i] == maxTag)
+          matchIds.push(i+1);
+      }
+
+      const maxId = matchIds[Math.floor(Math.random() * matchIds.length)]; 
       const querySpec = {
         query: "SELECT * FROM c WHERE c.paintid = @n",
         parameters: [
@@ -492,7 +499,7 @@ class QnABot extends ActivityHandler {
 
       let paintNum = 33;
       let maxTag = 0;
-      let maxId = 1;
+      let matchCnt = [];
 
       let queryString = "SELECT VALUE COUNT(1) FROM (SELECT * from c WHERE c.paintid = @n) as d WHERE ";
       for ( let i = 0; i < tags.length; i++ ) {
@@ -518,11 +525,18 @@ class QnABot extends ActivityHandler {
           .fetchAll();
         
         if ( items[0] > maxTag ) {
-          maxId = i.toString();
           maxTag = items[0];
         }
+        matchCnt.push(items[0]);
       }
-      
+        
+      let matchIds = [];
+      for ( let i = 0; i < matchCnt.length; ++i ) {
+        if (matchCnt[i] == maxTag)
+          matchIds.push(i+1);
+      }
+
+      const maxId = matchIds[Math.floor(Math.random() * matchIds.length)]; 
       const querySpec = {
         query: "SELECT * FROM c WHERE c.paintid = @n",
         parameters: [
