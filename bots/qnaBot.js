@@ -219,13 +219,16 @@ class QnABot extends ActivityHandler {
             reply.attachments = [this.getInternetAttachment(firstLine.substring(9, firstLine.indexOf(')')))];
             
             const replyString = await this.englishToOther(restString,userProfile);
-            
+            var replyString2 = replyString.replace(/\\n/g, "\n")
+
             await context.sendActivity(reply);
-            await context.sendActivity(replyString);
+            await context.sendActivity(replyString2);
           }
           else {
             const reply = await this.englishToOther(results[0].answer,userProfile);
-            await context.sendActivity(reply);
+            var replyString = reply.replace(/\\n/g, "\n")
+
+            await context.sendActivity(replyString);
           }
         } else {
             const query = process.argv[2] || context.activity.text
