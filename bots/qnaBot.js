@@ -437,7 +437,7 @@ class QnABot extends ActivityHandler {
 
       replyPaint.attachments = [this.getInternetAttachment(items[0].url)];
       replyPhoto.attachments = [this.getInternetAttachment(turnContext.activity.text)];
-      if(userProfile.language=="en"){
+      if(userProfile.language=="\"en\""){
 
         let tagString = "Hmm... I see these features in your photo: "
         for ( let i = 0; i < tags.length; i++ ) {
@@ -455,12 +455,13 @@ class QnABot extends ActivityHandler {
       }
       else{
 
-        let tagString = await this.englishToOther("Hmm... I see these characteristics in your photo: ",userProfile);
+        let tagString = "Hmm... I see these characteristics in your photo: "
         for ( let i = 0; i < tags.length; i++ ) {
           tagString += `"${tags[i].name}"`
           if (i != tags.length - 1)
             tagString += ", ";  
         }
+        tagString = await this.englishToOther(tagString,userProfile);
         const reply1 = await this.englishToOther("I received your photo!",userProfile);
         const reply2 = await this.englishToOther("Aha! I found your painting!",userProfile);
         const reply3 = await this.englishToOther("You can ask me for more details such as author, date, and so on ...",userProfile);
@@ -569,7 +570,7 @@ class QnABot extends ActivityHandler {
       replyPaint.attachments = [this.getInternetAttachment(items[0].url)];
       replyPhoto.attachments = [this.getInternetAttachment(turnContext.activity.text)];
 
-      if(userProfile.language=="en"){
+      if(userProfile.language=="\"en\""){
 
         let tagString = "Hmm... I see these features in your photo: "
         for ( let i = 0; i < tags.length; i++ ) {
